@@ -1,0 +1,9 @@
+left,right,middleStim,cue,corrAns
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/BlueBall.png,SHAPE,z
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/YellowBall.png,SHAPE,z
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/BlueTruck.png,SHAPE,m
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/YellowTruck.png,SHAPE,m
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/BlueBall.png,SHAPE,z
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/YellowBall.png,SHAPE,z
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/BlueTruck.png,SHAPE,m
+resources/assets/BlueBallWhite.png,resources/assets/YellowTruckWhite.png,resources/assets/YellowTruck.png,SHAPE,m
