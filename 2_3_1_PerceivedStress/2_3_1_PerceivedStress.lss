@@ -16,7 +16,7 @@
   </fields>
   <rows>
    <row>
-    <aid><![CDATA[509]]></aid>
+    <aid><![CDATA[1080]]></aid>
     <qid><![CDATA[382]]></qid>
     <code><![CDATA[AO01]]></code>
     <sortorder><![CDATA[0]]></sortorder>
@@ -24,7 +24,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[510]]></aid>
+    <aid><![CDATA[1081]]></aid>
     <qid><![CDATA[382]]></qid>
     <code><![CDATA[AO02]]></code>
     <sortorder><![CDATA[1]]></sortorder>
@@ -32,7 +32,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[511]]></aid>
+    <aid><![CDATA[1082]]></aid>
     <qid><![CDATA[382]]></qid>
     <code><![CDATA[AO03]]></code>
     <sortorder><![CDATA[2]]></sortorder>
@@ -40,7 +40,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[512]]></aid>
+    <aid><![CDATA[1083]]></aid>
     <qid><![CDATA[382]]></qid>
     <code><![CDATA[AO04]]></code>
     <sortorder><![CDATA[3]]></sortorder>
@@ -48,7 +48,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[513]]></aid>
+    <aid><![CDATA[1084]]></aid>
     <qid><![CDATA[382]]></qid>
     <code><![CDATA[AO05]]></code>
     <sortorder><![CDATA[4]]></sortorder>
@@ -66,32 +66,32 @@
   </fields>
   <rows>
    <row>
-    <id><![CDATA[509]]></id>
-    <aid><![CDATA[509]]></aid>
+    <id><![CDATA[1080]]></id>
+    <aid><![CDATA[1080]]></aid>
     <answer><![CDATA[从不]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[510]]></id>
-    <aid><![CDATA[510]]></aid>
+    <id><![CDATA[1081]]></id>
+    <aid><![CDATA[1081]]></aid>
     <answer><![CDATA[很少]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[511]]></id>
-    <aid><![CDATA[511]]></aid>
+    <id><![CDATA[1082]]></id>
+    <aid><![CDATA[1082]]></aid>
     <answer><![CDATA[有时]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[512]]></id>
-    <aid><![CDATA[512]]></aid>
+    <id><![CDATA[1083]]></id>
+    <aid><![CDATA[1083]]></aid>
     <answer><![CDATA[经常]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[513]]></id>
-    <aid><![CDATA[513]]></aid>
+    <id><![CDATA[1084]]></id>
+    <aid><![CDATA[1084]]></aid>
     <answer><![CDATA[总是]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
@@ -109,7 +109,7 @@
    <row>
     <gid><![CDATA[15]]></gid>
     <sid><![CDATA[456886]]></sid>
-    <group_order><![CDATA[0]]></group_order>
+    <group_order><![CDATA[1]]></group_order>
     <randomization_group/>
     <grelevance><![CDATA[1]]></grelevance>
    </row>
@@ -135,7 +135,7 @@
     <description/>
     <language><![CDATA[zh-Hans]]></language>
     <sid><![CDATA[456886]]></sid>
-    <group_order><![CDATA[0]]></group_order>
+    <group_order><![CDATA[1]]></group_order>
     <randomization_group/>
     <grelevance><![CDATA[1]]></grelevance>
    </row>
@@ -172,11 +172,30 @@
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[Y]]></mandatory>
     <encrypted><![CDATA[N]]></encrypted>
-    <question_order><![CDATA[1]]></question_order>
+    <question_order><![CDATA[2]]></question_order>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
     <question_theme_name><![CDATA[arrays/array]]></question_theme_name>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[456886]]></sid>
+    <gid><![CDATA[15]]></gid>
+    <type><![CDATA[S]]></type>
+    <title><![CDATA[G00Q02]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[1]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[shortfreetext]]></question_theme_name>
+    <modulename/>
     <same_script><![CDATA[0]]></same_script>
    </row>
   </rows>
@@ -203,7 +222,7 @@
   </fields>
   <rows>
    <row>
-    <qid><![CDATA[394]]></qid>
+    <qid><![CDATA[1440]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -219,7 +238,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[395]]></qid>
+    <qid><![CDATA[1441]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -235,7 +254,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[396]]></qid>
+    <qid><![CDATA[1442]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -251,7 +270,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[397]]></qid>
+    <qid><![CDATA[1443]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -267,7 +286,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[398]]></qid>
+    <qid><![CDATA[1444]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -283,7 +302,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[399]]></qid>
+    <qid><![CDATA[1445]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -299,7 +318,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[400]]></qid>
+    <qid><![CDATA[1446]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -315,7 +334,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[401]]></qid>
+    <qid><![CDATA[1447]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -331,7 +350,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[402]]></qid>
+    <qid><![CDATA[1448]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -347,7 +366,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[403]]></qid>
+    <qid><![CDATA[1449]]></qid>
     <parent_qid><![CDATA[382]]></parent_qid>
     <sid><![CDATA[456886]]></sid>
     <gid><![CDATA[15]]></gid>
@@ -377,68 +396,76 @@
    <row>
     <id><![CDATA[382]]></id>
     <qid><![CDATA[382]]></qid>
-    <question><![CDATA[<font face="DengXian"><span style="font-size: 14px;">请回忆在过去的一个月内，你是否：</span></font>]]></question>
-    <help><![CDATA[这是问题帮助文本。]]></help>
+    <question><![CDATA[<font face="DengXian"><span style="font-size: 14px;">请回忆在过去的一个月内，您是否：</span></font>]]></question>
+    <help/>
     <script/>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[394]]></id>
-    <qid><![CDATA[394]]></qid>
+    <id><![CDATA[1439]]></id>
+    <qid><![CDATA[1439]]></qid>
+    <question><![CDATA[您的编号：]]></question>
+    <help/>
+    <script/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[1440]]></id>
+    <qid><![CDATA[1440]]></qid>
     <question><![CDATA[当意想不到的事情发生时感到烦躁]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[395]]></id>
-    <qid><![CDATA[395]]></qid>
+    <id><![CDATA[1441]]></id>
+    <qid><![CDATA[1441]]></qid>
     <question><![CDATA[感到自己无法控制生活中重要的事情]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[396]]></id>
-    <qid><![CDATA[396]]></qid>
+    <id><![CDATA[1442]]></id>
+    <qid><![CDATA[1442]]></qid>
     <question><![CDATA[感到紧张和有压力]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[397]]></id>
-    <qid><![CDATA[397]]></qid>
+    <id><![CDATA[1443]]></id>
+    <qid><![CDATA[1443]]></qid>
     <question><![CDATA[自己有信心能够处理个人问题]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[398]]></id>
-    <qid><![CDATA[398]]></qid>
+    <id><![CDATA[1444]]></id>
+    <qid><![CDATA[1444]]></qid>
     <question><![CDATA[事情正在和希望的一样发展]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[399]]></id>
-    <qid><![CDATA[399]]></qid>
+    <id><![CDATA[1445]]></id>
+    <qid><![CDATA[1445]]></qid>
     <question><![CDATA[自己不能处理所有必须做的事情]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[400]]></id>
-    <qid><![CDATA[400]]></qid>
+    <id><![CDATA[1446]]></id>
+    <qid><![CDATA[1446]]></qid>
     <question><![CDATA[自己能控制生活中的一些恼怒情绪]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[401]]></id>
-    <qid><![CDATA[401]]></qid>
+    <id><![CDATA[1447]]></id>
+    <qid><![CDATA[1447]]></qid>
     <question><![CDATA[自己能安排一切]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[402]]></id>
-    <qid><![CDATA[402]]></qid>
+    <id><![CDATA[1448]]></id>
+    <qid><![CDATA[1448]]></qid>
     <question><![CDATA[因无法掌控发生的事情感到生气]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[403]]></id>
-    <qid><![CDATA[403]]></qid>
+    <id><![CDATA[1449]]></id>
+    <qid><![CDATA[1449]]></qid>
     <question><![CDATA[困难积累得太大而无法克服]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
@@ -590,6 +617,276 @@
     <value><![CDATA[0]]></value>
     <language/>
    </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1439]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
   </rows>
  </question_attributes>
  <surveys>
@@ -671,12 +968,12 @@
     <usecookie><![CDATA[I]]></usecookie>
     <allowregister><![CDATA[I]]></allowregister>
     <allowsave><![CDATA[I]]></allowsave>
-    <autonumber_start><![CDATA[0]]></autonumber_start>
+    <autonumber_start><![CDATA[1]]></autonumber_start>
     <autoredirect><![CDATA[I]]></autoredirect>
     <allowprev><![CDATA[I]]></allowprev>
     <printanswers><![CDATA[I]]></printanswers>
     <ipaddr><![CDATA[Y]]></ipaddr>
-    <ipanonymize><![CDATA[Y]]></ipanonymize>
+    <ipanonymize><![CDATA[N]]></ipanonymize>
     <refurl><![CDATA[Y]]></refurl>
     <showsurveypolicynotice><![CDATA[0]]></showsurveypolicynotice>
     <publicstatistics><![CDATA[I]]></publicstatistics>

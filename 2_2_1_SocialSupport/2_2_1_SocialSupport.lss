@@ -144,22 +144,6 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[910]]></aid>
-    <qid><![CDATA[530]]></qid>
-    <code><![CDATA[AO03]]></code>
-    <sortorder><![CDATA[2]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
-    <aid><![CDATA[926]]></aid>
-    <qid><![CDATA[676]]></qid>
-    <code><![CDATA[AO03]]></code>
-    <sortorder><![CDATA[2]]></sortorder>
-    <assessment_value><![CDATA[0]]></assessment_value>
-    <scale_id><![CDATA[0]]></scale_id>
-   </row>
-   <row>
     <aid><![CDATA[651]]></aid>
     <qid><![CDATA[529]]></qid>
     <code><![CDATA[AO03]]></code>
@@ -208,18 +192,18 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[915]]></aid>
-    <qid><![CDATA[531]]></qid>
-    <code><![CDATA[AO04]]></code>
-    <sortorder><![CDATA[3]]></sortorder>
+    <aid><![CDATA[910]]></aid>
+    <qid><![CDATA[530]]></qid>
+    <code><![CDATA[AO03]]></code>
+    <sortorder><![CDATA[2]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[931]]></aid>
-    <qid><![CDATA[677]]></qid>
-    <code><![CDATA[AO04]]></code>
-    <sortorder><![CDATA[3]]></sortorder>
+    <aid><![CDATA[926]]></aid>
+    <qid><![CDATA[676]]></qid>
+    <code><![CDATA[AO03]]></code>
+    <sortorder><![CDATA[2]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <scale_id><![CDATA[0]]></scale_id>
    </row>
@@ -266,6 +250,22 @@
    <row>
     <aid><![CDATA[935]]></aid>
     <qid><![CDATA[678]]></qid>
+    <code><![CDATA[AO04]]></code>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <aid><![CDATA[915]]></aid>
+    <qid><![CDATA[531]]></qid>
+    <code><![CDATA[AO04]]></code>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <aid><![CDATA[931]]></aid>
+    <qid><![CDATA[677]]></qid>
     <code><![CDATA[AO04]]></code>
     <sortorder><![CDATA[3]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
@@ -288,15 +288,9 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[924]]></id>
-    <aid><![CDATA[924]]></aid>
-    <answer><![CDATA[从不向任何人诉述]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
-    <id><![CDATA[928]]></id>
-    <aid><![CDATA[928]]></aid>
-    <answer><![CDATA[只靠自己，不接受别人帮助]]></answer>
+    <id><![CDATA[649]]></id>
+    <aid><![CDATA[649]]></aid>
+    <answer><![CDATA[一个也没有]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -306,21 +300,27 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
+    <id><![CDATA[908]]></id>
+    <aid><![CDATA[908]]></aid>
+    <answer><![CDATA[远离家人，且独居一室]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[928]]></id>
+    <aid><![CDATA[928]]></aid>
+    <answer><![CDATA[只靠自己，不接受别人帮助]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
     <id><![CDATA[912]]></id>
     <aid><![CDATA[912]]></aid>
     <answer><![CDATA[相互之间从不关心，只是点头之交]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[649]]></id>
-    <aid><![CDATA[649]]></aid>
-    <answer><![CDATA[一个也没有]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
-    <id><![CDATA[908]]></id>
-    <aid><![CDATA[908]]></aid>
-    <answer><![CDATA[远离家人，且独居一室]]></answer>
+    <id><![CDATA[924]]></id>
+    <aid><![CDATA[924]]></aid>
+    <answer><![CDATA[从不向任何人诉述]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -330,33 +330,9 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[929]]></id>
-    <aid><![CDATA[929]]></aid>
-    <answer><![CDATA[很少请求别人帮助]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
     <id><![CDATA[933]]></id>
     <aid><![CDATA[933]]></aid>
     <answer><![CDATA[偶尔参加]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
-    <id><![CDATA[925]]></id>
-    <aid><![CDATA[925]]></aid>
-    <answer><![CDATA[只向关系极为密切的1-2个人诉述]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
-    <id><![CDATA[921]]></id>
-    <aid><![CDATA[921]]></aid>
-    <answer><![CDATA[极少]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
-    <id><![CDATA[650]]></id>
-    <aid><![CDATA[650]]></aid>
-    <answer><![CDATA[1-2个]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -372,21 +348,33 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
+    <id><![CDATA[929]]></id>
+    <aid><![CDATA[929]]></aid>
+    <answer><![CDATA[很少请求别人帮助]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
     <id><![CDATA[917]]></id>
     <aid><![CDATA[917]]></aid>
     <answer><![CDATA[遇到困难可能稍微关心]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[914]]></id>
-    <aid><![CDATA[914]]></aid>
-    <answer><![CDATA[有些邻居都很关心您]]></answer>
+    <id><![CDATA[925]]></id>
+    <aid><![CDATA[925]]></aid>
+    <answer><![CDATA[只向关系极为密切的1-2个人诉述]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[922]]></id>
-    <aid><![CDATA[922]]></aid>
-    <answer><![CDATA[一般]]></answer>
+    <id><![CDATA[650]]></id>
+    <aid><![CDATA[650]]></aid>
+    <answer><![CDATA[1-2个]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[921]]></id>
+    <aid><![CDATA[921]]></aid>
+    <answer><![CDATA[极少]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -396,9 +384,9 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[918]]></id>
-    <aid><![CDATA[918]]></aid>
-    <answer><![CDATA[有些同事很关心您]]></answer>
+    <id><![CDATA[934]]></id>
+    <aid><![CDATA[934]]></aid>
+    <answer><![CDATA[经常参加]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -408,9 +396,21 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[934]]></id>
-    <aid><![CDATA[934]]></aid>
-    <answer><![CDATA[经常参加]]></answer>
+    <id><![CDATA[914]]></id>
+    <aid><![CDATA[914]]></aid>
+    <answer><![CDATA[有些邻居都很关心您]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[918]]></id>
+    <aid><![CDATA[918]]></aid>
+    <answer><![CDATA[有些同事很关心您]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[922]]></id>
+    <aid><![CDATA[922]]></aid>
+    <answer><![CDATA[一般]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -426,9 +426,15 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[931]]></id>
-    <aid><![CDATA[931]]></aid>
-    <answer><![CDATA[有困难时经常向家人、亲友、组织求援]]></answer>
+    <id><![CDATA[652]]></id>
+    <aid><![CDATA[652]]></aid>
+    <answer><![CDATA[6个或6个以上]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[911]]></id>
+    <aid><![CDATA[911]]></aid>
+    <answer><![CDATA[和家人住在一起]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -444,6 +450,12 @@
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
+    <id><![CDATA[931]]></id>
+    <aid><![CDATA[931]]></aid>
+    <answer><![CDATA[有困难时经常向家人、亲友、组织求援]]></answer>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
     <id><![CDATA[919]]></id>
     <aid><![CDATA[919]]></aid>
     <answer><![CDATA[大多数同事都很关心您]]></answer>
@@ -453,18 +465,6 @@
     <id><![CDATA[915]]></id>
     <aid><![CDATA[915]]></aid>
     <answer><![CDATA[大多数邻居都很关心您]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
-    <id><![CDATA[911]]></id>
-    <aid><![CDATA[911]]></aid>
-    <answer><![CDATA[和家人住在一起]]></answer>
-    <language><![CDATA[zh-Hans]]></language>
-   </row>
-   <row>
-    <id><![CDATA[652]]></id>
-    <aid><![CDATA[652]]></aid>
-    <answer><![CDATA[6个或6个以上]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
@@ -486,6 +486,13 @@
   <rows>
    <row>
     <gid><![CDATA[26]]></gid>
+    <sid><![CDATA[172559]]></sid>
+    <group_order><![CDATA[2]]></group_order>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[51]]></gid>
     <sid><![CDATA[172559]]></sid>
     <group_order><![CDATA[1]]></group_order>
     <randomization_group/>
@@ -509,9 +516,20 @@
    <row>
     <id><![CDATA[26]]></id>
     <gid><![CDATA[26]]></gid>
-    <group_name><![CDATA[社会支持评定量表（social suppport）]]></group_name>
+    <group_name/>
     <description><![CDATA[<p style="text-align:left"><span style="font-size:10.5pt"><span style="font-family:等线"><span style="font-size:10.5000pt"><span style="font-family:等线"><font face="等线">下面的问题用于反映您在社会中所获得的支持，请按各个问题的具体要求，根据您的实际情况写。谢谢您的合作。</font></span></span></span></span></p>
 ]]></description>
+    <language><![CDATA[zh-Hans]]></language>
+    <sid><![CDATA[172559]]></sid>
+    <group_order><![CDATA[2]]></group_order>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <id><![CDATA[51]]></id>
+    <gid><![CDATA[51]]></gid>
+    <group_name/>
+    <description/>
     <language><![CDATA[zh-Hans]]></language>
     <sid><![CDATA[172559]]></sid>
     <group_order><![CDATA[1]]></group_order>
@@ -719,6 +737,25 @@
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
     <question_theme_name><![CDATA[listradio]]></question_theme_name>
+    <modulename/>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[172559]]></sid>
+    <gid><![CDATA[51]]></gid>
+    <type><![CDATA[S]]></type>
+    <title><![CDATA[G01Q11]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[1]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[shortfreetext]]></question_theme_name>
     <modulename/>
     <same_script><![CDATA[0]]></same_script>
    </row>
@@ -1348,6 +1385,14 @@
     <id><![CDATA[1378]]></id>
     <qid><![CDATA[1378]]></qid>
     <question><![CDATA[宗教、社会团体等非宫方组织]]></question>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[1463]]></id>
+    <qid><![CDATA[1463]]></qid>
+    <question><![CDATA[您的编号：]]></question>
+    <help/>
+    <script/>
     <language><![CDATA[zh-Hans]]></language>
    </row>
   </rows>
@@ -3922,6 +3967,276 @@
     <value/>
     <language/>
    </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1463]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
   </rows>
  </question_attributes>
  <surveys>
@@ -3992,7 +4307,7 @@
     <gsid><![CDATA[1]]></gsid>
     <admin><![CDATA[inherit]]></admin>
     <adminemail><![CDATA[inherit]]></adminemail>
-    <anonymized><![CDATA[Y]]></anonymized>
+    <anonymized><![CDATA[N]]></anonymized>
     <format><![CDATA[I]]></format>
     <savetimings><![CDATA[Y]]></savetimings>
     <template><![CDATA[inherit]]></template>
@@ -4002,12 +4317,12 @@
     <usecookie><![CDATA[I]]></usecookie>
     <allowregister><![CDATA[I]]></allowregister>
     <allowsave><![CDATA[I]]></allowsave>
-    <autonumber_start><![CDATA[0]]></autonumber_start>
+    <autonumber_start><![CDATA[2]]></autonumber_start>
     <autoredirect><![CDATA[I]]></autoredirect>
     <allowprev><![CDATA[I]]></allowprev>
     <printanswers><![CDATA[I]]></printanswers>
     <ipaddr><![CDATA[Y]]></ipaddr>
-    <ipanonymize><![CDATA[Y]]></ipanonymize>
+    <ipanonymize><![CDATA[N]]></ipanonymize>
     <refurl><![CDATA[Y]]></refurl>
     <showsurveypolicynotice><![CDATA[0]]></showsurveypolicynotice>
     <publicstatistics><![CDATA[I]]></publicstatistics>
@@ -4076,8 +4391,8 @@
     <surveyls_language><![CDATA[zh-Hans]]></surveyls_language>
     <surveyls_title><![CDATA[社会支持评定量表（social support）]]></surveyls_title>
     <surveyls_description/>
-    <surveyls_welcometext><![CDATA[欢迎参加本次调查！]]></surveyls_welcometext>
-    <surveyls_endtext><![CDATA[调查结束！感谢您的参与！]]></surveyls_endtext>
+    <surveyls_welcometext/>
+    <surveyls_endtext/>
     <surveyls_policy_notice/>
     <surveyls_policy_notice_label/>
     <surveyls_url/>

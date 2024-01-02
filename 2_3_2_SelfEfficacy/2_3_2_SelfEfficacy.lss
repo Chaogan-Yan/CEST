@@ -16,7 +16,7 @@
   </fields>
   <rows>
    <row>
-    <aid><![CDATA[524]]></aid>
+    <aid><![CDATA[1075]]></aid>
     <qid><![CDATA[409]]></qid>
     <code><![CDATA[A1]]></code>
     <sortorder><![CDATA[0]]></sortorder>
@@ -24,7 +24,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[525]]></aid>
+    <aid><![CDATA[1076]]></aid>
     <qid><![CDATA[409]]></qid>
     <code><![CDATA[A2]]></code>
     <sortorder><![CDATA[1]]></sortorder>
@@ -32,7 +32,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[526]]></aid>
+    <aid><![CDATA[1077]]></aid>
     <qid><![CDATA[409]]></qid>
     <code><![CDATA[A3]]></code>
     <sortorder><![CDATA[2]]></sortorder>
@@ -40,7 +40,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[527]]></aid>
+    <aid><![CDATA[1078]]></aid>
     <qid><![CDATA[409]]></qid>
     <code><![CDATA[A4]]></code>
     <sortorder><![CDATA[3]]></sortorder>
@@ -48,7 +48,7 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
-    <aid><![CDATA[528]]></aid>
+    <aid><![CDATA[1079]]></aid>
     <qid><![CDATA[409]]></qid>
     <code><![CDATA[A5]]></code>
     <sortorder><![CDATA[4]]></sortorder>
@@ -66,32 +66,32 @@
   </fields>
   <rows>
    <row>
-    <id><![CDATA[524]]></id>
-    <aid><![CDATA[524]]></aid>
+    <id><![CDATA[1075]]></id>
+    <aid><![CDATA[1075]]></aid>
     <answer><![CDATA[从不]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[525]]></id>
-    <aid><![CDATA[525]]></aid>
+    <id><![CDATA[1076]]></id>
+    <aid><![CDATA[1076]]></aid>
     <answer><![CDATA[很少]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[526]]></id>
-    <aid><![CDATA[526]]></aid>
+    <id><![CDATA[1077]]></id>
+    <aid><![CDATA[1077]]></aid>
     <answer><![CDATA[有时]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[527]]></id>
-    <aid><![CDATA[527]]></aid>
+    <id><![CDATA[1078]]></id>
+    <aid><![CDATA[1078]]></aid>
     <answer><![CDATA[经常]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[528]]></id>
-    <aid><![CDATA[528]]></aid>
+    <id><![CDATA[1079]]></id>
+    <aid><![CDATA[1079]]></aid>
     <answer><![CDATA[总是]]></answer>
     <language><![CDATA[zh-Hans]]></language>
    </row>
@@ -172,11 +172,30 @@
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[Y]]></mandatory>
     <encrypted><![CDATA[N]]></encrypted>
-    <question_order><![CDATA[1]]></question_order>
+    <question_order><![CDATA[2]]></question_order>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
     <question_theme_name><![CDATA[arrays/array]]></question_theme_name>
+    <same_script><![CDATA[0]]></same_script>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[653895]]></sid>
+    <gid><![CDATA[17]]></gid>
+    <type><![CDATA[S]]></type>
+    <title><![CDATA[G01Q02]]></title>
+    <preg/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <encrypted><![CDATA[N]]></encrypted>
+    <question_order><![CDATA[1]]></question_order>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <question_theme_name><![CDATA[shortfreetext]]></question_theme_name>
+    <modulename/>
     <same_script><![CDATA[0]]></same_script>
    </row>
   </rows>
@@ -203,7 +222,7 @@
   </fields>
   <rows>
    <row>
-    <qid><![CDATA[430]]></qid>
+    <qid><![CDATA[1429]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -219,7 +238,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[431]]></qid>
+    <qid><![CDATA[1430]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -235,7 +254,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[432]]></qid>
+    <qid><![CDATA[1431]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -251,7 +270,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[433]]></qid>
+    <qid><![CDATA[1432]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -267,7 +286,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[434]]></qid>
+    <qid><![CDATA[1433]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -283,7 +302,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[435]]></qid>
+    <qid><![CDATA[1434]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -299,7 +318,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[436]]></qid>
+    <qid><![CDATA[1435]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -315,7 +334,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[437]]></qid>
+    <qid><![CDATA[1436]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -331,7 +350,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[438]]></qid>
+    <qid><![CDATA[1437]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -347,7 +366,7 @@
     <same_script><![CDATA[0]]></same_script>
    </row>
    <row>
-    <qid><![CDATA[439]]></qid>
+    <qid><![CDATA[1438]]></qid>
     <parent_qid><![CDATA[409]]></parent_qid>
     <sid><![CDATA[653895]]></sid>
     <gid><![CDATA[17]]></gid>
@@ -377,68 +396,76 @@
    <row>
     <id><![CDATA[409]]></id>
     <qid><![CDATA[409]]></qid>
-    <question/>
+    <question><![CDATA[请选择最符合您情况的选项：]]></question>
     <help/>
     <script/>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[430]]></id>
-    <qid><![CDATA[430]]></qid>
+    <id><![CDATA[1418]]></id>
+    <qid><![CDATA[1418]]></qid>
+    <question><![CDATA[您的编号：]]></question>
+    <help/>
+    <script/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <id><![CDATA[1429]]></id>
+    <qid><![CDATA[1429]]></qid>
     <question><![CDATA[如果我努力去做的话，我总是能够解决问题的。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[431]]></id>
-    <qid><![CDATA[431]]></qid>
+    <id><![CDATA[1430]]></id>
+    <qid><![CDATA[1430]]></qid>
     <question><![CDATA[即使别人反对我，我仍有办法取得我所要的。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[432]]></id>
-    <qid><![CDATA[432]]></qid>
+    <id><![CDATA[1431]]></id>
+    <qid><![CDATA[1431]]></qid>
     <question><![CDATA[对我来说，坚持理想和达成目标是轻而易举的。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[433]]></id>
-    <qid><![CDATA[433]]></qid>
+    <id><![CDATA[1432]]></id>
+    <qid><![CDATA[1432]]></qid>
     <question><![CDATA[我自信能有效地应付任何突如其来的事情。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[434]]></id>
-    <qid><![CDATA[434]]></qid>
+    <id><![CDATA[1433]]></id>
+    <qid><![CDATA[1433]]></qid>
     <question><![CDATA[以我的才智，我定能应付意料之外的情况。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[435]]></id>
-    <qid><![CDATA[435]]></qid>
+    <id><![CDATA[1434]]></id>
+    <qid><![CDATA[1434]]></qid>
     <question><![CDATA[如果我付出必要的努力，我一定能解决大多数的难题。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[436]]></id>
-    <qid><![CDATA[436]]></qid>
+    <id><![CDATA[1435]]></id>
+    <qid><![CDATA[1435]]></qid>
     <question><![CDATA[我能冷静地面对困难，因为我信赖自己处理问题的能力。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[437]]></id>
-    <qid><![CDATA[437]]></qid>
+    <id><![CDATA[1436]]></id>
+    <qid><![CDATA[1436]]></qid>
     <question><![CDATA[面对一个难题时，我通常能找到几个解决方法。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[438]]></id>
-    <qid><![CDATA[438]]></qid>
+    <id><![CDATA[1437]]></id>
+    <qid><![CDATA[1437]]></qid>
     <question><![CDATA[有麻烦的时候，我通常能想到一些应付的方法。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
    <row>
-    <id><![CDATA[439]]></id>
-    <qid><![CDATA[439]]></qid>
+    <id><![CDATA[1438]]></id>
+    <qid><![CDATA[1438]]></qid>
     <question><![CDATA[无论什么事在我身上发生，我都能应付自如。]]></question>
     <language><![CDATA[zh-Hans]]></language>
    </row>
@@ -590,6 +617,276 @@
     <value><![CDATA[0]]></value>
     <language/>
    </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[cssclass]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[display_rows]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[em_validation_q]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[em_validation_q_tip]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[hide_tip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[input_size]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_city]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_country]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_defaultcoordinates]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_mapheight]]></attribute>
+    <value><![CDATA[300]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_mapservice]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_mapwidth]]></attribute>
+    <value><![CDATA[500]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_mapzoom]]></attribute>
+    <value><![CDATA[11]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_nodefaultfromip]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_postal]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[location_state]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[maximum_chars]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[numbers_only]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[page_break]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[prefix]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[random_group]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[save_as_default]]></attribute>
+    <value><![CDATA[N]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[statistics_graphtype]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[statistics_showgraph]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[statistics_showmap]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[suffix]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[text_input_width]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_action]]></attribute>
+    <value><![CDATA[1]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_countdown_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_disable_next]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_disable_prev]]></attribute>
+    <value><![CDATA[0]]></value>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_message_delay]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_message_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_timer_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning_2]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning_2_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning_display_time]]></attribute>
+    <value/>
+    <language/>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning_message]]></attribute>
+    <value/>
+    <language><![CDATA[zh-Hans]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[1418]]></qid>
+    <attribute><![CDATA[time_limit_warning_style]]></attribute>
+    <value/>
+    <language/>
+   </row>
   </rows>
  </question_attributes>
  <surveys>
@@ -671,12 +968,12 @@
     <usecookie><![CDATA[I]]></usecookie>
     <allowregister><![CDATA[I]]></allowregister>
     <allowsave><![CDATA[I]]></allowsave>
-    <autonumber_start><![CDATA[0]]></autonumber_start>
+    <autonumber_start><![CDATA[1]]></autonumber_start>
     <autoredirect><![CDATA[I]]></autoredirect>
     <allowprev><![CDATA[I]]></allowprev>
     <printanswers><![CDATA[I]]></printanswers>
     <ipaddr><![CDATA[Y]]></ipaddr>
-    <ipanonymize><![CDATA[Y]]></ipanonymize>
+    <ipanonymize><![CDATA[N]]></ipanonymize>
     <refurl><![CDATA[Y]]></refurl>
     <showsurveypolicynotice><![CDATA[0]]></showsurveypolicynotice>
     <publicstatistics><![CDATA[I]]></publicstatistics>

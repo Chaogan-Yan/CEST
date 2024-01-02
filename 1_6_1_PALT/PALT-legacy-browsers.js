@@ -10,6 +10,12 @@ let expInfo = {
 };
 
 // Start code blocks for 'Before Experiment'
+/* BEGIN CUSTOM CODE */
+;(async () => {
+  // Ask for pemission to use the mic
+  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+})();
+/* END */
 // init psychoJS:
 const psychoJS = new PsychoJS({
   debug: true
@@ -18,7 +24,7 @@ const psychoJS = new PsychoJS({
 // open window:
 psychoJS.openWindow({
   fullscr: true,
-  color: new util.Color([0,0,0]),
+  color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),
   units: 'height',
   waitBlanking: true,
   backgroundImage: '',
@@ -74,7 +80,10 @@ psychoJS.start({
   expInfo: expInfo,
   resources: [
     // resources:
-    {'name': 'zdy.xlsx', 'path': 'zdy.xlsx'},
+    {'name': 'zdy_with_sound.xlsx', 'path': 'zdy_with_sound.xlsx'},
+    {'name': 'audio/instr_3_1.wav', 'path': 'audio/instr_3_1.wav'},
+    {'name': 'audio/instr_3_2.wav', 'path': 'audio/instr_3_2.wav'},
+    {'name': 'audio/instr_3_3.wav', 'path': 'audio/instr_3_3.wav'},
     {'name': 'read_sound.xlsx', 'path': 'read_sound.xlsx'},
     {'name': 'audio/西瓜.wav', 'path': 'audio/西瓜.wav'},
     {'name': 'audio/衣服.wav', 'path': 'audio/衣服.wav'},
@@ -113,7 +122,10 @@ psychoJS.start({
     {'name': 'audio/光明.wav', 'path': 'audio/光明.wav'},
     {'name': 'audio/颜色.wav', 'path': 'audio/颜色.wav'},
     {'name': 'audio/牲口.wav', 'path': 'audio/牲口.wav'},
+    {'name': 'audio/instr.wav', 'path': 'audio/instr.wav'},
+    {'name': 'audio/instr_2.wav', 'path': 'audio/instr_2.wav'},
     {'name': 'player_icon.jpg', 'path': 'player_icon.jpg'},
+    {'name': 'audio/instr_4.wav', 'path': 'audio/instr_4.wav'},
     {'name': 'mic_icon.jpg', 'path': 'mic_icon.jpg'},
   ]
 });
@@ -154,11 +166,14 @@ async function updateInfo() {
 var instrClock;
 var instr_text;
 var key_resp;
+var instr_sound;
 var instr_2Clock;
 var instr_2_text;
 var key_resp_2;
+var instr_2_sound;
 var instr_3Clock;
 var instr_3_text;
+var instr_3_sound;
 var S1Clock;
 var sound_1;
 var image;
@@ -170,7 +185,8 @@ var text_2;
 var instr_4Clock;
 var instr_4_text;
 var key_resp_3;
-var answer1Clock;
+var instr_4_sound;
+var answerClock;
 var sound_3;
 var image_3;
 var text;
@@ -191,9 +207,9 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'instr_text',
     text: '欢迎参加词语配对联想学习测验！\n\n在这个测验中，我将给您播放12对词，您要注意听，\n\n要求您记住哪两个词是连在一起的一对，\n\n比如我念“桌子-马车”，\n\n表示“桌子”和“马车”是连在一起的一对词。\n\n\n按空格键继续。',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -201,15 +217,21 @@ async function experimentInit() {
   
   key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  instr_sound = new sound.Sound({
+      win: psychoJS.window,
+      value: 'audio/instr.wav',
+      secs: (- 1),
+      });
+  instr_sound.setVolume(1.0);
   // Initialize components for Routine "instr_2"
   instr_2Clock = new util.Clock();
   instr_2_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'instr_2_text',
     text: '12对词播放完毕后，就会开始测试，\n\n我念每对词中前面的一个词，\n\n要求您答出和它一对的后面一个词来，\n\n比如念“桌子”，您就答“马车”，听明白了么？\n\n\n按空格键继续。',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -217,20 +239,32 @@ async function experimentInit() {
   
   key_resp_2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  instr_2_sound = new sound.Sound({
+      win: psychoJS.window,
+      value: 'audio/instr_2.wav',
+      secs: (- 1),
+      });
+  instr_2_sound.setVolume(1.0);
   // Initialize components for Routine "instr_3"
   instr_3Clock = new util.Clock();
   instr_3_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'instr_3_text',
     text: '',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
   });
   
+  instr_3_sound = new sound.Sound({
+      win: psychoJS.window,
+      value: 'A',
+      secs: (- 1),
+      });
+  instr_3_sound.setVolume(1.0);
   // Initialize components for Routine "S1"
   S1Clock = new util.Clock();
   sound_1 = new sound.Sound({
@@ -247,7 +281,7 @@ async function experimentInit() {
     ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : -1.0 
+    texRes : 128.0, interpolate : true, depth : -2.0 
   });
   // Initialize components for Routine "S2"
   S2Clock = new util.Clock();
@@ -265,7 +299,7 @@ async function experimentInit() {
     ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : -1.0 
+    texRes : 128.0, interpolate : true, depth : -2.0 
   });
   // Initialize components for Routine "interval"
   intervalClock = new util.Clock();
@@ -287,9 +321,9 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'instr_4_text',
     text: '好，下面我读前面一个词，\n\n请您回答和它一对儿的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样后作答。\n\n\n按空格键继续。',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -297,8 +331,14 @@ async function experimentInit() {
   
   key_resp_3 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  // Initialize components for Routine "answer1"
-  answer1Clock = new util.Clock();
+  instr_4_sound = new sound.Sound({
+      win: psychoJS.window,
+      value: 'audio/instr_4.wav',
+      secs: (- 1),
+      });
+  instr_4_sound.setVolume(1.0);
+  // Initialize components for Routine "answer"
+  answerClock = new util.Clock();
   sound_3 = new sound.Sound({
       win: psychoJS.window,
       value: 'A',
@@ -319,9 +359,9 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text',
     text: '请作答',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, (- 0.1)], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, (- 0.1)], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: -2.0 
@@ -344,7 +384,7 @@ async function experimentInit() {
     ori : 0.0, pos : [0, 0.1], size : [0.1, 0.1],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : -4.0 
+    texRes : 128.0, interpolate : true, depth : -5.0 
   });
   // Initialize components for Routine "recall"
   recallClock = new util.Clock();
@@ -352,9 +392,9 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'recall_text',
     text: '回忆结束，现在，请想一想，您刚才是用什么方法记忆这些词对的？\n\n您可以具体回忆一下刚才记忆成功的词对，想想您是如何记住它们的。\n\n',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0.3], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0.3], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -365,7 +405,7 @@ async function experimentInit() {
     name: 'textbox',
     text: '',
     placeholder: '请大致描述您记忆词对的方式...',
-    font: 'STSong',
+    font: 'Heiti SC',
     pos: [0, 0], 
     letterHeight: 0.05,
     lineSpacing: 1.0,
@@ -393,7 +433,7 @@ async function experimentInit() {
     color: 'white',
     colorSpace: 'rgb',
     pos: [0, (- 0.3)],
-    letterHeight: 0.03,
+    letterHeight: 0.035,
     size: [0.1, 0.06],
     depth: -2
   });
@@ -405,9 +445,9 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'endpage',
     text: '实验结束，感谢您的参与！',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -440,10 +480,12 @@ function instrRoutineBegin(snapshot) {
     key_resp.keys = undefined;
     key_resp.rt = undefined;
     _key_resp_allKeys = [];
+    instr_sound.setVolume(1.0);
     // keep track of which components have finished
     instrComponents = [];
     instrComponents.push(instr_text);
     instrComponents.push(key_resp);
+    instrComponents.push(instr_sound);
     
     instrComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -496,6 +538,19 @@ function instrRoutineEachFrame() {
       }
     }
     
+    // start/stop instr_sound
+    if (t >= 0.0 && instr_sound.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      instr_sound.tStart = t;  // (not accounting for frame time here)
+      instr_sound.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ instr_sound.play(); });  // screen flip
+      instr_sound.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (instr_sound.getDuration() + instr_sound.tStart)     && instr_sound.status === PsychoJS.Status.STARTED) {
+      instr_sound.stop();  // stop the sound (if longer than duration)
+      instr_sound.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -544,6 +599,7 @@ function instrRoutineEnd(snapshot) {
         }
     
     key_resp.stop();
+    instr_sound.stop();  // ensure sound has stopped at end of Routine
     // the Routine "instr" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -572,10 +628,12 @@ function instr_2RoutineBegin(snapshot) {
     key_resp_2.keys = undefined;
     key_resp_2.rt = undefined;
     _key_resp_2_allKeys = [];
+    instr_2_sound.setVolume(1.0);
     // keep track of which components have finished
     instr_2Components = [];
     instr_2Components.push(instr_2_text);
     instr_2Components.push(key_resp_2);
+    instr_2Components.push(instr_2_sound);
     
     instr_2Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -628,6 +686,19 @@ function instr_2RoutineEachFrame() {
       }
     }
     
+    // start/stop instr_2_sound
+    if (t >= 0.0 && instr_2_sound.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      instr_2_sound.tStart = t;  // (not accounting for frame time here)
+      instr_2_sound.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ instr_2_sound.play(); });  // screen flip
+      instr_2_sound.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (instr_2_sound.getDuration() + instr_2_sound.tStart)     && instr_2_sound.status === PsychoJS.Status.STARTED) {
+      instr_2_sound.stop();  // stop the sound (if longer than duration)
+      instr_2_sound.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -676,6 +747,7 @@ function instr_2RoutineEnd(snapshot) {
         }
     
     key_resp_2.stop();
+    instr_2_sound.stop();  // ensure sound has stopped at end of Routine
     // the Routine "instr_2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -698,7 +770,7 @@ function blockLoopBegin(blockLoopScheduler, snapshot) {
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
       extraInfo: expInfo, originPath: undefined,
-      trialList: 'zdy.xlsx',
+      trialList: 'zdy_with_sound.xlsx',
       seed: undefined, name: 'block'
     });
     psychoJS.experiment.addLoop(block); // add the loop to the experiment
@@ -712,17 +784,17 @@ function blockLoopBegin(blockLoopScheduler, snapshot) {
       blockLoopScheduler.add(instr_3RoutineBegin(snapshot));
       blockLoopScheduler.add(instr_3RoutineEachFrame());
       blockLoopScheduler.add(instr_3RoutineEnd(snapshot));
-      const read1_trialsLoopScheduler = new Scheduler(psychoJS);
-      blockLoopScheduler.add(read1_trialsLoopBegin(read1_trialsLoopScheduler, snapshot));
-      blockLoopScheduler.add(read1_trialsLoopScheduler);
-      blockLoopScheduler.add(read1_trialsLoopEnd);
+      const read_trialsLoopScheduler = new Scheduler(psychoJS);
+      blockLoopScheduler.add(read_trialsLoopBegin(read_trialsLoopScheduler, snapshot));
+      blockLoopScheduler.add(read_trialsLoopScheduler);
+      blockLoopScheduler.add(read_trialsLoopEnd);
       blockLoopScheduler.add(instr_4RoutineBegin(snapshot));
       blockLoopScheduler.add(instr_4RoutineEachFrame());
       blockLoopScheduler.add(instr_4RoutineEnd(snapshot));
-      const answer1_trialsLoopScheduler = new Scheduler(psychoJS);
-      blockLoopScheduler.add(answer1_trialsLoopBegin(answer1_trialsLoopScheduler, snapshot));
-      blockLoopScheduler.add(answer1_trialsLoopScheduler);
-      blockLoopScheduler.add(answer1_trialsLoopEnd);
+      const answer_trialsLoopScheduler = new Scheduler(psychoJS);
+      blockLoopScheduler.add(answer_trialsLoopBegin(answer_trialsLoopScheduler, snapshot));
+      blockLoopScheduler.add(answer_trialsLoopScheduler);
+      blockLoopScheduler.add(answer_trialsLoopEnd);
       blockLoopScheduler.add(blockLoopEndIteration(blockLoopScheduler, snapshot));
     });
     
@@ -731,37 +803,37 @@ function blockLoopBegin(blockLoopScheduler, snapshot) {
 }
 
 
-var read1_trials;
-function read1_trialsLoopBegin(read1_trialsLoopScheduler, snapshot) {
+var read_trials;
+function read_trialsLoopBegin(read_trialsLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
     
     // set up handler to look after randomisation of conditions etc
-    read1_trials = new TrialHandler({
+    read_trials = new TrialHandler({
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'read_sound.xlsx',
-      seed: undefined, name: 'read1_trials'
+      seed: undefined, name: 'read_trials'
     });
-    psychoJS.experiment.addLoop(read1_trials); // add the loop to the experiment
-    currentLoop = read1_trials;  // we're now the current loop
+    psychoJS.experiment.addLoop(read_trials); // add the loop to the experiment
+    currentLoop = read_trials;  // we're now the current loop
     
     // Schedule all the trials in the trialList:
-    read1_trials.forEach(function() {
-      snapshot = read1_trials.getSnapshot();
+    read_trials.forEach(function() {
+      snapshot = read_trials.getSnapshot();
     
-      read1_trialsLoopScheduler.add(importConditions(snapshot));
-      read1_trialsLoopScheduler.add(S1RoutineBegin(snapshot));
-      read1_trialsLoopScheduler.add(S1RoutineEachFrame());
-      read1_trialsLoopScheduler.add(S1RoutineEnd(snapshot));
-      read1_trialsLoopScheduler.add(S2RoutineBegin(snapshot));
-      read1_trialsLoopScheduler.add(S2RoutineEachFrame());
-      read1_trialsLoopScheduler.add(S2RoutineEnd(snapshot));
-      read1_trialsLoopScheduler.add(intervalRoutineBegin(snapshot));
-      read1_trialsLoopScheduler.add(intervalRoutineEachFrame());
-      read1_trialsLoopScheduler.add(intervalRoutineEnd(snapshot));
-      read1_trialsLoopScheduler.add(read1_trialsLoopEndIteration(read1_trialsLoopScheduler, snapshot));
+      read_trialsLoopScheduler.add(importConditions(snapshot));
+      read_trialsLoopScheduler.add(S1RoutineBegin(snapshot));
+      read_trialsLoopScheduler.add(S1RoutineEachFrame());
+      read_trialsLoopScheduler.add(S1RoutineEnd(snapshot));
+      read_trialsLoopScheduler.add(S2RoutineBegin(snapshot));
+      read_trialsLoopScheduler.add(S2RoutineEachFrame());
+      read_trialsLoopScheduler.add(S2RoutineEnd(snapshot));
+      read_trialsLoopScheduler.add(intervalRoutineBegin(snapshot));
+      read_trialsLoopScheduler.add(intervalRoutineEachFrame());
+      read_trialsLoopScheduler.add(intervalRoutineEnd(snapshot));
+      read_trialsLoopScheduler.add(read_trialsLoopEndIteration(read_trialsLoopScheduler, snapshot));
     });
     
     return Scheduler.Event.NEXT;
@@ -769,9 +841,9 @@ function read1_trialsLoopBegin(read1_trialsLoopScheduler, snapshot) {
 }
 
 
-async function read1_trialsLoopEnd() {
+async function read_trialsLoopEnd() {
   // terminate loop
-  psychoJS.experiment.removeLoop(read1_trials);
+  psychoJS.experiment.removeLoop(read_trials);
   // update the current loop from the ExperimentHandler
   if (psychoJS.experiment._unfinishedLoops.length>0)
     currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
@@ -781,7 +853,7 @@ async function read1_trialsLoopEnd() {
 }
 
 
-function read1_trialsLoopEndIteration(scheduler, snapshot) {
+function read_trialsLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
   return async function () {
     if (typeof snapshot !== 'undefined') {
@@ -801,31 +873,31 @@ function read1_trialsLoopEndIteration(scheduler, snapshot) {
 }
 
 
-var answer1_trials;
-function answer1_trialsLoopBegin(answer1_trialsLoopScheduler, snapshot) {
+var answer_trials;
+function answer_trialsLoopBegin(answer_trialsLoopScheduler, snapshot) {
   return async function() {
     TrialHandler.fromSnapshot(snapshot); // update internal variables (.thisN etc) of the loop
     
     // set up handler to look after randomisation of conditions etc
-    answer1_trials = new TrialHandler({
+    answer_trials = new TrialHandler({
       psychoJS: psychoJS,
       nReps: 1, method: TrialHandler.Method.RANDOM,
       extraInfo: expInfo, originPath: undefined,
       trialList: 'answer_sound.xlsx',
-      seed: undefined, name: 'answer1_trials'
+      seed: undefined, name: 'answer_trials'
     });
-    psychoJS.experiment.addLoop(answer1_trials); // add the loop to the experiment
-    currentLoop = answer1_trials;  // we're now the current loop
+    psychoJS.experiment.addLoop(answer_trials); // add the loop to the experiment
+    currentLoop = answer_trials;  // we're now the current loop
     
     // Schedule all the trials in the trialList:
-    answer1_trials.forEach(function() {
-      snapshot = answer1_trials.getSnapshot();
+    answer_trials.forEach(function() {
+      snapshot = answer_trials.getSnapshot();
     
-      answer1_trialsLoopScheduler.add(importConditions(snapshot));
-      answer1_trialsLoopScheduler.add(answer1RoutineBegin(snapshot));
-      answer1_trialsLoopScheduler.add(answer1RoutineEachFrame());
-      answer1_trialsLoopScheduler.add(answer1RoutineEnd(snapshot));
-      answer1_trialsLoopScheduler.add(answer1_trialsLoopEndIteration(answer1_trialsLoopScheduler, snapshot));
+      answer_trialsLoopScheduler.add(importConditions(snapshot));
+      answer_trialsLoopScheduler.add(answerRoutineBegin(snapshot));
+      answer_trialsLoopScheduler.add(answerRoutineEachFrame());
+      answer_trialsLoopScheduler.add(answerRoutineEnd(snapshot));
+      answer_trialsLoopScheduler.add(answer_trialsLoopEndIteration(answer_trialsLoopScheduler, snapshot));
     });
     
     return Scheduler.Event.NEXT;
@@ -833,9 +905,9 @@ function answer1_trialsLoopBegin(answer1_trialsLoopScheduler, snapshot) {
 }
 
 
-async function answer1_trialsLoopEnd() {
+async function answer_trialsLoopEnd() {
   // terminate loop
-  psychoJS.experiment.removeLoop(answer1_trials);
+  psychoJS.experiment.removeLoop(answer_trials);
   // update the current loop from the ExperimentHandler
   if (psychoJS.experiment._unfinishedLoops.length>0)
     currentLoop = psychoJS.experiment._unfinishedLoops.at(-1);
@@ -845,7 +917,7 @@ async function answer1_trialsLoopEnd() {
 }
 
 
-function answer1_trialsLoopEndIteration(scheduler, snapshot) {
+function answer_trialsLoopEndIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
   return async function () {
     if (typeof snapshot !== 'undefined') {
@@ -907,13 +979,17 @@ function instr_3RoutineBegin(snapshot) {
     instr_3Clock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
-    routineTimer.add(3.000000);
+    routineTimer.add(4.000000);
     // update component parameters for each repeat
     psychoJS.experiment.addData('instr_3.started', globalClock.getTime());
     instr_3_text.setText(instruction);
+    instr_3_sound.setValue(instructions_sound);
+    instr_3_sound.secs=4;
+    instr_3_sound.setVolume(1.0);
     // keep track of which components have finished
     instr_3Components = [];
     instr_3Components.push(instr_3_text);
+    instr_3Components.push(instr_3_sound);
     
     instr_3Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -942,9 +1018,25 @@ function instr_3RoutineEachFrame() {
       instr_3_text.setAutoDraw(true);
     }
     
-    frameRemains = 0.0 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0.0 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (instr_3_text.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       instr_3_text.setAutoDraw(false);
+    }
+    // start/stop instr_3_sound
+    if (t >= 0.0 && instr_3_sound.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      instr_3_sound.tStart = t;  // (not accounting for frame time here)
+      instr_3_sound.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ instr_3_sound.play(); });  // screen flip
+      instr_3_sound.status = PsychoJS.Status.STARTED;
+    }
+    frameRemains = 0.0 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (instr_3_sound.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      if (t >= instr_3_sound.tStart + 0.5) {
+        instr_3_sound.stop();  // stop the sound (if longer than duration)
+        instr_3_sound.status = PsychoJS.Status.FINISHED;
+      }
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -982,6 +1074,7 @@ function instr_3RoutineEnd(snapshot) {
       }
     });
     psychoJS.experiment.addData('instr_3.stopped', globalClock.getTime());
+    instr_3_sound.stop();  // ensure sound has stopped at end of Routine
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
       psychoJS.experiment.nextEntry(snapshot);
@@ -1029,7 +1122,7 @@ function S1RoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // start/stop sound_1
-    if (t >= 0.0 && sound_1.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0 && sound_1.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       sound_1.tStart = t;  // (not accounting for frame time here)
       sound_1.frameNStart = frameN;  // exact frame index
@@ -1037,7 +1130,7 @@ function S1RoutineEachFrame() {
       psychoJS.window.callOnFlip(function(){ sound_1.play(); });  // screen flip
       sound_1.status = PsychoJS.Status.STARTED;
     }
-    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (sound_1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       if (t >= sound_1.tStart + 0.5) {
         sound_1.stop();  // stop the sound (if longer than duration)
@@ -1094,6 +1187,12 @@ function S1RoutineEnd(snapshot) {
       }
     });
     psychoJS.experiment.addData('S1.stopped', globalClock.getTime());
+    sound_1 = new sound.Sound({
+          win: psychoJS.window,
+          value: 'A',
+          secs: 1.5,
+          });
+    sound_1.setVolume(1.0);
     sound_1.stop();  // ensure sound has stopped at end of Routine
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -1142,7 +1241,7 @@ function S2RoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // start/stop sound_2
-    if (t >= 0.0 && sound_2.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0 && sound_2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       sound_2.tStart = t;  // (not accounting for frame time here)
       sound_2.frameNStart = frameN;  // exact frame index
@@ -1150,7 +1249,7 @@ function S2RoutineEachFrame() {
       psychoJS.window.callOnFlip(function(){ sound_2.play(); });  // screen flip
       sound_2.status = PsychoJS.Status.STARTED;
     }
-    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (sound_2.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       if (t >= sound_2.tStart + 0.5) {
         sound_2.stop();  // stop the sound (if longer than duration)
@@ -1207,6 +1306,12 @@ function S2RoutineEnd(snapshot) {
       }
     });
     psychoJS.experiment.addData('S2.stopped', globalClock.getTime());
+    sound_2 = new sound.Sound({
+          win: psychoJS.window,
+          value: 'A',
+          secs: 1.5,
+          });
+    sound_2.setVolume(1.0);
     sound_2.stop();  // ensure sound has stopped at end of Routine
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -1325,10 +1430,12 @@ function instr_4RoutineBegin(snapshot) {
     key_resp_3.keys = undefined;
     key_resp_3.rt = undefined;
     _key_resp_3_allKeys = [];
+    instr_4_sound.setVolume(1.0);
     // keep track of which components have finished
     instr_4Components = [];
     instr_4Components.push(instr_4_text);
     instr_4Components.push(key_resp_3);
+    instr_4Components.push(instr_4_sound);
     
     instr_4Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -1381,6 +1488,19 @@ function instr_4RoutineEachFrame() {
       }
     }
     
+    // start/stop instr_4_sound
+    if (t >= 0.0 && instr_4_sound.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      instr_4_sound.tStart = t;  // (not accounting for frame time here)
+      instr_4_sound.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ instr_4_sound.play(); });  // screen flip
+      instr_4_sound.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (instr_4_sound.getDuration() + instr_4_sound.tStart)     && instr_4_sound.status === PsychoJS.Status.STARTED) {
+      instr_4_sound.stop();  // stop the sound (if longer than duration)
+      instr_4_sound.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -1429,6 +1549,7 @@ function instr_4RoutineEnd(snapshot) {
         }
     
     key_resp_3.stop();
+    instr_4_sound.stop();  // ensure sound has stopped at end of Routine
     // the Routine "instr_4" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -1441,31 +1562,31 @@ function instr_4RoutineEnd(snapshot) {
 }
 
 
-var answer1Components;
-function answer1RoutineBegin(snapshot) {
+var answerComponents;
+function answerRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //--- Prepare to start Routine 'answer1' ---
+    //--- Prepare to start Routine 'answer' ---
     t = 0;
-    answer1Clock.reset(); // clock
+    answerClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     routineTimer.add(6.500000);
     // update component parameters for each repeat
-    psychoJS.experiment.addData('answer1.started', globalClock.getTime());
+    psychoJS.experiment.addData('answer.started', globalClock.getTime());
     sound_3.setValue(prompt);
     sound_3.secs=1.5;
     sound_3.setVolume(1.0);
     // keep track of which components have finished
-    answer1Components = [];
-    answer1Components.push(sound_3);
-    answer1Components.push(image_3);
-    answer1Components.push(text);
-    answer1Components.push(mic);
-    answer1Components.push(image_4);
+    answerComponents = [];
+    answerComponents.push(sound_3);
+    answerComponents.push(image_3);
+    answerComponents.push(text);
+    answerComponents.push(mic);
+    answerComponents.push(image_4);
     
-    answer1Components.forEach( function(thisComponent) {
+    answerComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
        });
@@ -1474,15 +1595,15 @@ function answer1RoutineBegin(snapshot) {
 }
 
 
-function answer1RoutineEachFrame() {
+function answerRoutineEachFrame() {
   return async function () {
-    //--- Loop for each frame of Routine 'answer1' ---
+    //--- Loop for each frame of Routine 'answer' ---
     // get current time
-    t = answer1Clock.getTime();
+    t = answerClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     // start/stop sound_3
-    if (t >= 0.0 && sound_3.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0 && sound_3.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       sound_3.tStart = t;  // (not accounting for frame time here)
       sound_3.frameNStart = frameN;  // exact frame index
@@ -1490,7 +1611,7 @@ function answer1RoutineEachFrame() {
       psychoJS.window.callOnFlip(function(){ sound_3.play(); });  // screen flip
       sound_3.status = PsychoJS.Status.STARTED;
     }
-    frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (sound_3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       if (t >= sound_3.tStart + 0.5) {
         sound_3.stop();  // stop the sound (if longer than duration)
@@ -1561,7 +1682,7 @@ function answer1RoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    answer1Components.forEach( function(thisComponent) {
+    answerComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
       }
@@ -1578,15 +1699,15 @@ function answer1RoutineEachFrame() {
 
 
 var thisFilename;
-function answer1RoutineEnd(snapshot) {
+function answerRoutineEnd(snapshot) {
   return async function () {
-    //--- Ending Routine 'answer1' ---
-    answer1Components.forEach( function(thisComponent) {
+    //--- Ending Routine 'answer' ---
+    answerComponents.forEach( function(thisComponent) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     });
-    psychoJS.experiment.addData('answer1.stopped', globalClock.getTime());
+    psychoJS.experiment.addData('answer.stopped', globalClock.getTime());
     sound_3.stop();  // ensure sound has stopped at end of Routine
     // stop the microphone (make the audio data ready for upload)
     await mic.stop();
@@ -1600,6 +1721,12 @@ function answer1RoutineEnd(snapshot) {
     psychoJS.experiment.addData('mic.clip', thisFilename);
     // start the asynchronous upload to the server
     mic.lastClip.upload();
+    sound_3 = new sound.Sound({
+          win: psychoJS.window,
+          value: 'A',
+          secs: 1.5,
+          });
+    sound_3.setVolume(1.0);
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
       psychoJS.experiment.nextEntry(snapshot);
@@ -1864,6 +1991,12 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
+  
+  
+  
+  
   psychoJS.window.close();
   psychoJS.quit({message: message, isCompleted: isCompleted});
   

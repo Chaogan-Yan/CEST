@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.2),
-    on Tue Oct 10 23:25:08 2023
+    on Wed Dec  6 19:39:46 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -104,7 +104,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/chen-nanwu/Desktop/CEST_v2/1_3_1_SpeechFluency/SpeechFluency_lastrun.py',
+        originPath='/Users/chen-nanwu/Desktop/CEST_1128/1_3_1_SpeechFluency/SpeechFluency_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -157,7 +157,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=[1440, 900], fullscr=True, screen=0,
             winType='pyglet', allowStencil=False,
-            monitor='testMonitor', color=[0.0000, 0.0000, 0.0000], colorSpace='rgb',
+            monitor='testMonitor', color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='height'
@@ -167,7 +167,7 @@ def setupWindow(expInfo=None, win=None):
             expInfo['frameRate'] = win.getActualFrameRate()
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = [0.0000, 0.0000, 0.0000]
+        win.color = [-1.0000, -1.0000, -1.0000]
         win.colorSpace = 'rgb'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
@@ -322,14 +322,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Intro" ---
     exp_name = visual.TextStim(win=win, name='exp_name',
         text='语音流畅性任务',
-        font='STSong',
+        font='Heiti SC',
         pos=(0, 0.3), height=0.07, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     intro1 = visual.TextStim(win=win, name='intro1',
         text='欢迎您参加实验，本实验需要您口述您的答案，\n所以，请务必确保您所在的环境安静无干扰。\n\n\n\n\n请按空格键继续',
-        font='STSong',
+        font='Heiti SC',
         pos=(0, -0.1), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -339,14 +339,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "ready1" ---
     text = visual.TextStim(win=win, name='text',
         text='第一题\n请您尽可能快、尽可能多地说出\n您所知道的以＂yi＂音开头的词。\n时间是１分钟，准备好了按【空格键】马上开始。',
-        font='STSong',
+        font='Heiti SC',
         pos=(0, 0.2), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     text_4 = visual.TextStim(win=win, name='text_4',
         text='倒计时：\n60s',
-        font='STSong',
+        font='Heiti SC',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -363,7 +363,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     mic_2 = defaultMicrophone
     text_3 = visual.TextStim(win=win, name='text_3',
         text='',
-        font='Open Sans',
+        font='Heiti SC',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -372,14 +372,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "ready2" ---
     text_2 = visual.TextStim(win=win, name='text_2',
         text='第二题\n请您尽可能快、尽可能多地说出\n您所知道的以＂fa＂音开头的词。\n时间是１分钟，准备好了按【空格键】马上开始。',
-        font='STSong',
+        font='Heiti SC',
         pos=(0, 0.2), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     text_5 = visual.TextStim(win=win, name='text_5',
         text='倒计时\n60s',
-        font='STSong',
+        font='Heiti SC',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -391,7 +391,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     mic_3 = defaultMicrophone
     text_6 = visual.TextStim(win=win, name='text_6',
         text='',
-        font='Open Sans',
+        font='Heiti SC',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -400,7 +400,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "end" ---
     text_7 = visual.TextStim(win=win, name='text_7',
         text='实验结束了，感谢您的参与！',
-        font='STSong',
+        font='Heiti SC',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',

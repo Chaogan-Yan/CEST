@@ -38,7 +38,7 @@ const psychoJS = new PsychoJS({
 // open window:
 psychoJS.openWindow({
   fullscr: true,
-  color: new util.Color([0.0, 0.0, 0.0]),
+  color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),
   units: 'height',
   waitBlanking: true,
   backgroundImage: '',
@@ -150,7 +150,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'exp_name',
     text: '语义流畅性任务',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.3], height: 0.07,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -162,7 +162,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'intro1',
     text: '欢迎您参加实验，本实验需要您口述您的答案，\n所以，请务必确保您所在的环境安静无干扰。\n\n\n\n\n请按空格键继续',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, (- 0.1)], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -178,7 +178,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text',
     text: '第一题\n请您尽可能快、尽可能多地说出您所知道的动物名称。\n时间是１分钟，准备好了按空格键开始。',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.2], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -190,7 +190,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text_4',
     text: '倒计时\n60s',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -215,7 +215,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text_3',
     text: '',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -229,7 +229,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text_2',
     text: '第二题\n请您尽可能快、尽可能多地说出您所知道的食物名称。\n时间是１分钟，准备好了按空格键开始。',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.2], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -241,7 +241,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text_5',
     text: '倒计时\n60s',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -266,7 +266,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text_6',
     text: '',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -280,7 +280,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'text_7',
     text: '实验结束了，感谢您的参与！',
-    font: 'STSong',
+    font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -696,7 +696,7 @@ function micRoutineEnd(snapshot) {
     // stop the microphone (make the audio data ready for upload)
     await mic_2.stop();
     // construct a filename for this recording
-    thisFilename = 'recording_mic_2_' + currentLoop.name + '_' + currentLoop.thisN
+    thisFilename = psychoJS.experiment.dataFileName.substring(7)+'recording_mic_2_' + currentLoop.name + '_' + currentLoop.thisN
     // get the recording
     mic_2.lastClip = await mic_2.getRecording({
       tag: thisFilename + '_' + util.MonotonicClock.getDateStr(),
@@ -965,7 +965,7 @@ function mic2RoutineEnd(snapshot) {
     // stop the microphone (make the audio data ready for upload)
     await mic_3.stop();
     // construct a filename for this recording
-    thisFilename = 'recording_mic_3_' + currentLoop.name + '_' + currentLoop.thisN
+    thisFilename = psychoJS.experiment.dataFileName.substring(7)+'recording_mic_3_' + currentLoop.name + '_' + currentLoop.thisN
     // get the recording
     mic_3.lastClip = await mic_3.getRecording({
       tag: thisFilename + '_' + util.MonotonicClock.getDateStr(),

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.2),
-    on Mon Oct  9 22:51:47 2023
+    on Tue Dec 12 09:53:28 2023
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -106,7 +106,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/chen-nanwu/Desktop/认知工具箱_副本/Cognition新增/1_6_1_PALT/PALT_lastrun.py',
+        originPath='/Users/chen-nanwu/Desktop/CEST_1128/1_6_1_PALT/PALT_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -159,7 +159,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=[1440, 900], fullscr=True, screen=0,
             winType='pyglet', allowStencil=True,
-            monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+            monitor='testMonitor', color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='height'
@@ -169,7 +169,7 @@ def setupWindow(expInfo=None, win=None):
             expInfo['frameRate'] = win.getActualFrameRate()
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = [0,0,0]
+        win.color = [-1.0000, -1.0000, -1.0000]
         win.colorSpace = 'rgb'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
@@ -320,31 +320,40 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "instr" ---
     instr_text = visual.TextStim(win=win, name='instr_text',
         text='欢迎参加词语配对联想学习测验！\n\n在这个测验中，我将给您播放12对词，您要注意听，\n\n要求您记住哪两个词是连在一起的一对，\n\n比如我念“桌子-马车”，\n\n表示“桌子”和“马车”是连在一起的一对词。\n\n\n按空格键继续。',
-        font='STSong',
-        pos=(0, 0), height=0.03, wrapWidth=None, ori=0.0, 
+        font='Heiti SC',
+        pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     key_resp = keyboard.Keyboard()
+    instr_sound = sound.Sound('audio/instr.wav', secs=-1, stereo=True, hamming=True,
+        name='instr_sound')
+    instr_sound.setVolume(1.0)
     
     # --- Initialize components for Routine "instr_2" ---
     instr_2_text = visual.TextStim(win=win, name='instr_2_text',
         text='12对词播放完毕后，就会开始测试，\n\n我念每对词中前面的一个词，\n\n要求您答出和它一对的后面一个词来，\n\n比如念“桌子”，您就答“马车”，听明白了么？\n\n\n按空格键继续。',
-        font='STSong',
-        pos=(0, 0), height=0.03, wrapWidth=None, ori=0.0, 
+        font='Heiti SC',
+        pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     key_resp_2 = keyboard.Keyboard()
+    instr_2_sound = sound.Sound('audio/instr_2.wav', secs=-1, stereo=True, hamming=True,
+        name='instr_2_sound')
+    instr_2_sound.setVolume(1.0)
     
     # --- Initialize components for Routine "instr_3" ---
     instr_3_text = visual.TextStim(win=win, name='instr_3_text',
         text='',
-        font='STSong',
-        pos=(0, 0), height=0.03, wrapWidth=None, ori=0.0, 
+        font='Heiti SC',
+        pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
+    instr_3_sound = sound.Sound('A', secs=-1, stereo=True, hamming=True,
+        name='instr_3_sound')
+    instr_3_sound.setVolume(1.0)
     
     # --- Initialize components for Routine "S1" ---
     sound_1 = sound.Sound('A', secs=1.5, stereo=True, hamming=True,
@@ -384,12 +393,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "instr_4" ---
     instr_4_text = visual.TextStim(win=win, name='instr_4_text',
         text='好，下面我读前面一个词，\n\n请您回答和它一对儿的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样后作答。\n\n\n按空格键继续。',
-        font='STSong',
-        pos=(0, 0), height=0.03, wrapWidth=None, ori=0.0, 
+        font='Heiti SC',
+        pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     key_resp_3 = keyboard.Keyboard()
+    instr_4_sound = sound.Sound('audio/instr_4.wav', secs=-1, stereo=True, hamming=True,
+        name='instr_4_sound')
+    instr_4_sound.setVolume(1.0)
     # create a microphone object for device: default
     defaultMicrophone = sound.microphone.Microphone(
         device=None, channels=None, 
@@ -410,8 +422,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         texRes=128.0, interpolate=True, depth=-1.0)
     text = visual.TextStim(win=win, name='text',
         text='请作答',
-        font='STSong',
-        pos=(0, -0.1), height=0.03, wrapWidth=None, ori=0.0, 
+        font='Heiti SC',
+        pos=(0, -0.1), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-2.0);
@@ -424,13 +436,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         ori=0.0, pos=(0, 0.1), size=(0.1, 0.1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-4.0)
+        texRes=128.0, interpolate=True, depth=-5.0)
     
     # --- Initialize components for Routine "recall" ---
     recall_text = visual.TextStim(win=win, name='recall_text',
         text='回忆结束，现在，请想一想，您刚才是用什么方法记忆这些词对的？\n\n您可以具体回忆一下刚才记忆成功的词对，想想您是如何记住它们的。\n\n',
-        font='STSong',
-        pos=(0, 0.3), height=0.03, wrapWidth=None, ori=0.0, 
+        font='Heiti SC',
+        pos=(0, 0.3), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
@@ -469,8 +481,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "thanks" ---
     endpage = visual.TextStim(win=win, name='endpage',
         text='实验结束，感谢您的参与！',
-        font='STSong',
-        pos=(0, 0), height=0.03, wrapWidth=None, ori=0.0, 
+        font='Heiti SC',
+        pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
@@ -493,8 +505,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
+    instr_sound.setSound('audio/instr.wav', hamming=True)
+    instr_sound.setVolume(1.0, log=False)
+    instr_sound.seek(0)
     # keep track of which components have finished
-    instrComponents = [instr_text, key_resp]
+    instrComponents = [instr_text, key_resp, instr_sound]
     for thisComponent in instrComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -565,6 +580,23 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # a response ends the routine
                 continueRoutine = False
         
+        # if instr_sound is starting this frame...
+        if instr_sound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_sound.frameNStart = frameN  # exact frame index
+            instr_sound.tStart = t  # local t and not account for scr refresh
+            instr_sound.tStartRefresh = tThisFlipGlobal  # on global time
+            # add timestamp to datafile
+            thisExp.addData('instr_sound.started', tThisFlipGlobal)
+            # update status
+            instr_sound.status = STARTED
+            instr_sound.play(when=win)  # sync with win flip
+        # update instr_sound status according to whether it's playing
+        if instr_sound.isPlaying:
+            instr_sound.status = STARTED
+        elif instr_sound.isFinished:
+            instr_sound.status = FINISHED
+        
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
             thisExp.status = FINISHED
@@ -599,6 +631,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         thisExp.addData('key_resp.rt', key_resp.rt)
         thisExp.addData('key_resp.duration', key_resp.duration)
     thisExp.nextEntry()
+    instr_sound.pause()  # ensure sound has stopped at end of Routine
     # the Routine "instr" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -609,8 +642,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     key_resp_2.keys = []
     key_resp_2.rt = []
     _key_resp_2_allKeys = []
+    instr_2_sound.setSound('audio/instr_2.wav', hamming=True)
+    instr_2_sound.setVolume(1.0, log=False)
+    instr_2_sound.seek(0)
     # keep track of which components have finished
-    instr_2Components = [instr_2_text, key_resp_2]
+    instr_2Components = [instr_2_text, key_resp_2, instr_2_sound]
     for thisComponent in instr_2Components:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -681,6 +717,23 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # a response ends the routine
                 continueRoutine = False
         
+        # if instr_2_sound is starting this frame...
+        if instr_2_sound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_2_sound.frameNStart = frameN  # exact frame index
+            instr_2_sound.tStart = t  # local t and not account for scr refresh
+            instr_2_sound.tStartRefresh = tThisFlipGlobal  # on global time
+            # add timestamp to datafile
+            thisExp.addData('instr_2_sound.started', tThisFlipGlobal)
+            # update status
+            instr_2_sound.status = STARTED
+            instr_2_sound.play(when=win)  # sync with win flip
+        # update instr_2_sound status according to whether it's playing
+        if instr_2_sound.isPlaying:
+            instr_2_sound.status = STARTED
+        elif instr_2_sound.isFinished:
+            instr_2_sound.status = FINISHED
+        
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
             thisExp.status = FINISHED
@@ -715,13 +768,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         thisExp.addData('key_resp_2.rt', key_resp_2.rt)
         thisExp.addData('key_resp_2.duration', key_resp_2.duration)
     thisExp.nextEntry()
+    instr_2_sound.pause()  # ensure sound has stopped at end of Routine
     # the Routine "instr_2" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
     block = data.TrialHandler(nReps=1.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('zdy.xlsx'),
+        trialList=data.importConditions('zdy_with_sound.xlsx'),
         seed=None, name='block')
     thisExp.addLoop(block)  # add the loop to the experiment
     thisBlock = block.trialList[0]  # so we can initialise stimuli with some values
@@ -752,8 +806,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # update component parameters for each repeat
         thisExp.addData('instr_3.started', globalClock.getTime())
         instr_3_text.setText(instruction)
+        instr_3_sound.setSound(instructions_sound, secs=4, hamming=True)
+        instr_3_sound.setVolume(1.0, log=False)
+        instr_3_sound.seek(0)
         # keep track of which components have finished
-        instr_3Components = [instr_3_text]
+        instr_3Components = [instr_3_text, instr_3_sound]
         for thisComponent in instr_3Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -768,7 +825,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "instr_3" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 3.0:
+        while continueRoutine and routineTimer.getTime() < 4.0:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -799,7 +856,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # if instr_3_text is stopping this frame...
             if instr_3_text.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > instr_3_text.tStartRefresh + 3-frameTolerance:
+                if tThisFlipGlobal > instr_3_text.tStartRefresh + 4-frameTolerance:
                     # keep track of stop time/frame for later
                     instr_3_text.tStop = t  # not accounting for scr refresh
                     instr_3_text.frameNStop = frameN  # exact frame index
@@ -808,6 +865,36 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     # update status
                     instr_3_text.status = FINISHED
                     instr_3_text.setAutoDraw(False)
+            
+            # if instr_3_sound is starting this frame...
+            if instr_3_sound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                instr_3_sound.frameNStart = frameN  # exact frame index
+                instr_3_sound.tStart = t  # local t and not account for scr refresh
+                instr_3_sound.tStartRefresh = tThisFlipGlobal  # on global time
+                # add timestamp to datafile
+                thisExp.addData('instr_3_sound.started', tThisFlipGlobal)
+                # update status
+                instr_3_sound.status = STARTED
+                instr_3_sound.play(when=win)  # sync with win flip
+            
+            # if instr_3_sound is stopping this frame...
+            if instr_3_sound.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > instr_3_sound.tStartRefresh + 4-frameTolerance:
+                    # keep track of stop time/frame for later
+                    instr_3_sound.tStop = t  # not accounting for scr refresh
+                    instr_3_sound.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'instr_3_sound.stopped')
+                    # update status
+                    instr_3_sound.status = FINISHED
+                    instr_3_sound.stop()
+            # update instr_3_sound status according to whether it's playing
+            if instr_3_sound.isPlaying:
+                instr_3_sound.status = STARTED
+            elif instr_3_sound.isFinished:
+                instr_3_sound.status = FINISHED
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -835,11 +922,12 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         thisExp.addData('instr_3.stopped', globalClock.getTime())
+        instr_3_sound.pause()  # ensure sound has stopped at end of Routine
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if routineForceEnded:
             routineTimer.reset()
         else:
-            routineTimer.addTime(-3.000000)
+            routineTimer.addTime(-4.000000)
         
         # set up handler to look after randomisation of conditions etc
         read1_trials = data.TrialHandler(nReps=1.0, method='random', 
@@ -1231,8 +1319,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         key_resp_3.keys = []
         key_resp_3.rt = []
         _key_resp_3_allKeys = []
+        instr_4_sound.setSound('audio/instr_4.wav', hamming=True)
+        instr_4_sound.setVolume(1.0, log=False)
+        instr_4_sound.seek(0)
         # keep track of which components have finished
-        instr_4Components = [instr_4_text, key_resp_3]
+        instr_4Components = [instr_4_text, key_resp_3, instr_4_sound]
         for thisComponent in instr_4Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1303,6 +1394,23 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     # a response ends the routine
                     continueRoutine = False
             
+            # if instr_4_sound is starting this frame...
+            if instr_4_sound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                instr_4_sound.frameNStart = frameN  # exact frame index
+                instr_4_sound.tStart = t  # local t and not account for scr refresh
+                instr_4_sound.tStartRefresh = tThisFlipGlobal  # on global time
+                # add timestamp to datafile
+                thisExp.addData('instr_4_sound.started', tThisFlipGlobal)
+                # update status
+                instr_4_sound.status = STARTED
+                instr_4_sound.play(when=win)  # sync with win flip
+            # update instr_4_sound status according to whether it's playing
+            if instr_4_sound.isPlaying:
+                instr_4_sound.status = STARTED
+            elif instr_4_sound.isFinished:
+                instr_4_sound.status = FINISHED
+            
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 thisExp.status = FINISHED
@@ -1336,6 +1444,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if key_resp_3.keys != None:  # we had a response
             block.addData('key_resp_3.rt', key_resp_3.rt)
             block.addData('key_resp_3.duration', key_resp_3.duration)
+        instr_4_sound.pause()  # ensure sound has stopped at end of Routine
         # the Routine "instr_4" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
