@@ -391,7 +391,7 @@ async function experimentInit() {
   recall_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'recall_text',
-    text: '回忆结束，现在，请想一想，您刚才是用什么方法记忆这些词对的？\n\n您可以具体回忆一下刚才记忆成功的词对，想想您是如何记住它们的。\n\n',
+    text: '回忆结束，现在，请想一想，您刚才是用什么方法记忆这些词对的？\n\n您可以具体回忆一下刚才记忆成功的词对，想想您是如何记住它们的。\n\n请直接输入文字，并点击蓝色方格提交。',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.3], height: 0.035,  wrapWidth: undefined, ori: 0.0,

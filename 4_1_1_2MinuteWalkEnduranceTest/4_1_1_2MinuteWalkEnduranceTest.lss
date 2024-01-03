@@ -150,8 +150,8 @@
    <row>
     <id><![CDATA[1541]]></id>
     <qid><![CDATA[1541]]></qid>
-    <question><![CDATA[额外走过的距离（单位：英尺）：]]></question>
-    <help><![CDATA[请在括号内标注测量单位（默认为英尺）。]]></help>
+    <question><![CDATA[额外走过的距离（单位：米）：]]></question>
+    <help><![CDATA[请在括号内标注测量单位（默认为米）。]]></help>
     <script/>
     <language><![CDATA[zh-Hans]]></language>
    </row>
