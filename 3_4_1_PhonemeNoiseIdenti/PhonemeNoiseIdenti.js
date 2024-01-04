@@ -15,6 +15,7 @@ const { round } = util;
 let expName = 'PhonemeNoiseIdenti';  // from the Builder filename that created this script
 let expInfo = {
     '编号': '',
+    '主试ID': '',
 };
 
 // Start code blocks for 'Before Experiment'
@@ -200,7 +201,7 @@ async function updateInfo() {
   
 
   
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/3_4_1_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
+  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["\u4e3b\u8bd5ID"]}_3_4_1_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
   psychoJS.experiment.field_separator = '\t';
 
 

@@ -15,6 +15,7 @@ const { round } = util;
 let expName = 'SpeechFluency';  // from the Builder filename that created this script
 let expInfo = {
     '编号': '',
+    '主试ID': '',
 };
 
 // Start code blocks for 'Before Experiment'
@@ -113,7 +114,7 @@ async function updateInfo() {
   
 
   
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/1_3_1_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
+  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["\u4e3b\u8bd5ID"]}_1_3_1_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
   psychoJS.experiment.field_separator = '\t';
 
 
@@ -696,7 +697,7 @@ function micRoutineEnd(snapshot) {
     // stop the microphone (make the audio data ready for upload)
     await mic_2.stop();
     // construct a filename for this recording
-    thisFilename = psychoJS.experiment.dataFileName.substring(7)+'recording_mic_2_' + currentLoop.name + '_' + currentLoop.thisN
+    thisFilename = psychoJS.experiment.dataFileName.substring(8) + '_' + 'recording_mic_2_' + currentLoop.name + '_' + currentLoop.thisN
     // get the recording
     mic_2.lastClip = await mic_2.getRecording({
       tag: thisFilename + '_' + util.MonotonicClock.getDateStr(),
@@ -965,7 +966,7 @@ function mic2RoutineEnd(snapshot) {
     // stop the microphone (make the audio data ready for upload)
     await mic_3.stop();
     // construct a filename for this recording
-    thisFilename = psychoJS.experiment.dataFileName.substring(7)+'recording_mic_3_' + currentLoop.name + '_' + currentLoop.thisN
+    thisFilename = psychoJS.experiment.dataFileName.substring(8) + '_' + 'recording_mic_3_' + currentLoop.name + '_' + currentLoop.thisN
     // get the recording
     mic_3.lastClip = await mic_3.getRecording({
       tag: thisFilename + '_' + util.MonotonicClock.getDateStr(),

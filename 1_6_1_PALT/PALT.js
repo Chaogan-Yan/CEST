@@ -12,9 +12,10 @@ const { round } = util;
 
 
 // store info about the experiment session:
-let expName = 'PALT';  // from the Builder filename that created this script
+let expName = 'PALT';  // from the Builder filename that created this script./lib
 let expInfo = {
     '编号': '',
+    '主试ID': '',
 };
 
 // Start code blocks for 'Before Experiment'
@@ -163,7 +164,7 @@ async function updateInfo() {
   
 
   
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/1_6_1_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
+  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["\u4e3b\u8bd5ID"]}_1_6_1_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
   psychoJS.experiment.field_separator = '\t';
 
 
@@ -1709,7 +1710,7 @@ function answerRoutineEnd(snapshot) {
     // stop the microphone (make the audio data ready for upload)
     await mic.stop();
     // construct a filename for this recording
-    thisFilename = psychoJS.experiment.dataFileName.substring(7) + '_' + 'recording_mic_' + 'block_' + block.thisN + '_' + currentLoop.name + '_' + currentLoop.thisN
+    thisFilename = psychoJS.experiment.dataFileName.substring(8) + '_' + 'recording_mic_' + 'block_' + block.thisN + '_' + currentLoop.name + '_' + currentLoop.thisN
     // get the recording
     mic.lastClip = await mic.getRecording({
       tag: thisFilename + '_' + util.MonotonicClock.getDateStr(),

@@ -7,6 +7,7 @@
 let expName = 'DCCS';  // from the Builder filename that created this script
 let expInfo = {
     '编号': '',
+    '主试ID': '',
 };
 
 // Start code blocks for 'Before Experiment'
@@ -32,7 +33,7 @@ const psychoJS = new PsychoJS({
 // open window:
 psychoJS.openWindow({
   fullscr: true,
-  color: new util.Color([-1,-1,-1]),
+  color: new util.Color([(- 1.0), (- 1.0), (- 1.0)]),
   units: 'height',
   waitBlanking: true,
   backgroundImage: '',
@@ -224,7 +225,7 @@ async function updateInfo() {
   
 
   
-  psychoJS.experiment.dataFileName = (("." + "/") + `data/1_2_2_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
+  psychoJS.experiment.dataFileName = (("." + "/") + `data/${expInfo["\u4e3b\u8bd5ID"]}_1_2_2_${expName}_${expInfo["\u7f16\u53f7"]}_${expInfo["date"]}`);
   psychoJS.experiment.field_separator = '\t';
 
 

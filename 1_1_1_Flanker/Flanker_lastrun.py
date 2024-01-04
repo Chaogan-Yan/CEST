@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.2),
-    on Tue Nov 28 13:59:03 2023
+    on Thu Jan  4 08:28:12 2024
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -39,6 +39,7 @@ psychopyVersion = '2023.2.2'
 expName = 'Flanker'  # from the Builder filename that created this script
 expInfo = {
     '编号': '',
+    '主试ID': '',
     'date': data.getDateStr(),  # add a simple timestamp
     'expName': expName,
     'psychopyVersion': psychopyVersion,
@@ -94,7 +95,7 @@ def setupData(expInfo, dataDir=None):
     # data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
     if dataDir is None:
         dataDir = _thisDir
-    filename = u'data/1_1_1_%s_%s_%s' % (expName, expInfo['编号'], expInfo['date'])
+    filename = u'data/%s_1_1_1_%s_%s_%s' % (expInfo['主试ID'], expName, expInfo['编号'], expInfo['date'])
     # make sure filename is relative to dataDir
     if os.path.isabs(filename):
         dataDir = os.path.commonprefix([dataDir, filename])
@@ -104,7 +105,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/chen-nanwu/Desktop/CEST_v3/1_1_1_Flanker/Flanker_lastrun.py',
+        originPath='/Users/chen-nanwu/Documents/认知实验工具箱/认知实验工具箱0103/Cognition/1_1_1_Flanker/Flanker_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )

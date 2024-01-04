@@ -5,10 +5,10 @@
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
-    <Param val="u'data/1_2_2_%s_%s_%s' % (expName, expInfo['编号'], expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="u'data/%s_1_2_2_%s_%s_%s' % (expInfo['主试ID'], expName, expInfo['编号'], expInfo['date'])" valType="code" updates="None" name="Data filename"/>
     <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
     <Param val="" valType="str" updates="None" name="End Message"/>
-    <Param val="{'编号': ''}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="{'编号': '', '主试ID': ''}" valType="code" updates="None" name="Experiment info"/>
     <Param val="True" valType="bool" updates="None" name="Force stereo"/>
     <Param val="True" valType="bool" updates="None" name="Full-screen window"/>
     <Param val="" valType="str" updates="None" name="HTML path"/>
