@@ -1,0 +1,1449 @@
+19.7063 	INFO 	Loaded monitor calibration from ['2023_10_08 02:47']
+20.0032 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0047 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0063 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0086 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0108 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0119 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0135 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0158 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0161 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0165 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0182 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0197 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0211 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0227 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0239 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0258 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0287 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0309 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0327 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0367 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0373 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0377 	DEBUG 	Uploading Texture Font fontname to graphics card
+20.0399 	DEBUG 	Upload of Texture Font fontname complete
+20.0503 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0525 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0547 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+20.0550 	DEBUG 	Uploading Texture Font fontname to graphics card
+20.0556 	DEBUG 	Upload of Texture Font fontname complete
+20.6200 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f9780e975e0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f9780e97580>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f9780e97400>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f9780603c10>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+20.6202 	EXP 	window1: mouseVisible = True
+20.6203 	EXP 	window1: backgroundImage = ''
+20.6203 	EXP 	window1: backgroundFit = 'none'
+20.6230 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+20.6230 	EXP 	window1: recordFrameIntervals = False
+20.7716 	EXP 	window1: recordFrameIntervals = True
+21.1112 	WARNING 	t of last frame was 24.79ms (=1/40)
+21.1294 	WARNING 	t of last frame was 18.20ms (=1/54)
+21.2578 	EXP 	Screen (0) actual frame rate measured at 78.81Hz
+21.2580 	EXP 	window1: recordFrameIntervals = False
+21.2609 	EXP 	window1: mouseVisible = False
+25.4286 	INFO 	keyboard.Keyboard is using iohub backend.
+25.4286 	EXP 	Flanker: status = STARTED
+26.0535 	EXP 	Sound sound_14 set volume 1.000
+26.0595 	EXP 	Sound sound_15 set volume 1.000
+26.0624 	EXP 	Sound sound_16 set volume 1.000
+26.0687 	EXP 	Sound sound_17 set volume 1.000
+26.0762 	EXP 	Sound sound_18 set volume 1.000
+26.0774 	EXP 	window1: mouseVisible = True
+27.3585 	EXP 	Created image_47 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow_red.png', interpolate=True, mask=None, maskParams=None, name='image_47', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=512, units='height', win=Window(...))
+27.3586 	EXP 	window1: mouseVisible = True
+28.3903 	EXP 	Created image_48 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow_red.png', interpolate=True, mask=None, maskParams=None, name='image_48', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=512, units='height', win=Window(...))
+28.4006 	EXP 	Sound sound_23 set volume 1.000
+28.4010 	EXP 	window1: mouseVisible = True
+28.4918 	EXP 	Created text_homebase = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_homebase', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+28.4918 	INFO 	keyboard.Keyboard is using iohub backend.
+28.5067 	EXP 	Sound sound_1 set volume 1.000
+28.5070 	EXP 	window1: mouseVisible = True
+28.5265 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+28.5266 	EXP 	window1: mouseVisible = True
+28.6247 	EXP 	Created image_8 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/congruent_left.png', interpolate=True, mask=None, maskParams=None, name='image_8', opacity=1.0, ori=0.0, pos=array([0.  , 0.38]), size=array([0.53, 0.53]), texRes=512, units='height', win=Window(...))
+28.6249 	EXP 	window1: mouseVisible = True
+29.6696 	EXP 	Created image_9 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_9', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+29.6698 	EXP 	window1: mouseVisible = True
+30.7913 	EXP 	Created image_10 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_10', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+30.8020 	EXP 	Sound sound_2 set volume 1.000
+30.8020 	INFO 	keyboard.Keyboard is using iohub backend.
+30.8022 	EXP 	window1: mouseVisible = True
+30.9029 	EXP 	Created image_11 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/congruent_left_flash.png', interpolate=True, mask=None, maskParams=None, name='image_11', opacity=1.0, ori=0.0, pos=array([0.  , 0.38]), size=array([0.53, 0.53]), texRes=512, units='height', win=Window(...))
+30.9031 	EXP 	window1: mouseVisible = True
+32.0673 	EXP 	Created image_12 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_12', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+32.0674 	EXP 	window1: mouseVisible = True
+33.0841 	EXP 	Created image_13 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_13', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+33.0844 	EXP 	window1: mouseVisible = True
+33.0989 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='如果中间的箭头指向左方，请选择代表左的按键Z。\n\n\n按Z键继续。', units='height', win=Window(...), wrapWidth=1)
+33.1101 	EXP 	Sound sound_3 set volume 1.000
+33.1103 	EXP 	window1: mouseVisible = True
+34.1746 	EXP 	Created image_24 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow_border.png', interpolate=True, mask=None, maskParams=None, name='image_24', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+34.1746 	INFO 	keyboard.Keyboard is using iohub backend.
+34.1748 	EXP 	window1: mouseVisible = True
+34.2725 	EXP 	Created image_14 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/congruent_right_flash.png', interpolate=True, mask=None, maskParams=None, name='image_14', opacity=1.0, ori=0.0, pos=array([0.  , 0.38]), size=array([0.53, 0.53]), texRes=512, units='height', win=Window(...))
+34.2727 	EXP 	window1: mouseVisible = True
+35.3632 	EXP 	Created image_15 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_15', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+35.3634 	EXP 	window1: mouseVisible = True
+36.3564 	EXP 	Created image_16 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_16', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+36.3566 	EXP 	window1: mouseVisible = True
+36.3806 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='heiti SC', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='如果中间的箭头指向右方，请选择代表右的按键M。\n\n\n按M键继续。', units='height', win=Window(...), wrapWidth=1)
+36.3896 	EXP 	Sound sound_4 set volume 1.000
+36.3898 	EXP 	window1: mouseVisible = True
+37.3854 	EXP 	Created image_25 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow_border.png', interpolate=True, mask=None, maskParams=None, name='image_25', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+37.3854 	INFO 	keyboard.Keyboard is using iohub backend.
+37.3856 	EXP 	window1: mouseVisible = True
+37.4845 	EXP 	Created image_17 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/incongruent_right_flash.png', interpolate=True, mask=None, maskParams=None, name='image_17', opacity=1.0, ori=0.0, pos=array([0.  , 0.38]), size=array([0.53, 0.53]), texRes=512, units='height', win=Window(...))
+37.4847 	EXP 	window1: mouseVisible = True
+38.6294 	EXP 	Created image_18 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_18', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+38.6296 	EXP 	window1: mouseVisible = True
+39.6758 	EXP 	Created image_19 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_19', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+39.6760 	EXP 	window1: mouseVisible = True
+39.7010 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='heiti sc', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+39.7139 	EXP 	Sound sound_5 set volume 1.000
+39.7140 	EXP 	window1: mouseVisible = True
+40.7193 	EXP 	Created image_23 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow_border.png', interpolate=True, mask=None, maskParams=None, name='image_23', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+40.7193 	INFO 	keyboard.Keyboard is using iohub backend.
+40.7195 	EXP 	window1: mouseVisible = True
+40.8171 	EXP 	Created image_20 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/incongruent_left_flash.png', interpolate=True, mask=None, maskParams=None, name='image_20', opacity=1.0, ori=0.0, pos=array([0.  , 0.38]), size=array([0.53, 0.53]), texRes=512, units='height', win=Window(...))
+40.8173 	EXP 	window1: mouseVisible = True
+41.8803 	EXP 	Created image_21 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_21', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+41.8805 	EXP 	window1: mouseVisible = True
+42.9446 	EXP 	Created image_22 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_22', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+42.9448 	EXP 	window1: mouseVisible = True
+42.9548 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='heiti sc', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+42.9658 	EXP 	Sound sound_6 set volume 1.000
+42.9660 	EXP 	window1: mouseVisible = True
+44.0327 	EXP 	Created image_26 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow_border.png', interpolate=True, mask=None, maskParams=None, name='image_26', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+44.0327 	INFO 	keyboard.Keyboard is using iohub backend.
+44.0329 	EXP 	window1: mouseVisible = True
+44.1298 	EXP 	Created image_27 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/incongruent_left_flash.png', interpolate=True, mask=None, maskParams=None, name='image_27', opacity=1.0, ori=0.0, pos=array([0.  , 0.38]), size=array([0.53, 0.53]), texRes=512, units='height', win=Window(...))
+44.1299 	EXP 	window1: mouseVisible = True
+45.1485 	EXP 	Created image_29 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_29', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+45.1487 	EXP 	window1: mouseVisible = True
+45.1701 	EXP 	Created text_9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='heiti sc', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_9', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+45.1821 	EXP 	Sound sound_7 set volume 1.000
+45.1824 	EXP 	window1: mouseVisible = True
+46.1950 	EXP 	Created image_30 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow_border.png', interpolate=True, mask=None, maskParams=None, name='image_30', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.25, 0.25]), texRes=512, units='height', win=Window(...))
+46.1951 	INFO 	keyboard.Keyboard is using iohub backend.
+46.1952 	EXP 	window1: mouseVisible = True
+47.0938 	EXP 	Created image_49 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/star_text.png', interpolate=True, mask=None, maskParams=None, name='image_49', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.9, 0.6]), texRes=512, units='height', win=Window(...))
+47.0938 	INFO 	keyboard.Keyboard is using iohub backend.
+47.1078 	EXP 	Sound sound_24 set volume 1.000
+47.1080 	EXP 	window1: mouseVisible = True
+48.1700 	EXP 	Created image_31 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_31', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+48.1702 	EXP 	window1: mouseVisible = True
+49.2575 	EXP 	Created image_32 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_32', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+49.2577 	EXP 	window1: mouseVisible = True
+49.3916 	EXP 	Created image_35 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/star_middle.png', interpolate=True, mask=None, maskParams=None, name='image_35', opacity=1.0, ori=0.0, pos=array([0. , 0.2]), size=array([0.5, 0.5]), texRes=512, units='height', win=Window(...))
+49.3919 	EXP 	window1: mouseVisible = True
+50.5467 	EXP 	Created image_33 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_33', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+50.5469 	EXP 	window1: mouseVisible = True
+51.5552 	EXP 	Created image_34 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_34', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+51.5554 	EXP 	window1: mouseVisible = True
+51.6556 	EXP 	Created image_38 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/middle.jpeg', interpolate=True, mask=None, maskParams=None, name='image_38', opacity=1.0, ori=0.0, pos=array([0. , 0.2]), size=array([0.5, 0.5]), texRes=512, units='height', win=Window(...))
+51.6557 	EXP 	window1: mouseVisible = True
+52.7046 	EXP 	Created image_36 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_36', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+52.7048 	EXP 	window1: mouseVisible = True
+53.7049 	EXP 	Created image_37 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_37', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+53.7050 	EXP 	window1: mouseVisible = True
+53.7274 	EXP 	Created image_39 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_39', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+53.7276 	EXP 	window1: mouseVisible = True
+53.7440 	EXP 	Created image_41 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_41', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+53.7441 	EXP 	window1: mouseVisible = True
+53.7598 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+53.7600 	EXP 	window1: mouseVisible = True
+53.7760 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+53.7761 	INFO 	keyboard.Keyboard is using iohub backend.
+53.7762 	EXP 	window1: mouseVisible = True
+53.7919 	EXP 	Created image_42 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_42', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+53.7921 	EXP 	window1: mouseVisible = True
+53.8077 	EXP 	Created image_3 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_3', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+53.8079 	EXP 	window1: mouseVisible = True
+53.8232 	EXP 	Created image_43 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_43', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+53.8397 	EXP 	Sound sound_9 set volume 1.000
+53.8400 	EXP 	window1: mouseVisible = True
+53.8419 	EXP 	Created text_24 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='heiti sc', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_24', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+53.8419 	INFO 	keyboard.Keyboard is using iohub backend.
+53.8552 	EXP 	Sound sound_10 set volume 1.000
+53.8553 	EXP 	window1: mouseVisible = True
+54.7675 	EXP 	Created image_40 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/star_text_formal.png', interpolate=True, mask=None, maskParams=None, name='image_40', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.9, 0.6]), texRes=512, units='height', win=Window(...))
+54.7676 	INFO 	keyboard.Keyboard is using iohub backend.
+54.7845 	EXP 	Sound sound_13 set volume 1.000
+54.7847 	EXP 	window1: mouseVisible = True
+55.8434 	EXP 	Created image_31 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_31', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+55.8436 	EXP 	window1: mouseVisible = True
+56.8597 	EXP 	Created image_32 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_32', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+56.8599 	EXP 	window1: mouseVisible = True
+56.9563 	EXP 	Created image_35 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/star_middle.png', interpolate=True, mask=None, maskParams=None, name='image_35', opacity=1.0, ori=0.0, pos=array([0. , 0.2]), size=array([0.5, 0.5]), texRes=512, units='height', win=Window(...))
+56.9564 	EXP 	window1: mouseVisible = True
+57.9912 	EXP 	Created image_33 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_33', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+57.9914 	EXP 	window1: mouseVisible = True
+59.0935 	EXP 	Created image_34 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_34', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+59.0937 	EXP 	window1: mouseVisible = True
+59.1899 	EXP 	Created image_38 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='img/middle.jpeg', interpolate=True, mask=None, maskParams=None, name='image_38', opacity=1.0, ori=0.0, pos=array([0. , 0.2]), size=array([0.5, 0.5]), texRes=512, units='height', win=Window(...))
+59.1901 	EXP 	window1: mouseVisible = True
+60.2619 	EXP 	Created image_36 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='img/left_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_36', opacity=1.0, ori=0.0, pos=array([-0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+60.2621 	EXP 	window1: mouseVisible = True
+61.2291 	EXP 	Created image_37 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='img/right_arrow.png', interpolate=True, mask=None, maskParams=None, name='image_37', opacity=1.0, ori=0.0, pos=array([ 0.4, -0.2]), size=array([0.15, 0.15]), texRes=512, units='height', win=Window(...))
+61.2293 	EXP 	window1: mouseVisible = True
+61.2498 	EXP 	Created image_39 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_39', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+61.2499 	EXP 	window1: mouseVisible = True
+61.2672 	EXP 	Created image_41 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_41', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+61.2673 	EXP 	window1: mouseVisible = True
+61.2830 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+61.2831 	EXP 	window1: mouseVisible = True
+61.2994 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, image='default.png', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=512, units='height', win=Window(...))
+61.2994 	INFO 	keyboard.Keyboard is using iohub backend.
+61.2996 	EXP 	window1: mouseVisible = True
+61.3133 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='heiti sc', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='任务已经全部完成了，感谢您的参与！', units='height', win=Window(...), wrapWidth=1)
+61.3219 	EXP 	Sound sound_12 set volume 1.000
+0.0648 	EXP 	Created sequence: random, trialTypes=1, nReps=0, seed=None
+0.0979 	EXP 	Sound sound_1 started
+0.1283 	INFO 	Keyboard events cleared
+0.1270 	EXP 	text_homebase: autoDraw = True
+1.8458 	EXP 	Sound sound_1 stopped
+1.8458 	EXP 	Sound sound_1 paused
+1.8706 	EXP 	Sound sound_2 started
+1.8817 	DATA 	Keypress: space
+1.9595 	INFO 	Keyboard events cleared
+1.9587 	EXP 	text_homebase: autoDraw = False
+1.9587 	EXP 	text: autoDraw = True
+1.9587 	EXP 	image_8: autoDraw = True
+1.9587 	EXP 	image_9: autoDraw = True
+1.9587 	EXP 	image_10: autoDraw = True
+3.4779 	EXP 	Sound sound_2 stopped
+3.4779 	EXP 	Sound sound_2 paused
+3.4951 	EXP 	Sound sound_3 started
+3.4945 	DATA 	Keypress: space
+3.5458 	INFO 	Keyboard events cleared
+3.5437 	EXP 	text: autoDraw = False
+3.5437 	EXP 	image_8: autoDraw = False
+3.5437 	EXP 	image_9: autoDraw = False
+3.5437 	EXP 	image_10: autoDraw = False
+3.5437 	EXP 	image_11: autoDraw = True
+3.5437 	EXP 	image_12: autoDraw = True
+3.5437 	EXP 	image_13: autoDraw = True
+3.5437 	EXP 	text_5: autoDraw = True
+4.4746 	EXP 	Sound sound_3 stopped
+4.4747 	EXP 	Sound sound_3 paused
+4.4885 	EXP 	Sound sound_4 started
+4.4885 	DATA 	Keypress: z
+4.6012 	INFO 	Keyboard events cleared
+4.5987 	EXP 	image_11: autoDraw = False
+4.5987 	EXP 	image_12: autoDraw = False
+4.5987 	EXP 	image_13: autoDraw = False
+4.5987 	EXP 	text_5: autoDraw = False
+4.5987 	EXP 	image_24: autoDraw = False
+4.5987 	EXP 	image_14: autoDraw = True
+4.5987 	EXP 	image_15: autoDraw = True
+4.5987 	EXP 	image_16: autoDraw = True
+4.5987 	EXP 	text_6: autoDraw = True
+5.0766 	EXP 	Sound sound_4 stopped
+5.0766 	EXP 	Sound sound_4 paused
+5.1053 	EXP 	Sound sound_5 started
+5.0948 	DATA 	Keypress: m
+5.1740 	INFO 	Keyboard events cleared
+5.1730 	EXP 	image_14: autoDraw = False
+5.1730 	EXP 	image_15: autoDraw = False
+5.1730 	EXP 	image_16: autoDraw = False
+5.1730 	EXP 	text_6: autoDraw = False
+5.1730 	EXP 	image_25: autoDraw = False
+5.1730 	EXP 	image_17: autoDraw = True
+5.1730 	EXP 	image_18: autoDraw = True
+5.1730 	EXP 	image_19: autoDraw = True
+5.1730 	EXP 	text_7: autoDraw = True
+5.5380 	DATA 	Keypress: space
+5.9876 	EXP 	Sound sound_5 stopped
+5.9876 	EXP 	Sound sound_5 paused
+6.0033 	EXP 	Sound sound_6 started
+6.0028 	DATA 	Keypress: m
+6.0473 	INFO 	Keyboard events cleared
+6.0453 	EXP 	image_17: autoDraw = False
+6.0453 	EXP 	image_18: autoDraw = False
+6.0453 	EXP 	image_19: autoDraw = False
+6.0453 	EXP 	text_7: autoDraw = False
+6.0453 	EXP 	image_23: autoDraw = False
+6.0453 	EXP 	image_20: autoDraw = True
+6.0453 	EXP 	image_21: autoDraw = True
+6.0453 	EXP 	image_22: autoDraw = True
+6.0453 	EXP 	text_8: autoDraw = True
+6.7424 	EXP 	Sound sound_6 stopped
+6.7424 	EXP 	Sound sound_6 paused
+6.7572 	EXP 	Sound sound_7 started
+6.7571 	DATA 	Keypress: z
+6.8003 	INFO 	Keyboard events cleared
+6.7980 	EXP 	image_20: autoDraw = False
+6.7980 	EXP 	image_21: autoDraw = False
+6.7980 	EXP 	image_22: autoDraw = False
+6.7980 	EXP 	text_8: autoDraw = False
+6.7980 	EXP 	image_26: autoDraw = False
+6.7980 	EXP 	image_27: autoDraw = True
+6.7980 	EXP 	image_29: autoDraw = True
+6.7980 	EXP 	text_9: autoDraw = True
+6.7980 	EXP 	image_30: autoDraw = True
+7.4436 	EXP 	Sound sound_7 stopped
+7.4437 	EXP 	Sound sound_7 paused
+7.4444 	EXP 	Created sequence: random, trialTypes=1, nReps=3, seed=None
+7.4447 	EXP 	New trial (rep=0, index=0): None
+7.4715 	EXP 	Sound sound_24 started
+7.4719 	DATA 	Keypress: space
+7.5254 	INFO 	Keyboard events cleared
+7.5213 	EXP 	image_27: autoDraw = False
+7.5213 	EXP 	image_29: autoDraw = False
+7.5213 	EXP 	text_9: autoDraw = False
+7.5213 	EXP 	image_30: autoDraw = False
+7.5213 	EXP 	image_49: autoDraw = True
+8.0790 	EXP 	Sound sound_24 stopped
+8.0790 	EXP 	Sound sound_24 paused
+8.0884 	DEBUG 	Read excel file with openpyxl: conditions_mixed.xlsx
+8.0892 	EXP 	Imported conditions_mixed.xlsx as conditions, 4 conditions, 6 params
+8.0896 	EXP 	Created sequence: sequential, trialTypes=4, nReps=1, seed=None
+8.0898 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}
+8.0926 	DATA 	Keypress: space
+8.1123 	EXP 	image_49: autoDraw = False
+8.1123 	EXP 	image_31: autoDraw = True
+8.1123 	EXP 	image_32: autoDraw = True
+8.9140 	EXP 	image_31: autoDraw = False
+8.9140 	EXP 	image_32: autoDraw = False
+8.9140 	EXP 	image_35: autoDraw = True
+8.9140 	EXP 	image_33: autoDraw = True
+8.9140 	EXP 	image_34: autoDraw = True
+10.4310 	EXP 	image_35: autoDraw = False
+10.4310 	EXP 	image_33: autoDraw = False
+10.4310 	EXP 	image_34: autoDraw = False
+10.4310 	EXP 	image_35: autoDraw = False
+10.4310 	EXP 	image_33: autoDraw = False
+10.4310 	EXP 	image_34: autoDraw = False
+10.4310 	EXP 	image_38: autoDraw = True
+10.4310 	EXP 	image_36: autoDraw = True
+10.4310 	EXP 	image_37: autoDraw = True
+12.3667 	INFO 	Keyboard events cleared
+12.3639 	EXP 	image_38: autoDraw = False
+12.3639 	EXP 	image_36: autoDraw = False
+12.3639 	EXP 	image_37: autoDraw = False
+12.3639 	EXP 	image_39: texRes = 512
+12.3639 	EXP 	image_39: ori = 0.0
+12.3639 	EXP 	image_39: image = 'img/congruent_left_empty.png'
+12.3639 	EXP 	image_41: texRes = 512
+12.3639 	EXP 	image_41: ori = 0.0
+12.3639 	EXP 	image_41: image = 'img/congruent_left.png'
+12.3639 	EXP 	image: texRes = 512
+12.3639 	EXP 	image: ori = 0.0
+12.3639 	EXP 	image: image = 'img/left_arrow.png'
+12.3639 	EXP 	image_2: texRes = 512
+12.3639 	EXP 	image_2: ori = 0.0
+12.3639 	EXP 	image_2: image = 'img/right_arrow.png'
+12.3639 	EXP 	image_39: autoDraw = True
+12.3639 	EXP 	image_41: autoDraw = True
+12.3639 	EXP 	image: autoDraw = True
+12.3639 	EXP 	image_2: autoDraw = True
+12.4745 	EXP 	image_39: autoDraw = False
+13.6644 	EXP 	Sound sound_9 started
+13.6602 	DATA 	Keypress: z
+13.7420 	EXP 	image_39: autoDraw = False
+13.7420 	EXP 	image_41: autoDraw = False
+13.7420 	EXP 	image: autoDraw = False
+13.7420 	EXP 	image_2: autoDraw = False
+13.7420 	EXP 	image_42: texRes = 512
+13.7420 	EXP 	image_42: ori = 0.0
+13.7420 	EXP 	image_42: image = 'img/congruent_left.png'
+13.7420 	EXP 	image_3: texRes = 512
+13.7420 	EXP 	image_3: ori = 0.0
+13.7420 	EXP 	image_3: image = 'img/left_arrow_border.png'
+13.7420 	EXP 	image_43: texRes = 512
+13.7420 	EXP 	image_43: ori = 0.0
+13.7420 	EXP 	image_43: image = 'img/right_arrow.png'
+13.7420 	EXP 	image_42: autoDraw = True
+13.7420 	EXP 	image_3: autoDraw = True
+13.7420 	EXP 	image_43: autoDraw = True
+17.2664 	EXP 	Sound sound_9 reached end of file
+17.2666 	EXP 	Sound sound_9 reached end of file
+17.9760 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+17.9990 	EXP 	image_42: autoDraw = False
+17.9990 	EXP 	image_3: autoDraw = False
+17.9990 	EXP 	image_43: autoDraw = False
+17.9990 	EXP 	image_31: autoDraw = True
+17.9990 	EXP 	image_32: autoDraw = True
+18.8154 	EXP 	image_31: autoDraw = False
+18.8154 	EXP 	image_32: autoDraw = False
+18.8154 	EXP 	image_35: autoDraw = True
+18.8154 	EXP 	image_33: autoDraw = True
+18.8154 	EXP 	image_34: autoDraw = True
+20.3166 	EXP 	image_35: autoDraw = False
+20.3166 	EXP 	image_33: autoDraw = False
+20.3166 	EXP 	image_34: autoDraw = False
+20.3166 	EXP 	image_35: autoDraw = False
+20.3166 	EXP 	image_33: autoDraw = False
+20.3166 	EXP 	image_34: autoDraw = False
+20.3166 	EXP 	image_38: autoDraw = True
+20.3166 	EXP 	image_36: autoDraw = True
+20.3166 	EXP 	image_37: autoDraw = True
+22.6746 	INFO 	Keyboard events cleared
+22.6738 	EXP 	image_38: autoDraw = False
+22.6738 	EXP 	image_36: autoDraw = False
+22.6738 	EXP 	image_37: autoDraw = False
+22.6738 	EXP 	image_39: texRes = 512
+22.6738 	EXP 	image_39: ori = 0.0
+22.6738 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+22.6738 	EXP 	image_41: texRes = 512
+22.6738 	EXP 	image_41: ori = 0.0
+22.6738 	EXP 	image_41: image = 'img/congruent_right.png'
+22.6738 	EXP 	image: texRes = 512
+22.6738 	EXP 	image: ori = 0.0
+22.6738 	EXP 	image: image = 'img/left_arrow.png'
+22.6738 	EXP 	image_2: texRes = 512
+22.6738 	EXP 	image_2: ori = 0.0
+22.6738 	EXP 	image_2: image = 'img/right_arrow.png'
+22.6738 	EXP 	image_39: autoDraw = True
+22.6738 	EXP 	image_41: autoDraw = True
+22.6738 	EXP 	image: autoDraw = True
+22.6738 	EXP 	image_2: autoDraw = True
+22.7741 	EXP 	image_39: autoDraw = False
+24.4100 	EXP 	Sound sound_9 started
+24.4017 	DATA 	Keypress: m
+24.4168 	EXP 	image_39: autoDraw = False
+24.4168 	EXP 	image_41: autoDraw = False
+24.4168 	EXP 	image: autoDraw = False
+24.4168 	EXP 	image_2: autoDraw = False
+24.4168 	EXP 	image_42: texRes = 512
+24.4168 	EXP 	image_42: ori = 0.0
+24.4168 	EXP 	image_42: image = 'img/congruent_right.png'
+24.4168 	EXP 	image_3: texRes = 512
+24.4168 	EXP 	image_3: ori = 0.0
+24.4168 	EXP 	image_3: image = 'img/left_arrow.png'
+24.4168 	EXP 	image_43: texRes = 512
+24.4168 	EXP 	image_43: ori = 0.0
+24.4168 	EXP 	image_43: image = 'img/right_arrow_border.png'
+24.4168 	EXP 	image_42: autoDraw = True
+24.4168 	EXP 	image_3: autoDraw = True
+24.4168 	EXP 	image_43: autoDraw = True
+28.0989 	EXP 	Sound sound_9 reached end of file
+28.0991 	EXP 	Sound sound_9 reached end of file
+28.2928 	EXP 	New trial (rep=0, index=2): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_right_empty.png', 'middle': 'img/incongruent_right.png', 'corrAns': 'm', 'condition': 'incongruent'}
+28.3187 	EXP 	image_42: autoDraw = False
+28.3187 	EXP 	image_3: autoDraw = False
+28.3187 	EXP 	image_43: autoDraw = False
+28.3187 	EXP 	image_31: autoDraw = True
+28.3187 	EXP 	image_32: autoDraw = True
+29.1240 	EXP 	image_31: autoDraw = False
+29.1240 	EXP 	image_32: autoDraw = False
+29.1240 	EXP 	image_35: autoDraw = True
+29.1240 	EXP 	image_33: autoDraw = True
+29.1240 	EXP 	image_34: autoDraw = True
+30.6014 	EXP 	image_35: autoDraw = False
+30.6014 	EXP 	image_33: autoDraw = False
+30.6014 	EXP 	image_34: autoDraw = False
+30.6014 	EXP 	image_35: autoDraw = False
+30.6014 	EXP 	image_33: autoDraw = False
+30.6014 	EXP 	image_34: autoDraw = False
+30.6014 	EXP 	image_38: autoDraw = True
+30.6014 	EXP 	image_36: autoDraw = True
+30.6014 	EXP 	image_37: autoDraw = True
+32.9345 	INFO 	Keyboard events cleared
+32.9322 	EXP 	image_38: autoDraw = False
+32.9322 	EXP 	image_36: autoDraw = False
+32.9322 	EXP 	image_37: autoDraw = False
+32.9322 	EXP 	image_39: texRes = 512
+32.9322 	EXP 	image_39: ori = 0.0
+32.9322 	EXP 	image_39: image = 'img/incongruent_right_empty.png'
+32.9322 	EXP 	image_41: texRes = 512
+32.9322 	EXP 	image_41: ori = 0.0
+32.9322 	EXP 	image_41: image = 'img/incongruent_right.png'
+32.9322 	EXP 	image: texRes = 512
+32.9322 	EXP 	image: ori = 0.0
+32.9322 	EXP 	image: image = 'img/left_arrow.png'
+32.9322 	EXP 	image_2: texRes = 512
+32.9322 	EXP 	image_2: ori = 0.0
+32.9322 	EXP 	image_2: image = 'img/right_arrow.png'
+32.9322 	EXP 	image_39: autoDraw = True
+32.9322 	EXP 	image_41: autoDraw = True
+32.9322 	EXP 	image: autoDraw = True
+32.9322 	EXP 	image_2: autoDraw = True
+33.0436 	EXP 	image_39: autoDraw = False
+34.7051 	EXP 	Sound sound_9 started
+34.6954 	DATA 	Keypress: m
+34.7992 	EXP 	image_39: autoDraw = False
+34.7992 	EXP 	image_41: autoDraw = False
+34.7992 	EXP 	image: autoDraw = False
+34.7992 	EXP 	image_2: autoDraw = False
+34.7992 	EXP 	image_42: texRes = 512
+34.7992 	EXP 	image_42: ori = 0.0
+34.7992 	EXP 	image_42: image = 'img/incongruent_right.png'
+34.7992 	EXP 	image_3: texRes = 512
+34.7992 	EXP 	image_3: ori = 0.0
+34.7992 	EXP 	image_3: image = 'img/left_arrow.png'
+34.7992 	EXP 	image_43: texRes = 512
+34.7992 	EXP 	image_43: ori = 0.0
+34.7992 	EXP 	image_43: image = 'img/right_arrow_border.png'
+34.7992 	EXP 	image_42: autoDraw = True
+34.7992 	EXP 	image_3: autoDraw = True
+34.7992 	EXP 	image_43: autoDraw = True
+38.3822 	EXP 	Sound sound_9 reached end of file
+38.3828 	EXP 	Sound sound_9 reached end of file
+38.5943 	EXP 	New trial (rep=0, index=3): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_left_empty.png', 'middle': 'img/incongruent_left.png', 'corrAns': 'z', 'condition': 'incongruent'}
+38.6270 	EXP 	image_42: autoDraw = False
+38.6270 	EXP 	image_3: autoDraw = False
+38.6270 	EXP 	image_43: autoDraw = False
+38.6270 	EXP 	image_31: autoDraw = True
+38.6270 	EXP 	image_32: autoDraw = True
+39.2923 	DATA 	Keypress: m
+39.4254 	EXP 	image_31: autoDraw = False
+39.4254 	EXP 	image_32: autoDraw = False
+39.4254 	EXP 	image_35: autoDraw = True
+39.4254 	EXP 	image_33: autoDraw = True
+39.4254 	EXP 	image_34: autoDraw = True
+40.4594 	EXP 	image_35: autoDraw = False
+40.4594 	EXP 	image_33: autoDraw = False
+40.4594 	EXP 	image_34: autoDraw = False
+40.4594 	EXP 	image_35: autoDraw = False
+40.4594 	EXP 	image_33: autoDraw = False
+40.4594 	EXP 	image_34: autoDraw = False
+40.4594 	EXP 	image_38: autoDraw = True
+40.4594 	EXP 	image_36: autoDraw = True
+40.4594 	EXP 	image_37: autoDraw = True
+42.8430 	INFO 	Keyboard events cleared
+42.8403 	EXP 	image_38: autoDraw = False
+42.8403 	EXP 	image_36: autoDraw = False
+42.8403 	EXP 	image_37: autoDraw = False
+42.8403 	EXP 	image_39: texRes = 512
+42.8403 	EXP 	image_39: ori = 0.0
+42.8403 	EXP 	image_39: image = 'img/incongruent_left_empty.png'
+42.8403 	EXP 	image_41: texRes = 512
+42.8403 	EXP 	image_41: ori = 0.0
+42.8403 	EXP 	image_41: image = 'img/incongruent_left.png'
+42.8403 	EXP 	image: texRes = 512
+42.8403 	EXP 	image: ori = 0.0
+42.8403 	EXP 	image: image = 'img/left_arrow.png'
+42.8403 	EXP 	image_2: texRes = 512
+42.8403 	EXP 	image_2: ori = 0.0
+42.8403 	EXP 	image_2: image = 'img/right_arrow.png'
+42.8403 	EXP 	image_39: autoDraw = True
+42.8403 	EXP 	image_41: autoDraw = True
+42.8403 	EXP 	image: autoDraw = True
+42.8403 	EXP 	image_2: autoDraw = True
+42.9476 	EXP 	image_39: autoDraw = False
+44.6811 	EXP 	Sound sound_9 started
+44.6806 	DATA 	Keypress: z
+44.6950 	EXP 	image_39: autoDraw = False
+44.6950 	EXP 	image_41: autoDraw = False
+44.6950 	EXP 	image: autoDraw = False
+44.6950 	EXP 	image_2: autoDraw = False
+44.6950 	EXP 	image_42: texRes = 512
+44.6950 	EXP 	image_42: ori = 0.0
+44.6950 	EXP 	image_42: image = 'img/incongruent_left.png'
+44.6950 	EXP 	image_3: texRes = 512
+44.6950 	EXP 	image_3: ori = 0.0
+44.6950 	EXP 	image_3: image = 'img/left_arrow_border.png'
+44.6950 	EXP 	image_43: texRes = 512
+44.6950 	EXP 	image_43: ori = 0.0
+44.6950 	EXP 	image_43: image = 'img/right_arrow.png'
+44.6950 	EXP 	image_42: autoDraw = True
+44.6950 	EXP 	image_3: autoDraw = True
+44.6950 	EXP 	image_43: autoDraw = True
+48.2189 	EXP 	Sound sound_9 reached end of file
+48.2197 	EXP 	Sound sound_9 reached end of file
+48.6273 	EXP 	Sound sound_10 started
+48.6327 	INFO 	Keyboard events cleared
+48.6301 	EXP 	image_42: autoDraw = False
+48.6301 	EXP 	image_3: autoDraw = False
+48.6301 	EXP 	image_43: autoDraw = False
+48.6301 	EXP 	text_24: autoDraw = True
+49.3385 	DATA 	Keypress: space
+49.3604 	EXP 	Sound sound_10 stopped
+49.3605 	EXP 	Sound sound_10 paused
+49.4044 	EXP 	Sound sound_13 started
+49.4261 	INFO 	Keyboard events cleared
+49.4240 	EXP 	text_24: autoDraw = False
+49.4240 	EXP 	image_40: autoDraw = True
+49.9593 	EXP 	Sound sound_13 stopped
+49.9594 	EXP 	Sound sound_13 paused
+49.9663 	DEBUG 	Read excel file with openpyxl: conditions_test(13+7).xlsx
+49.9666 	EXP 	Imported conditions_test(13+7).xlsx as conditions, 7 conditions, 1 params
+49.9671 	EXP 	Created sequence: random, trialTypes=7, nReps=1, seed=None
+49.9675 	EXP 	New trial (rep=0, index=0): {'blockfile': 'PNblock1.xlsx'}
+49.9748 	DEBUG 	Read excel file with openpyxl: PNblock1.xlsx
+49.9758 	EXP 	Imported PNblock1.xlsx as conditions, 2 conditions, 6 params
+49.9765 	EXP 	Created sequence: sequential, trialTypes=2, nReps=1, seed=None
+49.9769 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}
+49.9807 	DATA 	Keypress: space
+50.0019 	EXP 	image_40: autoDraw = False
+50.0019 	EXP 	image_31: autoDraw = True
+50.0019 	EXP 	image_32: autoDraw = True
+50.8000 	EXP 	image_31: autoDraw = False
+50.8000 	EXP 	image_32: autoDraw = False
+50.8000 	EXP 	image_35: autoDraw = True
+50.8000 	EXP 	image_33: autoDraw = True
+50.8000 	EXP 	image_34: autoDraw = True
+51.9125 	EXP 	image_35: autoDraw = False
+51.9125 	EXP 	image_33: autoDraw = False
+51.9125 	EXP 	image_34: autoDraw = False
+51.9125 	EXP 	image_35: autoDraw = False
+51.9125 	EXP 	image_33: autoDraw = False
+51.9125 	EXP 	image_34: autoDraw = False
+51.9125 	EXP 	image_38: autoDraw = True
+51.9125 	EXP 	image_36: autoDraw = True
+51.9125 	EXP 	image_37: autoDraw = True
+54.2509 	INFO 	Keyboard events cleared
+54.2496 	EXP 	image_38: autoDraw = False
+54.2496 	EXP 	image_36: autoDraw = False
+54.2496 	EXP 	image_37: autoDraw = False
+54.2496 	EXP 	image_39: texRes = 512
+54.2496 	EXP 	image_39: ori = 0.0
+54.2496 	EXP 	image_39: image = 'img/congruent_left_empty.png'
+54.2496 	EXP 	image_41: texRes = 512
+54.2496 	EXP 	image_41: ori = 0.0
+54.2496 	EXP 	image_41: image = 'img/congruent_left.png'
+54.2496 	EXP 	image: texRes = 512
+54.2496 	EXP 	image: ori = 0.0
+54.2496 	EXP 	image: image = 'img/left_arrow.png'
+54.2496 	EXP 	image_2: texRes = 512
+54.2496 	EXP 	image_2: ori = 0.0
+54.2496 	EXP 	image_2: image = 'img/right_arrow.png'
+54.2496 	EXP 	image_39: autoDraw = True
+54.2496 	EXP 	image_41: autoDraw = True
+54.2496 	EXP 	image: autoDraw = True
+54.2496 	EXP 	image_2: autoDraw = True
+54.3546 	EXP 	image_39: autoDraw = False
+54.7317 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_right_empty.png', 'middle': 'img/incongruent_right.png', 'corrAns': 'm', 'condition': 'incongruent'}
+54.7352 	DATA 	Keypress: z
+54.7609 	EXP 	image_39: autoDraw = False
+54.7609 	EXP 	image_41: autoDraw = False
+54.7609 	EXP 	image: autoDraw = False
+54.7609 	EXP 	image_2: autoDraw = False
+54.7609 	EXP 	image_31: autoDraw = True
+54.7609 	EXP 	image_32: autoDraw = True
+55.5674 	EXP 	image_31: autoDraw = False
+55.5674 	EXP 	image_32: autoDraw = False
+55.5674 	EXP 	image_35: autoDraw = True
+55.5674 	EXP 	image_33: autoDraw = True
+55.5674 	EXP 	image_34: autoDraw = True
+56.8412 	EXP 	image_35: autoDraw = False
+56.8412 	EXP 	image_33: autoDraw = False
+56.8412 	EXP 	image_34: autoDraw = False
+56.8412 	EXP 	image_35: autoDraw = False
+56.8412 	EXP 	image_33: autoDraw = False
+56.8412 	EXP 	image_34: autoDraw = False
+56.8412 	EXP 	image_38: autoDraw = True
+56.8412 	EXP 	image_36: autoDraw = True
+56.8412 	EXP 	image_37: autoDraw = True
+59.0791 	INFO 	Keyboard events cleared
+59.0757 	EXP 	image_38: autoDraw = False
+59.0757 	EXP 	image_36: autoDraw = False
+59.0757 	EXP 	image_37: autoDraw = False
+59.0757 	EXP 	image_39: texRes = 512
+59.0757 	EXP 	image_39: ori = 0.0
+59.0757 	EXP 	image_39: image = 'img/incongruent_right_empty.png'
+59.0757 	EXP 	image_41: texRes = 512
+59.0757 	EXP 	image_41: ori = 0.0
+59.0757 	EXP 	image_41: image = 'img/incongruent_right.png'
+59.0757 	EXP 	image: texRes = 512
+59.0757 	EXP 	image: ori = 0.0
+59.0757 	EXP 	image: image = 'img/left_arrow.png'
+59.0757 	EXP 	image_2: texRes = 512
+59.0757 	EXP 	image_2: ori = 0.0
+59.0757 	EXP 	image_2: image = 'img/right_arrow.png'
+59.0757 	EXP 	image_39: autoDraw = True
+59.0757 	EXP 	image_41: autoDraw = True
+59.0757 	EXP 	image: autoDraw = True
+59.0757 	EXP 	image_2: autoDraw = True
+59.1810 	EXP 	image_39: autoDraw = False
+59.5928 	DATA 	Keypress: m
+59.6077 	EXP 	New trial (rep=0, index=1): {'blockfile': 'PNblock3.xlsx'}
+59.6158 	DEBUG 	Read excel file with openpyxl: PNblock3.xlsx
+59.6163 	EXP 	Imported PNblock3.xlsx as conditions, 3 conditions, 6 params
+59.6167 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+59.6169 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}
+59.6414 	EXP 	image_39: autoDraw = False
+59.6414 	EXP 	image_41: autoDraw = False
+59.6414 	EXP 	image: autoDraw = False
+59.6414 	EXP 	image_2: autoDraw = False
+59.6414 	EXP 	image_31: autoDraw = True
+59.6414 	EXP 	image_32: autoDraw = True
+60.4456 	EXP 	image_31: autoDraw = False
+60.4456 	EXP 	image_32: autoDraw = False
+60.4456 	EXP 	image_35: autoDraw = True
+60.4456 	EXP 	image_33: autoDraw = True
+60.4456 	EXP 	image_34: autoDraw = True
+61.5752 	EXP 	image_35: autoDraw = False
+61.5752 	EXP 	image_33: autoDraw = False
+61.5752 	EXP 	image_34: autoDraw = False
+61.5752 	EXP 	image_35: autoDraw = False
+61.5752 	EXP 	image_33: autoDraw = False
+61.5752 	EXP 	image_34: autoDraw = False
+61.5752 	EXP 	image_38: autoDraw = True
+61.5752 	EXP 	image_36: autoDraw = True
+61.5752 	EXP 	image_37: autoDraw = True
+63.8674 	INFO 	Keyboard events cleared
+63.8657 	EXP 	image_38: autoDraw = False
+63.8657 	EXP 	image_36: autoDraw = False
+63.8657 	EXP 	image_37: autoDraw = False
+63.8657 	EXP 	image_39: texRes = 512
+63.8657 	EXP 	image_39: ori = 0.0
+63.8657 	EXP 	image_39: image = 'img/congruent_left_empty.png'
+63.8657 	EXP 	image_41: texRes = 512
+63.8657 	EXP 	image_41: ori = 0.0
+63.8657 	EXP 	image_41: image = 'img/congruent_left.png'
+63.8657 	EXP 	image: texRes = 512
+63.8657 	EXP 	image: ori = 0.0
+63.8657 	EXP 	image: image = 'img/left_arrow.png'
+63.8657 	EXP 	image_2: texRes = 512
+63.8657 	EXP 	image_2: ori = 0.0
+63.8657 	EXP 	image_2: image = 'img/right_arrow.png'
+63.8657 	EXP 	image_39: autoDraw = True
+63.8657 	EXP 	image_41: autoDraw = True
+63.8657 	EXP 	image: autoDraw = True
+63.8657 	EXP 	image_2: autoDraw = True
+63.9716 	EXP 	image_39: autoDraw = False
+64.3060 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_left_empty.png', 'middle': 'img/incongruent_left.png', 'corrAns': 'z', 'condition': 'incongruent'}
+64.3085 	DATA 	Keypress: z
+64.3295 	EXP 	image_39: autoDraw = False
+64.3295 	EXP 	image_41: autoDraw = False
+64.3295 	EXP 	image: autoDraw = False
+64.3295 	EXP 	image_2: autoDraw = False
+64.3295 	EXP 	image_31: autoDraw = True
+64.3295 	EXP 	image_32: autoDraw = True
+65.1366 	EXP 	image_31: autoDraw = False
+65.1366 	EXP 	image_32: autoDraw = False
+65.1366 	EXP 	image_35: autoDraw = True
+65.1366 	EXP 	image_33: autoDraw = True
+65.1366 	EXP 	image_34: autoDraw = True
+66.2861 	EXP 	image_35: autoDraw = False
+66.2861 	EXP 	image_33: autoDraw = False
+66.2861 	EXP 	image_34: autoDraw = False
+66.2861 	EXP 	image_35: autoDraw = False
+66.2861 	EXP 	image_33: autoDraw = False
+66.2861 	EXP 	image_34: autoDraw = False
+66.2861 	EXP 	image_38: autoDraw = True
+66.2861 	EXP 	image_36: autoDraw = True
+66.2861 	EXP 	image_37: autoDraw = True
+68.5243 	INFO 	Keyboard events cleared
+68.5239 	EXP 	image_38: autoDraw = False
+68.5239 	EXP 	image_36: autoDraw = False
+68.5239 	EXP 	image_37: autoDraw = False
+68.5239 	EXP 	image_39: texRes = 512
+68.5239 	EXP 	image_39: ori = 0.0
+68.5239 	EXP 	image_39: image = 'img/incongruent_left_empty.png'
+68.5239 	EXP 	image_41: texRes = 512
+68.5239 	EXP 	image_41: ori = 0.0
+68.5239 	EXP 	image_41: image = 'img/incongruent_left.png'
+68.5239 	EXP 	image: texRes = 512
+68.5239 	EXP 	image: ori = 0.0
+68.5239 	EXP 	image: image = 'img/left_arrow.png'
+68.5239 	EXP 	image_2: texRes = 512
+68.5239 	EXP 	image_2: ori = 0.0
+68.5239 	EXP 	image_2: image = 'img/right_arrow.png'
+68.5239 	EXP 	image_39: autoDraw = True
+68.5239 	EXP 	image_41: autoDraw = True
+68.5239 	EXP 	image: autoDraw = True
+68.5239 	EXP 	image_2: autoDraw = True
+68.6308 	EXP 	image_39: autoDraw = False
+69.0573 	DATA 	Keypress: z
+69.0718 	EXP 	New trial (rep=0, index=2): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+69.0944 	EXP 	image_39: autoDraw = False
+69.0944 	EXP 	image_41: autoDraw = False
+69.0944 	EXP 	image: autoDraw = False
+69.0944 	EXP 	image_2: autoDraw = False
+69.0944 	EXP 	image_31: autoDraw = True
+69.0944 	EXP 	image_32: autoDraw = True
+69.9094 	EXP 	image_31: autoDraw = False
+69.9094 	EXP 	image_32: autoDraw = False
+69.9094 	EXP 	image_35: autoDraw = True
+69.9094 	EXP 	image_33: autoDraw = True
+69.9094 	EXP 	image_34: autoDraw = True
+71.4044 	EXP 	image_35: autoDraw = False
+71.4044 	EXP 	image_33: autoDraw = False
+71.4044 	EXP 	image_34: autoDraw = False
+71.4044 	EXP 	image_35: autoDraw = False
+71.4044 	EXP 	image_33: autoDraw = False
+71.4044 	EXP 	image_34: autoDraw = False
+71.4044 	EXP 	image_38: autoDraw = True
+71.4044 	EXP 	image_36: autoDraw = True
+71.4044 	EXP 	image_37: autoDraw = True
+73.6585 	INFO 	Keyboard events cleared
+73.6561 	EXP 	image_38: autoDraw = False
+73.6561 	EXP 	image_36: autoDraw = False
+73.6561 	EXP 	image_37: autoDraw = False
+73.6561 	EXP 	image_39: texRes = 512
+73.6561 	EXP 	image_39: ori = 0.0
+73.6561 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+73.6561 	EXP 	image_41: texRes = 512
+73.6561 	EXP 	image_41: ori = 0.0
+73.6561 	EXP 	image_41: image = 'img/congruent_right.png'
+73.6561 	EXP 	image: texRes = 512
+73.6561 	EXP 	image: ori = 0.0
+73.6561 	EXP 	image: image = 'img/left_arrow.png'
+73.6561 	EXP 	image_2: texRes = 512
+73.6561 	EXP 	image_2: ori = 0.0
+73.6561 	EXP 	image_2: image = 'img/right_arrow.png'
+73.6561 	EXP 	image_39: autoDraw = True
+73.6561 	EXP 	image_41: autoDraw = True
+73.6561 	EXP 	image: autoDraw = True
+73.6561 	EXP 	image_2: autoDraw = True
+73.7602 	EXP 	image_39: autoDraw = False
+74.0550 	EXP 	New trial (rep=0, index=2): {'blockfile': 'PNblock4.xlsx'}
+74.0626 	DEBUG 	Read excel file with openpyxl: PNblock4.xlsx
+74.0632 	EXP 	Imported PNblock4.xlsx as conditions, 3 conditions, 6 params
+74.0636 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+74.0637 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}
+74.0660 	DATA 	Keypress: m
+74.0868 	EXP 	image_39: autoDraw = False
+74.0868 	EXP 	image_41: autoDraw = False
+74.0868 	EXP 	image: autoDraw = False
+74.0868 	EXP 	image_2: autoDraw = False
+74.0868 	EXP 	image_31: autoDraw = True
+74.0868 	EXP 	image_32: autoDraw = True
+74.8905 	EXP 	image_31: autoDraw = False
+74.8905 	EXP 	image_32: autoDraw = False
+74.8905 	EXP 	image_35: autoDraw = True
+74.8905 	EXP 	image_33: autoDraw = True
+74.8905 	EXP 	image_34: autoDraw = True
+76.3282 	EXP 	image_35: autoDraw = False
+76.3282 	EXP 	image_33: autoDraw = False
+76.3282 	EXP 	image_34: autoDraw = False
+76.3282 	EXP 	image_35: autoDraw = False
+76.3282 	EXP 	image_33: autoDraw = False
+76.3282 	EXP 	image_34: autoDraw = False
+76.3282 	EXP 	image_38: autoDraw = True
+76.3282 	EXP 	image_36: autoDraw = True
+76.3282 	EXP 	image_37: autoDraw = True
+78.5460 	INFO 	Keyboard events cleared
+78.5425 	EXP 	image_38: autoDraw = False
+78.5425 	EXP 	image_36: autoDraw = False
+78.5425 	EXP 	image_37: autoDraw = False
+78.5425 	EXP 	image_39: texRes = 512
+78.5425 	EXP 	image_39: ori = 0.0
+78.5425 	EXP 	image_39: image = 'img/congruent_left_empty.png'
+78.5425 	EXP 	image_41: texRes = 512
+78.5425 	EXP 	image_41: ori = 0.0
+78.5425 	EXP 	image_41: image = 'img/congruent_left.png'
+78.5425 	EXP 	image: texRes = 512
+78.5425 	EXP 	image: ori = 0.0
+78.5425 	EXP 	image: image = 'img/left_arrow.png'
+78.5425 	EXP 	image_2: texRes = 512
+78.5425 	EXP 	image_2: ori = 0.0
+78.5425 	EXP 	image_2: image = 'img/right_arrow.png'
+78.5425 	EXP 	image_39: autoDraw = True
+78.5425 	EXP 	image_41: autoDraw = True
+78.5425 	EXP 	image: autoDraw = True
+78.5425 	EXP 	image_2: autoDraw = True
+78.6494 	EXP 	image_39: autoDraw = False
+78.9724 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+78.9750 	DATA 	Keypress: z
+78.9956 	EXP 	image_39: autoDraw = False
+78.9956 	EXP 	image_41: autoDraw = False
+78.9956 	EXP 	image: autoDraw = False
+78.9956 	EXP 	image_2: autoDraw = False
+78.9956 	EXP 	image_31: autoDraw = True
+78.9956 	EXP 	image_32: autoDraw = True
+79.8019 	EXP 	image_31: autoDraw = False
+79.8019 	EXP 	image_32: autoDraw = False
+79.8019 	EXP 	image_35: autoDraw = True
+79.8019 	EXP 	image_33: autoDraw = True
+79.8019 	EXP 	image_34: autoDraw = True
+80.8615 	EXP 	image_35: autoDraw = False
+80.8615 	EXP 	image_33: autoDraw = False
+80.8615 	EXP 	image_34: autoDraw = False
+80.8615 	EXP 	image_35: autoDraw = False
+80.8615 	EXP 	image_33: autoDraw = False
+80.8615 	EXP 	image_34: autoDraw = False
+80.8615 	EXP 	image_38: autoDraw = True
+80.8615 	EXP 	image_36: autoDraw = True
+80.8615 	EXP 	image_37: autoDraw = True
+83.0859 	INFO 	Keyboard events cleared
+83.0833 	EXP 	image_38: autoDraw = False
+83.0833 	EXP 	image_36: autoDraw = False
+83.0833 	EXP 	image_37: autoDraw = False
+83.0833 	EXP 	image_39: texRes = 512
+83.0833 	EXP 	image_39: ori = 0.0
+83.0833 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+83.0833 	EXP 	image_41: texRes = 512
+83.0833 	EXP 	image_41: ori = 0.0
+83.0833 	EXP 	image_41: image = 'img/congruent_right.png'
+83.0833 	EXP 	image: texRes = 512
+83.0833 	EXP 	image: ori = 0.0
+83.0833 	EXP 	image: image = 'img/left_arrow.png'
+83.0833 	EXP 	image_2: texRes = 512
+83.0833 	EXP 	image_2: ori = 0.0
+83.0833 	EXP 	image_2: image = 'img/right_arrow.png'
+83.0833 	EXP 	image_39: autoDraw = True
+83.0833 	EXP 	image_41: autoDraw = True
+83.0833 	EXP 	image: autoDraw = True
+83.0833 	EXP 	image_2: autoDraw = True
+83.1928 	EXP 	image_39: autoDraw = False
+83.6924 	DATA 	Keypress: z
+83.7067 	EXP 	New trial (rep=0, index=2): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_left_empty.png', 'middle': 'img/incongruent_left.png', 'corrAns': 'z', 'condition': 'incongruent'}
+83.7242 	EXP 	image_39: autoDraw = False
+83.7242 	EXP 	image_41: autoDraw = False
+83.7242 	EXP 	image: autoDraw = False
+83.7242 	EXP 	image_2: autoDraw = False
+83.7242 	EXP 	image_31: autoDraw = True
+83.7242 	EXP 	image_32: autoDraw = True
+84.5382 	EXP 	image_31: autoDraw = False
+84.5382 	EXP 	image_32: autoDraw = False
+84.5382 	EXP 	image_35: autoDraw = True
+84.5382 	EXP 	image_33: autoDraw = True
+84.5382 	EXP 	image_34: autoDraw = True
+85.8750 	EXP 	image_35: autoDraw = False
+85.8750 	EXP 	image_33: autoDraw = False
+85.8750 	EXP 	image_34: autoDraw = False
+85.8750 	EXP 	image_35: autoDraw = False
+85.8750 	EXP 	image_33: autoDraw = False
+85.8750 	EXP 	image_34: autoDraw = False
+85.8750 	EXP 	image_38: autoDraw = True
+85.8750 	EXP 	image_36: autoDraw = True
+85.8750 	EXP 	image_37: autoDraw = True
+88.1494 	INFO 	Keyboard events cleared
+88.1471 	EXP 	image_38: autoDraw = False
+88.1471 	EXP 	image_36: autoDraw = False
+88.1471 	EXP 	image_37: autoDraw = False
+88.1471 	EXP 	image_39: texRes = 512
+88.1471 	EXP 	image_39: ori = 0.0
+88.1471 	EXP 	image_39: image = 'img/incongruent_left_empty.png'
+88.1471 	EXP 	image_41: texRes = 512
+88.1471 	EXP 	image_41: ori = 0.0
+88.1471 	EXP 	image_41: image = 'img/incongruent_left.png'
+88.1471 	EXP 	image: texRes = 512
+88.1471 	EXP 	image: ori = 0.0
+88.1471 	EXP 	image: image = 'img/left_arrow.png'
+88.1471 	EXP 	image_2: texRes = 512
+88.1471 	EXP 	image_2: ori = 0.0
+88.1471 	EXP 	image_2: image = 'img/right_arrow.png'
+88.1471 	EXP 	image_39: autoDraw = True
+88.1471 	EXP 	image_41: autoDraw = True
+88.1471 	EXP 	image: autoDraw = True
+88.1471 	EXP 	image_2: autoDraw = True
+88.2536 	EXP 	image_39: autoDraw = False
+88.6556 	EXP 	New trial (rep=0, index=3): {'blockfile': 'PNblock7.xlsx'}
+88.6639 	DEBUG 	Read excel file with openpyxl: PNblock7.xlsx
+88.6643 	EXP 	Imported PNblock7.xlsx as conditions, 2 conditions, 6 params
+88.6647 	EXP 	Created sequence: sequential, trialTypes=2, nReps=1, seed=None
+88.6649 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+88.6674 	DATA 	Keypress: z
+88.6907 	EXP 	image_39: autoDraw = False
+88.6907 	EXP 	image_41: autoDraw = False
+88.6907 	EXP 	image: autoDraw = False
+88.6907 	EXP 	image_2: autoDraw = False
+88.6907 	EXP 	image_31: autoDraw = True
+88.6907 	EXP 	image_32: autoDraw = True
+89.4817 	EXP 	image_31: autoDraw = False
+89.4817 	EXP 	image_32: autoDraw = False
+89.4817 	EXP 	image_35: autoDraw = True
+89.4817 	EXP 	image_33: autoDraw = True
+89.4817 	EXP 	image_34: autoDraw = True
+90.6356 	EXP 	image_35: autoDraw = False
+90.6356 	EXP 	image_33: autoDraw = False
+90.6356 	EXP 	image_34: autoDraw = False
+90.6356 	EXP 	image_35: autoDraw = False
+90.6356 	EXP 	image_33: autoDraw = False
+90.6356 	EXP 	image_34: autoDraw = False
+90.6356 	EXP 	image_38: autoDraw = True
+90.6356 	EXP 	image_36: autoDraw = True
+90.6356 	EXP 	image_37: autoDraw = True
+92.8736 	INFO 	Keyboard events cleared
+92.8698 	EXP 	image_38: autoDraw = False
+92.8698 	EXP 	image_36: autoDraw = False
+92.8698 	EXP 	image_37: autoDraw = False
+92.8698 	EXP 	image_39: texRes = 512
+92.8698 	EXP 	image_39: ori = 0.0
+92.8698 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+92.8698 	EXP 	image_41: texRes = 512
+92.8698 	EXP 	image_41: ori = 0.0
+92.8698 	EXP 	image_41: image = 'img/congruent_right.png'
+92.8698 	EXP 	image: texRes = 512
+92.8698 	EXP 	image: ori = 0.0
+92.8698 	EXP 	image: image = 'img/left_arrow.png'
+92.8698 	EXP 	image_2: texRes = 512
+92.8698 	EXP 	image_2: ori = 0.0
+92.8698 	EXP 	image_2: image = 'img/right_arrow.png'
+92.8698 	EXP 	image_39: autoDraw = True
+92.8698 	EXP 	image_41: autoDraw = True
+92.8698 	EXP 	image: autoDraw = True
+92.8698 	EXP 	image_2: autoDraw = True
+92.9874 	EXP 	image_39: autoDraw = False
+93.2057 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_right_empty.png', 'middle': 'img/incongruent_right.png', 'corrAns': 'm', 'condition': 'incongruent'}
+93.2085 	DATA 	Keypress: z
+93.2309 	EXP 	image_39: autoDraw = False
+93.2309 	EXP 	image_41: autoDraw = False
+93.2309 	EXP 	image: autoDraw = False
+93.2309 	EXP 	image_2: autoDraw = False
+93.2309 	EXP 	image_31: autoDraw = True
+93.2309 	EXP 	image_32: autoDraw = True
+94.0537 	EXP 	image_31: autoDraw = False
+94.0537 	EXP 	image_32: autoDraw = False
+94.0537 	EXP 	image_35: autoDraw = True
+94.0537 	EXP 	image_33: autoDraw = True
+94.0537 	EXP 	image_34: autoDraw = True
+95.1420 	EXP 	image_35: autoDraw = False
+95.1420 	EXP 	image_33: autoDraw = False
+95.1420 	EXP 	image_34: autoDraw = False
+95.1420 	EXP 	image_35: autoDraw = False
+95.1420 	EXP 	image_33: autoDraw = False
+95.1420 	EXP 	image_34: autoDraw = False
+95.1420 	EXP 	image_38: autoDraw = True
+95.1420 	EXP 	image_36: autoDraw = True
+95.1420 	EXP 	image_37: autoDraw = True
+97.3565 	INFO 	Keyboard events cleared
+97.3561 	EXP 	image_38: autoDraw = False
+97.3561 	EXP 	image_36: autoDraw = False
+97.3561 	EXP 	image_37: autoDraw = False
+97.3561 	EXP 	image_39: texRes = 512
+97.3561 	EXP 	image_39: ori = 0.0
+97.3561 	EXP 	image_39: image = 'img/incongruent_right_empty.png'
+97.3561 	EXP 	image_41: texRes = 512
+97.3561 	EXP 	image_41: ori = 0.0
+97.3561 	EXP 	image_41: image = 'img/incongruent_right.png'
+97.3561 	EXP 	image: texRes = 512
+97.3561 	EXP 	image: ori = 0.0
+97.3561 	EXP 	image: image = 'img/left_arrow.png'
+97.3561 	EXP 	image_2: texRes = 512
+97.3561 	EXP 	image_2: ori = 0.0
+97.3561 	EXP 	image_2: image = 'img/right_arrow.png'
+97.3561 	EXP 	image_39: autoDraw = True
+97.3561 	EXP 	image_41: autoDraw = True
+97.3561 	EXP 	image: autoDraw = True
+97.3561 	EXP 	image_2: autoDraw = True
+97.4561 	EXP 	image_39: autoDraw = False
+106.1357 	EXP 	New trial (rep=0, index=4): {'blockfile': 'PNblock5.xlsx'}
+106.1487 	DEBUG 	Read excel file with openpyxl: PNblock5.xlsx
+106.1501 	EXP 	Imported PNblock5.xlsx as conditions, 4 conditions, 6 params
+106.1508 	EXP 	Created sequence: sequential, trialTypes=4, nReps=1, seed=None
+106.1512 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}
+106.1792 	EXP 	image_39: autoDraw = False
+106.1792 	EXP 	image_41: autoDraw = False
+106.1792 	EXP 	image: autoDraw = False
+106.1792 	EXP 	image_2: autoDraw = False
+106.1792 	EXP 	image_31: autoDraw = True
+106.1792 	EXP 	image_32: autoDraw = True
+106.9524 	EXP 	image_31: autoDraw = False
+106.9524 	EXP 	image_32: autoDraw = False
+106.9524 	EXP 	image_35: autoDraw = True
+106.9524 	EXP 	image_33: autoDraw = True
+106.9524 	EXP 	image_34: autoDraw = True
+108.3325 	EXP 	image_35: autoDraw = False
+108.3325 	EXP 	image_33: autoDraw = False
+108.3325 	EXP 	image_34: autoDraw = False
+108.3325 	EXP 	image_35: autoDraw = False
+108.3325 	EXP 	image_33: autoDraw = False
+108.3325 	EXP 	image_34: autoDraw = False
+108.3325 	EXP 	image_38: autoDraw = True
+108.3325 	EXP 	image_36: autoDraw = True
+108.3325 	EXP 	image_37: autoDraw = True
+110.8545 	INFO 	Keyboard events cleared
+110.8525 	EXP 	image_38: autoDraw = False
+110.8525 	EXP 	image_36: autoDraw = False
+110.8525 	EXP 	image_37: autoDraw = False
+110.8525 	EXP 	image_39: texRes = 512
+110.8525 	EXP 	image_39: ori = 0.0
+110.8525 	EXP 	image_39: image = 'img/congruent_left_empty.png'
+110.8525 	EXP 	image_41: texRes = 512
+110.8525 	EXP 	image_41: ori = 0.0
+110.8525 	EXP 	image_41: image = 'img/congruent_left.png'
+110.8525 	EXP 	image: texRes = 512
+110.8525 	EXP 	image: ori = 0.0
+110.8525 	EXP 	image: image = 'img/left_arrow.png'
+110.8525 	EXP 	image_2: texRes = 512
+110.8525 	EXP 	image_2: ori = 0.0
+110.8525 	EXP 	image_2: image = 'img/right_arrow.png'
+110.8525 	EXP 	image_39: autoDraw = True
+110.8525 	EXP 	image_41: autoDraw = True
+110.8525 	EXP 	image: autoDraw = True
+110.8525 	EXP 	image_2: autoDraw = True
+110.9667 	EXP 	image_39: autoDraw = False
+119.3188 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}
+119.3500 	EXP 	image_39: autoDraw = False
+119.3500 	EXP 	image_41: autoDraw = False
+119.3500 	EXP 	image: autoDraw = False
+119.3500 	EXP 	image_2: autoDraw = False
+119.3500 	EXP 	image_31: autoDraw = True
+119.3500 	EXP 	image_32: autoDraw = True
+120.1404 	EXP 	image_31: autoDraw = False
+120.1404 	EXP 	image_32: autoDraw = False
+120.1404 	EXP 	image_35: autoDraw = True
+120.1404 	EXP 	image_33: autoDraw = True
+120.1404 	EXP 	image_34: autoDraw = True
+121.3398 	EXP 	image_35: autoDraw = False
+121.3398 	EXP 	image_33: autoDraw = False
+121.3398 	EXP 	image_34: autoDraw = False
+121.3398 	EXP 	image_35: autoDraw = False
+121.3398 	EXP 	image_33: autoDraw = False
+121.3398 	EXP 	image_34: autoDraw = False
+121.3398 	EXP 	image_38: autoDraw = True
+121.3398 	EXP 	image_36: autoDraw = True
+121.3398 	EXP 	image_37: autoDraw = True
+123.8616 	INFO 	Keyboard events cleared
+123.8592 	EXP 	image_38: autoDraw = False
+123.8592 	EXP 	image_36: autoDraw = False
+123.8592 	EXP 	image_37: autoDraw = False
+123.8592 	EXP 	image_39: texRes = 512
+123.8592 	EXP 	image_39: ori = 0.0
+123.8592 	EXP 	image_39: image = 'img/congruent_left_empty.png'
+123.8592 	EXP 	image_41: texRes = 512
+123.8592 	EXP 	image_41: ori = 0.0
+123.8592 	EXP 	image_41: image = 'img/congruent_left.png'
+123.8592 	EXP 	image: texRes = 512
+123.8592 	EXP 	image: ori = 0.0
+123.8592 	EXP 	image: image = 'img/left_arrow.png'
+123.8592 	EXP 	image_2: texRes = 512
+123.8592 	EXP 	image_2: ori = 0.0
+123.8592 	EXP 	image_2: image = 'img/right_arrow.png'
+123.8592 	EXP 	image_39: autoDraw = True
+123.8592 	EXP 	image_41: autoDraw = True
+123.8592 	EXP 	image: autoDraw = True
+123.8592 	EXP 	image_2: autoDraw = True
+123.9722 	EXP 	image_39: autoDraw = False
+132.3224 	EXP 	New trial (rep=0, index=2): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+132.3589 	EXP 	image_39: autoDraw = False
+132.3589 	EXP 	image_41: autoDraw = False
+132.3589 	EXP 	image: autoDraw = False
+132.3589 	EXP 	image_2: autoDraw = False
+132.3589 	EXP 	image_31: autoDraw = True
+132.3589 	EXP 	image_32: autoDraw = True
+133.1578 	EXP 	image_31: autoDraw = False
+133.1578 	EXP 	image_32: autoDraw = False
+133.1578 	EXP 	image_35: autoDraw = True
+133.1578 	EXP 	image_33: autoDraw = True
+133.1578 	EXP 	image_34: autoDraw = True
+134.5734 	EXP 	image_35: autoDraw = False
+134.5734 	EXP 	image_33: autoDraw = False
+134.5734 	EXP 	image_34: autoDraw = False
+134.5734 	EXP 	image_35: autoDraw = False
+134.5734 	EXP 	image_33: autoDraw = False
+134.5734 	EXP 	image_34: autoDraw = False
+134.5734 	EXP 	image_38: autoDraw = True
+134.5734 	EXP 	image_36: autoDraw = True
+134.5734 	EXP 	image_37: autoDraw = True
+137.1271 	INFO 	Keyboard events cleared
+137.1234 	EXP 	image_38: autoDraw = False
+137.1234 	EXP 	image_36: autoDraw = False
+137.1234 	EXP 	image_37: autoDraw = False
+137.1234 	EXP 	image_39: texRes = 512
+137.1234 	EXP 	image_39: ori = 0.0
+137.1234 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+137.1234 	EXP 	image_41: texRes = 512
+137.1234 	EXP 	image_41: ori = 0.0
+137.1234 	EXP 	image_41: image = 'img/congruent_right.png'
+137.1234 	EXP 	image: texRes = 512
+137.1234 	EXP 	image: ori = 0.0
+137.1234 	EXP 	image: image = 'img/left_arrow.png'
+137.1234 	EXP 	image_2: texRes = 512
+137.1234 	EXP 	image_2: ori = 0.0
+137.1234 	EXP 	image_2: image = 'img/right_arrow.png'
+137.1234 	EXP 	image_39: autoDraw = True
+137.1234 	EXP 	image_41: autoDraw = True
+137.1234 	EXP 	image: autoDraw = True
+137.1234 	EXP 	image_2: autoDraw = True
+137.2376 	EXP 	image_39: autoDraw = False
+145.5532 	EXP 	New trial (rep=0, index=3): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_left_empty.png', 'middle': 'img/incongruent_left.png', 'corrAns': 'z', 'condition': 'incongruent'}
+145.5760 	EXP 	image_39: autoDraw = False
+145.5760 	EXP 	image_41: autoDraw = False
+145.5760 	EXP 	image: autoDraw = False
+145.5760 	EXP 	image_2: autoDraw = False
+145.5760 	EXP 	image_31: autoDraw = True
+145.5760 	EXP 	image_32: autoDraw = True
+146.3795 	EXP 	image_31: autoDraw = False
+146.3795 	EXP 	image_32: autoDraw = False
+146.3795 	EXP 	image_35: autoDraw = True
+146.3795 	EXP 	image_33: autoDraw = True
+146.3795 	EXP 	image_34: autoDraw = True
+147.5982 	EXP 	image_35: autoDraw = False
+147.5982 	EXP 	image_33: autoDraw = False
+147.5982 	EXP 	image_34: autoDraw = False
+147.5982 	EXP 	image_35: autoDraw = False
+147.5982 	EXP 	image_33: autoDraw = False
+147.5982 	EXP 	image_34: autoDraw = False
+147.5982 	EXP 	image_38: autoDraw = True
+147.5982 	EXP 	image_36: autoDraw = True
+147.5982 	EXP 	image_37: autoDraw = True
+150.1386 	INFO 	Keyboard events cleared
+150.1361 	EXP 	image_38: autoDraw = False
+150.1361 	EXP 	image_36: autoDraw = False
+150.1361 	EXP 	image_37: autoDraw = False
+150.1361 	EXP 	image_39: texRes = 512
+150.1361 	EXP 	image_39: ori = 0.0
+150.1361 	EXP 	image_39: image = 'img/incongruent_left_empty.png'
+150.1361 	EXP 	image_41: texRes = 512
+150.1361 	EXP 	image_41: ori = 0.0
+150.1361 	EXP 	image_41: image = 'img/incongruent_left.png'
+150.1361 	EXP 	image: texRes = 512
+150.1361 	EXP 	image: ori = 0.0
+150.1361 	EXP 	image: image = 'img/left_arrow.png'
+150.1361 	EXP 	image_2: texRes = 512
+150.1361 	EXP 	image_2: ori = 0.0
+150.1361 	EXP 	image_2: image = 'img/right_arrow.png'
+150.1361 	EXP 	image_39: autoDraw = True
+150.1361 	EXP 	image_41: autoDraw = True
+150.1361 	EXP 	image: autoDraw = True
+150.1361 	EXP 	image_2: autoDraw = True
+150.2481 	EXP 	image_39: autoDraw = False
+158.5787 	EXP 	New trial (rep=0, index=5): {'blockfile': 'PNblock6.xlsx'}
+158.5943 	DEBUG 	Read excel file with openpyxl: PNblock6.xlsx
+158.5952 	EXP 	Imported PNblock6.xlsx as conditions, 3 conditions, 6 params
+158.5958 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+158.5960 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+158.6191 	EXP 	image_39: autoDraw = False
+158.6191 	EXP 	image_41: autoDraw = False
+158.6191 	EXP 	image: autoDraw = False
+158.6191 	EXP 	image_2: autoDraw = False
+158.6191 	EXP 	image_31: autoDraw = True
+158.6191 	EXP 	image_32: autoDraw = True
+159.4008 	EXP 	image_31: autoDraw = False
+159.4008 	EXP 	image_32: autoDraw = False
+159.4008 	EXP 	image_35: autoDraw = True
+159.4008 	EXP 	image_33: autoDraw = True
+159.4008 	EXP 	image_34: autoDraw = True
+160.6115 	EXP 	image_35: autoDraw = False
+160.6115 	EXP 	image_33: autoDraw = False
+160.6115 	EXP 	image_34: autoDraw = False
+160.6115 	EXP 	image_35: autoDraw = False
+160.6115 	EXP 	image_33: autoDraw = False
+160.6115 	EXP 	image_34: autoDraw = False
+160.6115 	EXP 	image_38: autoDraw = True
+160.6115 	EXP 	image_36: autoDraw = True
+160.6115 	EXP 	image_37: autoDraw = True
+163.1396 	INFO 	Keyboard events cleared
+163.1367 	EXP 	image_38: autoDraw = False
+163.1367 	EXP 	image_36: autoDraw = False
+163.1367 	EXP 	image_37: autoDraw = False
+163.1367 	EXP 	image_39: texRes = 512
+163.1367 	EXP 	image_39: ori = 0.0
+163.1367 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+163.1367 	EXP 	image_41: texRes = 512
+163.1367 	EXP 	image_41: ori = 0.0
+163.1367 	EXP 	image_41: image = 'img/congruent_right.png'
+163.1367 	EXP 	image: texRes = 512
+163.1367 	EXP 	image: ori = 0.0
+163.1367 	EXP 	image: image = 'img/left_arrow.png'
+163.1367 	EXP 	image_2: texRes = 512
+163.1367 	EXP 	image_2: ori = 0.0
+163.1367 	EXP 	image_2: image = 'img/right_arrow.png'
+163.1367 	EXP 	image_39: autoDraw = True
+163.1367 	EXP 	image_41: autoDraw = True
+163.1367 	EXP 	image: autoDraw = True
+163.1367 	EXP 	image_2: autoDraw = True
+163.2523 	EXP 	image_39: autoDraw = False
+171.5927 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+171.6175 	EXP 	image_39: autoDraw = False
+171.6175 	EXP 	image_41: autoDraw = False
+171.6175 	EXP 	image: autoDraw = False
+171.6175 	EXP 	image_2: autoDraw = False
+171.6175 	EXP 	image_31: autoDraw = True
+171.6175 	EXP 	image_32: autoDraw = True
+172.4229 	EXP 	image_31: autoDraw = False
+172.4229 	EXP 	image_32: autoDraw = False
+172.4229 	EXP 	image_35: autoDraw = True
+172.4229 	EXP 	image_33: autoDraw = True
+172.4229 	EXP 	image_34: autoDraw = True
+173.6633 	EXP 	image_35: autoDraw = False
+173.6633 	EXP 	image_33: autoDraw = False
+173.6633 	EXP 	image_34: autoDraw = False
+173.6633 	EXP 	image_35: autoDraw = False
+173.6633 	EXP 	image_33: autoDraw = False
+173.6633 	EXP 	image_34: autoDraw = False
+173.6633 	EXP 	image_38: autoDraw = True
+173.6633 	EXP 	image_36: autoDraw = True
+173.6633 	EXP 	image_37: autoDraw = True
+176.2134 	INFO 	Keyboard events cleared
+176.2111 	EXP 	image_38: autoDraw = False
+176.2111 	EXP 	image_36: autoDraw = False
+176.2111 	EXP 	image_37: autoDraw = False
+176.2111 	EXP 	image_39: texRes = 512
+176.2111 	EXP 	image_39: ori = 0.0
+176.2111 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+176.2111 	EXP 	image_41: texRes = 512
+176.2111 	EXP 	image_41: ori = 0.0
+176.2111 	EXP 	image_41: image = 'img/congruent_right.png'
+176.2111 	EXP 	image: texRes = 512
+176.2111 	EXP 	image: ori = 0.0
+176.2111 	EXP 	image: image = 'img/left_arrow.png'
+176.2111 	EXP 	image_2: texRes = 512
+176.2111 	EXP 	image_2: ori = 0.0
+176.2111 	EXP 	image_2: image = 'img/right_arrow.png'
+176.2111 	EXP 	image_39: autoDraw = True
+176.2111 	EXP 	image_41: autoDraw = True
+176.2111 	EXP 	image: autoDraw = True
+176.2111 	EXP 	image_2: autoDraw = True
+176.3190 	EXP 	image_39: autoDraw = False
+184.6238 	EXP 	New trial (rep=0, index=2): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_left_empty.png', 'middle': 'img/incongruent_left.png', 'corrAns': 'z', 'condition': 'incongruent'}
+184.6501 	EXP 	image_39: autoDraw = False
+184.6501 	EXP 	image_41: autoDraw = False
+184.6501 	EXP 	image: autoDraw = False
+184.6501 	EXP 	image_2: autoDraw = False
+184.6501 	EXP 	image_31: autoDraw = True
+184.6501 	EXP 	image_32: autoDraw = True
+185.4604 	EXP 	image_31: autoDraw = False
+185.4604 	EXP 	image_32: autoDraw = False
+185.4604 	EXP 	image_35: autoDraw = True
+185.4604 	EXP 	image_33: autoDraw = True
+185.4604 	EXP 	image_34: autoDraw = True
+186.5536 	EXP 	image_35: autoDraw = False
+186.5536 	EXP 	image_33: autoDraw = False
+186.5536 	EXP 	image_34: autoDraw = False
+186.5536 	EXP 	image_35: autoDraw = False
+186.5536 	EXP 	image_33: autoDraw = False
+186.5536 	EXP 	image_34: autoDraw = False
+186.5536 	EXP 	image_38: autoDraw = True
+186.5536 	EXP 	image_36: autoDraw = True
+186.5536 	EXP 	image_37: autoDraw = True
+189.1414 	INFO 	Keyboard events cleared
+189.1381 	EXP 	image_38: autoDraw = False
+189.1381 	EXP 	image_36: autoDraw = False
+189.1381 	EXP 	image_37: autoDraw = False
+189.1381 	EXP 	image_39: texRes = 512
+189.1381 	EXP 	image_39: ori = 0.0
+189.1381 	EXP 	image_39: image = 'img/incongruent_left_empty.png'
+189.1381 	EXP 	image_41: texRes = 512
+189.1381 	EXP 	image_41: ori = 0.0
+189.1381 	EXP 	image_41: image = 'img/incongruent_left.png'
+189.1381 	EXP 	image: texRes = 512
+189.1381 	EXP 	image: ori = 0.0
+189.1381 	EXP 	image: image = 'img/left_arrow.png'
+189.1381 	EXP 	image_2: texRes = 512
+189.1381 	EXP 	image_2: ori = 0.0
+189.1381 	EXP 	image_2: image = 'img/right_arrow.png'
+189.1381 	EXP 	image_39: autoDraw = True
+189.1381 	EXP 	image_41: autoDraw = True
+189.1381 	EXP 	image: autoDraw = True
+189.1381 	EXP 	image_2: autoDraw = True
+189.2612 	EXP 	image_39: autoDraw = False
+197.5396 	EXP 	New trial (rep=0, index=6): {'blockfile': 'PNblock2.xlsx'}
+197.5512 	DEBUG 	Read excel file with openpyxl: PNblock2.xlsx
+197.5521 	EXP 	Imported PNblock2.xlsx as conditions, 3 conditions, 6 params
+197.5527 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+197.5529 	EXP 	New trial (rep=0, index=0): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}
+197.5821 	EXP 	image_39: autoDraw = False
+197.5821 	EXP 	image_41: autoDraw = False
+197.5821 	EXP 	image: autoDraw = False
+197.5821 	EXP 	image_2: autoDraw = False
+197.5821 	EXP 	image_31: autoDraw = True
+197.5821 	EXP 	image_32: autoDraw = True
+198.3673 	EXP 	image_31: autoDraw = False
+198.3673 	EXP 	image_32: autoDraw = False
+198.3673 	EXP 	image_35: autoDraw = True
+198.3673 	EXP 	image_33: autoDraw = True
+198.3673 	EXP 	image_34: autoDraw = True
+199.8854 	EXP 	image_35: autoDraw = False
+199.8854 	EXP 	image_33: autoDraw = False
+199.8854 	EXP 	image_34: autoDraw = False
+199.8854 	EXP 	image_35: autoDraw = False
+199.8854 	EXP 	image_33: autoDraw = False
+199.8854 	EXP 	image_34: autoDraw = False
+199.8854 	EXP 	image_38: autoDraw = True
+199.8854 	EXP 	image_36: autoDraw = True
+199.8854 	EXP 	image_37: autoDraw = True
+202.5296 	INFO 	Keyboard events cleared
+202.5286 	EXP 	image_38: autoDraw = False
+202.5286 	EXP 	image_36: autoDraw = False
+202.5286 	EXP 	image_37: autoDraw = False
+202.5286 	EXP 	image_39: texRes = 512
+202.5286 	EXP 	image_39: ori = 0.0
+202.5286 	EXP 	image_39: image = 'img/congruent_right_empty.png'
+202.5286 	EXP 	image_41: texRes = 512
+202.5286 	EXP 	image_41: ori = 0.0
+202.5286 	EXP 	image_41: image = 'img/congruent_right.png'
+202.5286 	EXP 	image: texRes = 512
+202.5286 	EXP 	image: ori = 0.0
+202.5286 	EXP 	image: image = 'img/left_arrow.png'
+202.5286 	EXP 	image_2: texRes = 512
+202.5286 	EXP 	image_2: ori = 0.0
+202.5286 	EXP 	image_2: image = 'img/right_arrow.png'
+202.5286 	EXP 	image_39: autoDraw = True
+202.5286 	EXP 	image_41: autoDraw = True
+202.5286 	EXP 	image: autoDraw = True
+202.5286 	EXP 	image_2: autoDraw = True
+202.6349 	EXP 	image_39: autoDraw = False
+210.8643 	EXP 	New trial (rep=0, index=1): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}
+210.8995 	EXP 	image_39: autoDraw = False
+210.8995 	EXP 	image_41: autoDraw = False
+210.8995 	EXP 	image: autoDraw = False
+210.8995 	EXP 	image_2: autoDraw = False
+210.8995 	EXP 	image_31: autoDraw = True
+210.8995 	EXP 	image_32: autoDraw = True
+211.6901 	EXP 	image_31: autoDraw = False
+211.6901 	EXP 	image_32: autoDraw = False
+211.6901 	EXP 	image_35: autoDraw = True
+211.6901 	EXP 	image_33: autoDraw = True
+211.6901 	EXP 	image_34: autoDraw = True
+213.0012 	EXP 	image_35: autoDraw = False
+213.0012 	EXP 	image_33: autoDraw = False
+213.0012 	EXP 	image_34: autoDraw = False
+213.0012 	EXP 	image_35: autoDraw = False
+213.0012 	EXP 	image_33: autoDraw = False
+213.0012 	EXP 	image_34: autoDraw = False
+213.0012 	EXP 	image_38: autoDraw = True
+213.0012 	EXP 	image_36: autoDraw = True
+213.0012 	EXP 	image_37: autoDraw = True
+215.5985 	INFO 	Keyboard events cleared
+215.5968 	EXP 	image_38: autoDraw = False
+215.5968 	EXP 	image_36: autoDraw = False
+215.5968 	EXP 	image_37: autoDraw = False
+215.5968 	EXP 	image_39: texRes = 512
+215.5968 	EXP 	image_39: ori = 0.0
+215.5968 	EXP 	image_39: image = 'img/congruent_left_empty.png'
+215.5968 	EXP 	image_41: texRes = 512
+215.5968 	EXP 	image_41: ori = 0.0
+215.5968 	EXP 	image_41: image = 'img/congruent_left.png'
+215.5968 	EXP 	image: texRes = 512
+215.5968 	EXP 	image: ori = 0.0
+215.5968 	EXP 	image: image = 'img/left_arrow.png'
+215.5968 	EXP 	image_2: texRes = 512
+215.5968 	EXP 	image_2: ori = 0.0
+215.5968 	EXP 	image_2: image = 'img/right_arrow.png'
+215.5968 	EXP 	image_39: autoDraw = True
+215.5968 	EXP 	image_41: autoDraw = True
+215.5968 	EXP 	image: autoDraw = True
+215.5968 	EXP 	image_2: autoDraw = True
+215.7074 	EXP 	image_39: autoDraw = False
+223.9815 	EXP 	New trial (rep=0, index=2): {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_right_empty.png', 'middle': 'img/incongruent_right.png', 'corrAns': 'm', 'condition': 'incongruent'}
+224.0093 	EXP 	image_39: autoDraw = False
+224.0093 	EXP 	image_41: autoDraw = False
+224.0093 	EXP 	image: autoDraw = False
+224.0093 	EXP 	image_2: autoDraw = False
+224.0093 	EXP 	image_31: autoDraw = True
+224.0093 	EXP 	image_32: autoDraw = True
+224.8083 	EXP 	image_31: autoDraw = False
+224.8083 	EXP 	image_32: autoDraw = False
+224.8083 	EXP 	image_35: autoDraw = True
+224.8083 	EXP 	image_33: autoDraw = True
+224.8083 	EXP 	image_34: autoDraw = True
+226.1036 	EXP 	image_35: autoDraw = False
+226.1036 	EXP 	image_33: autoDraw = False
+226.1036 	EXP 	image_34: autoDraw = False
+226.1036 	EXP 	image_35: autoDraw = False
+226.1036 	EXP 	image_33: autoDraw = False
+226.1036 	EXP 	image_34: autoDraw = False
+226.1036 	EXP 	image_38: autoDraw = True
+226.1036 	EXP 	image_36: autoDraw = True
+226.1036 	EXP 	image_37: autoDraw = True
+228.7189 	INFO 	Keyboard events cleared
+228.7161 	EXP 	image_38: autoDraw = False
+228.7161 	EXP 	image_36: autoDraw = False
+228.7161 	EXP 	image_37: autoDraw = False
+228.7161 	EXP 	image_39: texRes = 512
+228.7161 	EXP 	image_39: ori = 0.0
+228.7161 	EXP 	image_39: image = 'img/incongruent_right_empty.png'
+228.7161 	EXP 	image_41: texRes = 512
+228.7161 	EXP 	image_41: ori = 0.0
+228.7161 	EXP 	image_41: image = 'img/incongruent_right.png'
+228.7161 	EXP 	image: texRes = 512
+228.7161 	EXP 	image: ori = 0.0
+228.7161 	EXP 	image: image = 'img/left_arrow.png'
+228.7161 	EXP 	image_2: texRes = 512
+228.7161 	EXP 	image_2: ori = 0.0
+228.7161 	EXP 	image_2: image = 'img/right_arrow.png'
+228.7161 	EXP 	image_39: autoDraw = True
+228.7161 	EXP 	image_41: autoDraw = True
+228.7161 	EXP 	image: autoDraw = True
+228.7161 	EXP 	image_2: autoDraw = True
+228.8170 	EXP 	image_39: autoDraw = False
+237.1098 	EXP 	Sound sound_12 started
+237.1077 	EXP 	image_39: autoDraw = False
+237.1077 	EXP 	image_41: autoDraw = False
+237.1077 	EXP 	image: autoDraw = False
+237.1077 	EXP 	image_2: autoDraw = False
+237.1077 	EXP 	text_3: autoDraw = True
+240.5885 	EXP 	Sound sound_12 stopped
+240.5886 	EXP 	Sound sound_12 paused
+240.5974 	EXP 	text_3: autoDraw = False
+240.5980 	EXP 	Flanker: status = STOPPED
+240.6713 	INFO 	saved data to '/Users/chen-nanwu/Documents/认知实验工具箱/认知实验工具箱【发布后修改】/CEST_Github_0104_v2/【有改动】1_1_1_Flanker/data/11_1_1_1_Flanker_11_2024-05-17_17h55.17.787.csv'
+240.6828 	INFO 	saved data to /Users/chen-nanwu/Documents/认知实验工具箱/认知实验工具箱【发布后修改】/CEST_Github_0104_v2/【有改动】1_1_1_Flanker/data/11_1_1_1_Flanker_11_2024-05-17_17h55.17.787.psydat
+241.2749 	EXP 	window1: mouseVisible = True
+242.0628 	DEBUG 	Saving data for Flanker ExperimentHandler

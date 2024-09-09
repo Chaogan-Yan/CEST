@@ -86,7 +86,7 @@ psychoJS.start({
     {'name': 'audio/颜色.wav', 'path': 'audio/颜色.wav'},
     {'name': 'audio/牲口.wav', 'path': 'audio/牲口.wav'},
     {'name': 'audio/instr.wav', 'path': 'audio/instr.wav'},
-    {'name': 'audio/instr_4.wav', 'path': 'audio/instr_4.wav'},
+    {'name': 'audio/instr_4_new.wav', 'path': 'audio/instr_4_new.wav'},
     {'name': 'player_icon.jpg', 'path': 'player_icon.jpg'},
     {'name': 'mic_icon.jpg', 'path': 'mic_icon.jpg'},
   ]
@@ -175,7 +175,7 @@ async function experimentInit() {
   instr_4_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'instr_4_text',
-    text: '请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样后作答。\n\n\n按空格键开始。',
+    text: '请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样消失后再进行作答。\n\n\n按空格键开始。',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -188,7 +188,7 @@ async function experimentInit() {
   
   instr_4_sound = new sound.Sound({
       win: psychoJS.window,
-      value: 'audio/instr_4.wav',
+      value: 'audio/instr_4_new.wav',
       secs: (- 1),
       });
   instr_4_sound.setVolume(1.0);
@@ -236,7 +236,7 @@ async function experimentInit() {
     name : 'image_4', units : undefined, 
     image : 'mic_icon.jpg', mask : undefined,
     anchor : 'center',
-    ori : 0.0, pos : [0, 0.1], size : [0.1, 0.1],
+    ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
     texRes : 128.0, interpolate : true, depth : -5.0 
@@ -777,7 +777,7 @@ function answerRoutineEachFrame() {
     }
     
     // *image_4* updates
-    if (t >= 1.5 && image_4.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 2.5 && image_4.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       image_4.tStart = t;  // (not accounting for frame time here)
       image_4.frameNStart = frameN;  // exact frame index
@@ -785,7 +785,7 @@ function answerRoutineEachFrame() {
       image_4.setAutoDraw(true);
     }
     
-    frameRemains = 1.5 + 5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 2.5 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (image_4.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       image_4.setAutoDraw(false);
     }
