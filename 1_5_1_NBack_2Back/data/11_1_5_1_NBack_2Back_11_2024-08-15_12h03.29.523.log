@@ -1,0 +1,142 @@
+62.9329 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd10a7f5400>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd10a7f53a0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1., -1., -1.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fd10a7f5220>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fd109ee4a30>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+62.9331 	EXP 	window1: mouseVisible = True
+62.9331 	EXP 	window1: backgroundImage = ''
+62.9332 	EXP 	window1: backgroundFit = 'none'
+62.9360 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+62.9360 	EXP 	window1: recordFrameIntervals = False
+63.0623 	EXP 	window1: recordFrameIntervals = True
+63.1987 	EXP 	Screen (0) actual frame rate measured at 81.49Hz
+63.1990 	EXP 	window1: recordFrameIntervals = False
+63.2006 	EXP 	window1: mouseVisible = False
+67.7272 	EXP 	NBack_2Back: status = STARTED
+67.7280 	EXP 	window1: mouseVisible = True
+67.8644 	EXP 	Created welpage = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+68.5920 	EXP 	Sound instr_sound set volume 1.000
+68.5924 	EXP 	window1: mouseVisible = True
+68.6117 	EXP 	Created welpage_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage_2', opacity=1.0, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+68.6119 	EXP 	window1: mouseVisible = True
+68.6160 	EXP 	Created welpage_2_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage_2_2', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.35]), rgb=UNKNOWN, text='请按 z 键继续。', units='height', win=Window(...), wrapWidth=1)
+68.6162 	EXP 	window1: mouseVisible = True
+68.7593 	EXP 	Created same_e_g = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='sm_example.jpg', interpolate=True, mask=None, maskParams=None, name='same_e_g', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+68.7678 	EXP 	Sound instr_2_sound set volume 1.000
+68.7680 	EXP 	window1: mouseVisible = True
+68.7737 	EXP 	Created welpage_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage_3', opacity=1.0, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text='在下面这种情况下，\n\n当前数字和往前数第2个数字是不同的，\n所以应该按 m 键。', units='height', win=Window(...), wrapWidth=1)
+68.7739 	EXP 	window1: mouseVisible = True
+68.7776 	EXP 	Created welpage_3_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage_3_2', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.35]), rgb=UNKNOWN, text='请按 m 键继续。', units='height', win=Window(...), wrapWidth=1)
+68.7778 	EXP 	window1: mouseVisible = True
+68.9027 	EXP 	Created different_e_g = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, image='diff_example.jpg', interpolate=True, mask=None, maskParams=None, name='different_e_g', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128.0, units='height', win=Window(...))
+68.9124 	EXP 	Sound instr_3_sound set volume 1.000
+68.9126 	EXP 	window1: mouseVisible = True
+68.9509 	EXP 	Created welpage_3_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage_3_1', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+68.9648 	EXP 	Sound instr_3_1_sound set volume 1.000
+68.9650 	EXP 	window1: mouseVisible = True
+68.9791 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='请判断：这个数字与往前数第2个数字 相同 还是 不同？\n\n5\n\n', units='height', win=Window(...), wrapWidth=1)
+68.9793 	EXP 	window1: mouseVisible = True
+68.9931 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='正确答案是不作反应，因为往前数两个没有数字。\n\n请按空格键继续。', units='height', win=Window(...), wrapWidth=1)
+68.9933 	EXP 	window1: mouseVisible = True
+68.9996 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='请判断：这个数字与往前数第2个数字 相同 还是 不同？\n\n3\n\n', units='height', win=Window(...), wrapWidth=1)
+68.9998 	EXP 	window1: mouseVisible = True
+69.0051 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='正确答案同样是不作反应，因为往前数两个没有数字。\n\n请按空格键继续。', units='height', win=Window(...), wrapWidth=1)
+69.0053 	EXP 	window1: mouseVisible = True
+69.0140 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_5', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+69.0142 	EXP 	window1: mouseVisible = True
+69.0241 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+69.0243 	EXP 	window1: mouseVisible = True
+69.0303 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 0.3569,  1.    , -0.6314]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='7', units='height', win=Window(...), wrapWidth=1)
+69.0304 	EXP 	window1: mouseVisible = True
+69.0349 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 0.3569,  1.    , -0.6314]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.02, italic=False, languageStyle='LTR', name='text_8', opacity=1.0, ori=0.0, pos=array([-0.2,  0. ]), rgb=UNKNOWN, text='5', units='height', win=Window(...), wrapWidth=1)
+69.0351 	EXP 	window1: mouseVisible = True
+69.0950 	EXP 	Created welpage_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage_4', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+69.1144 	EXP 	Sound instr_4_sound set volume 1.000
+69.1146 	EXP 	window1: mouseVisible = True
+69.1162 	EXP 	Created prac_rest_instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='prac_rest_instr', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.1311 	EXP 	Sound prac_rest_sound set volume 1.000
+69.1313 	EXP 	window1: mouseVisible = True
+69.1359 	EXP 	Created prac_fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prac_fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+69.1361 	EXP 	window1: mouseVisible = True
+69.1379 	EXP 	Created prac_stimu = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prac_stimu', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.1381 	EXP 	window1: mouseVisible = True
+69.1400 	EXP 	Created prac_blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prac_blank', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.1402 	EXP 	window1: mouseVisible = True
+69.1413 	EXP 	Created prac_feedb_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='prac_feedb_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.1424 	EXP 	Sound prac_feedb_sound set volume 1.000
+69.1426 	EXP 	window1: mouseVisible = True
+69.1441 	EXP 	Created prac_block_feedb_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='prac_block_feedb_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.1443 	EXP 	window1: mouseVisible = True
+69.2016 	EXP 	Created welpage_exp = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='welpage_exp', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+69.2158 	EXP 	Sound instr_sound_5 set volume 1.000
+69.2160 	EXP 	window1: mouseVisible = True
+69.2196 	EXP 	Created fix = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='fix', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='+', units='height', win=Window(...), wrapWidth=1)
+69.2197 	EXP 	window1: mouseVisible = True
+69.2216 	EXP 	Created stimu = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='stimu', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.2218 	EXP 	window1: mouseVisible = True
+69.2237 	EXP 	Created blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.2239 	EXP 	window1: mouseVisible = True
+69.2253 	EXP 	Created block_feedb_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='block_feedb_text', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.2255 	EXP 	window1: mouseVisible = True
+69.2268 	EXP 	Created text_rest = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='text_rest', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+69.2270 	EXP 	window1: mouseVisible = True
+69.2300 	EXP 	Created contn = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='contn', opacity=1.0, ori=0.0, pos=array([ 0. , -0.3]), rgb=UNKNOWN, text='继续', units='height', win=Window(...), wrapWidth=1)
+69.2302 	EXP 	window1: mouseVisible = True
+69.2303 	EXP 	window1: mouseVisible = True
+69.2407 	EXP 	Created endpage = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Heiti SC', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='endpage', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='实验结束。\n\n感谢您的参与！', units='height', win=Window(...), wrapWidth=1)
+0.0235 	EXP 	Sound instr_sound started
+0.0432 	EXP 	welpage: autoDraw = True
+6.3478 	EXP 	Sound instr_sound stopped
+6.3478 	EXP 	Sound instr_sound paused
+6.3554 	EXP 	Sound instr_2_sound started
+6.3606 	DATA 	Keypress: space
+6.3712 	EXP 	welpage: autoDraw = False
+6.3712 	EXP 	welpage_2: autoDraw = True
+6.3712 	EXP 	welpage_2_2: autoDraw = True
+6.3712 	EXP 	same_e_g: autoDraw = True
+7.8116 	DATA 	Keypress: z
+7.8341 	EXP 	Sound instr_2_sound stopped
+7.8341 	EXP 	Sound instr_2_sound paused
+7.8463 	EXP 	Sound instr_3_sound started
+7.8500 	EXP 	welpage_2: autoDraw = False
+7.8500 	EXP 	welpage_2_2: autoDraw = False
+7.8500 	EXP 	same_e_g: autoDraw = False
+7.8500 	EXP 	welpage_3: autoDraw = True
+7.8500 	EXP 	welpage_3_2: autoDraw = True
+7.8500 	EXP 	different_e_g: autoDraw = True
+8.5159 	EXP 	Sound instr_3_sound stopped
+8.5160 	EXP 	Sound instr_3_sound paused
+8.5304 	EXP 	Sound instr_3_1_sound started
+8.5242 	DATA 	Keypress: m
+8.5338 	EXP 	welpage_3: autoDraw = False
+8.5338 	EXP 	welpage_3_2: autoDraw = False
+8.5338 	EXP 	different_e_g: autoDraw = False
+8.5338 	EXP 	welpage_3_1: autoDraw = True
+9.7805 	EXP 	Sound instr_3_1_sound stopped
+9.7806 	EXP 	Sound instr_3_1_sound paused
+9.7851 	DATA 	Keypress: space
+9.7928 	EXP 	welpage_3_1: autoDraw = False
+9.7928 	EXP 	text: autoDraw = True
+10.5528 	EXP 	text: autoDraw = False
+10.5528 	EXP 	text_2: autoDraw = True
+27.8237 	DATA 	Keypress: space
+27.8356 	EXP 	text_2: autoDraw = False
+27.8356 	EXP 	text_3: autoDraw = True
+28.6015 	EXP 	text_3: autoDraw = False
+28.6015 	EXP 	text_4: autoDraw = True
+34.6425 	DATA 	Keypress: space
+34.6508 	EXP 	text_4: autoDraw = False
+34.6508 	EXP 	text_5: autoDraw = True
+41.2296 	DATA 	Keypress: z
+41.2409 	EXP 	text_5: autoDraw = False
+41.2409 	EXP 	text_6: autoDraw = True
+41.2409 	EXP 	text_7: autoDraw = True
+41.2409 	EXP 	text_8: autoDraw = True
+42.2418 	EXP 	text_8: autoDraw = False
+55.2758 	EXP 	Sound instr_4_sound started
+55.2672 	DATA 	Keypress: space
+55.2768 	EXP 	text_6: autoDraw = False
+55.2768 	EXP 	text_7: autoDraw = False
+55.2768 	EXP 	text_8: autoDraw = False
+55.2768 	EXP 	welpage_4: autoDraw = True
+57.7232 	DATA 	Keypress: escape
+57.8177 	EXP 	NBack_2Back: status = STOPPED
+57.8266 	EXP 	welpage_4: autoDraw = False
+57.8269 	EXP 	NBack_2Back: status = STOPPED
+58.4297 	EXP 	window1: mouseVisible = True

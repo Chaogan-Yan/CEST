@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.2),
-    on Tue Dec 12 09:53:28 2023
+    on Thu Jul  4 14:42:44 2024
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -41,6 +41,7 @@ psychopyVersion = '2023.2.2'
 expName = 'PALT'  # from the Builder filename that created this script
 expInfo = {
     '编号': '',
+    '主试ID': '',
     'date': data.getDateStr(),  # add a simple timestamp
     'expName': expName,
     'psychopyVersion': psychopyVersion,
@@ -96,7 +97,7 @@ def setupData(expInfo, dataDir=None):
     # data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
     if dataDir is None:
         dataDir = _thisDir
-    filename = u'data/1_6_1_%s_%s_%s' % (expName, expInfo['编号'], expInfo['date'])
+    filename = u'data/%s_1_6_1_%s_%s_%s' % (expInfo['主试ID'], expName, expInfo['编号'], expInfo['date'])
     # make sure filename is relative to dataDir
     if os.path.isabs(filename):
         dataDir = os.path.commonprefix([dataDir, filename])
@@ -106,7 +107,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/chen-nanwu/Desktop/CEST_1128/1_6_1_PALT/PALT_lastrun.py',
+        originPath='/Users/chen-nanwu/Documents/认知实验工具箱/认知实验工具箱【发布后修改】/CEST_Github_0104_v2/1_6_1_PALT/PALT_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -366,7 +367,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         ori=0.0, pos=(0, 0), size=(0.1, 0.1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-1.0)
+        texRes=128.0, interpolate=True, depth=-2.0)
     
     # --- Initialize components for Routine "S2" ---
     sound_2 = sound.Sound('A', secs=1.5, stereo=True, hamming=True,
@@ -379,7 +380,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         ori=0.0, pos=(0, 0), size=(0.1, 0.1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-1.0)
+        texRes=128.0, interpolate=True, depth=-2.0)
     
     # --- Initialize components for Routine "interval" ---
     text_2 = visual.TextStim(win=win, name='text_2',
@@ -392,7 +393,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "instr_4" ---
     instr_4_text = visual.TextStim(win=win, name='instr_4_text',
-        text='好，下面我读前面一个词，\n\n请您回答和它一对儿的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样后作答。\n\n\n按空格键继续。',
+        text='好，下面我读前面一个词，\n\n请您回答和它一对儿的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样消失后再进行作答。\n\n\n按空格键继续。',
         font='Heiti SC',
         pos=(0, 0), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -408,7 +409,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         sampleRateHz=48000, maxRecordingSize=24000.0
     )
     
-    # --- Initialize components for Routine "answer1" ---
+    # --- Initialize components for Routine "answer" ---
     sound_3 = sound.Sound('A', secs=1.5, stereo=True, hamming=True,
         name='sound_3')
     sound_3.setVolume(1.0)
@@ -440,14 +441,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "recall" ---
     recall_text = visual.TextStim(win=win, name='recall_text',
-        text='回忆结束，现在，请想一想，您刚才是用什么方法记忆这些词对的？\n\n您可以具体回忆一下刚才记忆成功的词对，想想您是如何记住它们的。\n\n',
+        text='回忆结束，现在，请想一想，您刚才是用什么方法记忆这些词对的？\n\n您可以具体回忆一下刚才记忆成功的词对，想想您是如何记住它们的。\n\n请直接输入文字，并点击蓝色方格提交。',
         font='Heiti SC',
         pos=(0, 0.3), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     textbox = visual.TextBox2(
-         win, text=None, placeholder='请大致描述您记忆词对的方式...', font='STSong',
+         win, text=None, placeholder='请大致描述您记忆词对的方式...', font='Heiti SC',
          pos=(0, 0),     letterHeight=0.05,
          size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
@@ -463,9 +464,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
          depth=-1, autoLog=True,
     )
     button = visual.ButtonStim(win, 
-        text='提交', font='STSong',
+        text='提交', font='Heiti SC',
         pos=(0, -0.3),units='height',
-        letterHeight=0.03,
+        letterHeight=0.035,
         size=(0.1, 0.06), borderWidth=0.0,
         fillColor=[-1.0000, -1.0000, 0.0902], borderColor=None,
         color='white', colorSpace='rgb',
@@ -930,19 +931,19 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineTimer.addTime(-4.000000)
         
         # set up handler to look after randomisation of conditions etc
-        read1_trials = data.TrialHandler(nReps=1.0, method='random', 
+        read_trials = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=data.importConditions('read_sound.xlsx'),
-            seed=None, name='read1_trials')
-        thisExp.addLoop(read1_trials)  # add the loop to the experiment
-        thisRead1_trial = read1_trials.trialList[0]  # so we can initialise stimuli with some values
-        # abbreviate parameter names if possible (e.g. rgb = thisRead1_trial.rgb)
-        if thisRead1_trial != None:
-            for paramName in thisRead1_trial:
-                globals()[paramName] = thisRead1_trial[paramName]
+            seed=None, name='read_trials')
+        thisExp.addLoop(read_trials)  # add the loop to the experiment
+        thisRead_trial = read_trials.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisRead_trial.rgb)
+        if thisRead_trial != None:
+            for paramName in thisRead_trial:
+                globals()[paramName] = thisRead_trial[paramName]
         
-        for thisRead1_trial in read1_trials:
-            currentLoop = read1_trials
+        for thisRead_trial in read_trials:
+            currentLoop = read_trials
             thisExp.timestampOnFlip(win, 'thisRow.t')
             # pause experiment here if requested
             if thisExp.status == PAUSED:
@@ -953,10 +954,10 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     timers=[routineTimer], 
                     playbackComponents=[]
             )
-            # abbreviate parameter names if possible (e.g. rgb = thisRead1_trial.rgb)
-            if thisRead1_trial != None:
-                for paramName in thisRead1_trial:
-                    globals()[paramName] = thisRead1_trial[paramName]
+            # abbreviate parameter names if possible (e.g. rgb = thisRead_trial.rgb)
+            if thisRead_trial != None:
+                for paramName in thisRead_trial:
+                    globals()[paramName] = thisRead_trial[paramName]
             
             # --- Prepare to start Routine "S1" ---
             continueRoutine = True
@@ -990,7 +991,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update/draw components on each frame
                 
                 # if sound_1 is starting this frame...
-                if sound_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                if sound_1.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                     # keep track of start time/frame for later
                     sound_1.frameNStart = frameN  # exact frame index
                     sound_1.tStart = t  # local t and not account for scr refresh
@@ -1117,7 +1118,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update/draw components on each frame
                 
                 # if sound_2 is starting this frame...
-                if sound_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                if sound_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                     # keep track of start time/frame for later
                     sound_2.frameNStart = frameN  # exact frame index
                     sound_2.tStart = t  # local t and not account for scr refresh
@@ -1309,7 +1310,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 1.0 repeats of 'read1_trials'
+        # completed 1.0 repeats of 'read_trials'
         
         
         # --- Prepare to start Routine "instr_4" ---
@@ -1449,19 +1450,19 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         routineTimer.reset()
         
         # set up handler to look after randomisation of conditions etc
-        answer1_trials = data.TrialHandler(nReps=1.0, method='random', 
+        answer_trials = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=data.importConditions('answer_sound.xlsx'),
-            seed=None, name='answer1_trials')
-        thisExp.addLoop(answer1_trials)  # add the loop to the experiment
-        thisAnswer1_trial = answer1_trials.trialList[0]  # so we can initialise stimuli with some values
-        # abbreviate parameter names if possible (e.g. rgb = thisAnswer1_trial.rgb)
-        if thisAnswer1_trial != None:
-            for paramName in thisAnswer1_trial:
-                globals()[paramName] = thisAnswer1_trial[paramName]
+            seed=None, name='answer_trials')
+        thisExp.addLoop(answer_trials)  # add the loop to the experiment
+        thisAnswer_trial = answer_trials.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisAnswer_trial.rgb)
+        if thisAnswer_trial != None:
+            for paramName in thisAnswer_trial:
+                globals()[paramName] = thisAnswer_trial[paramName]
         
-        for thisAnswer1_trial in answer1_trials:
-            currentLoop = answer1_trials
+        for thisAnswer_trial in answer_trials:
+            currentLoop = answer_trials
             thisExp.timestampOnFlip(win, 'thisRow.t')
             # pause experiment here if requested
             if thisExp.status == PAUSED:
@@ -1472,21 +1473,21 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     timers=[routineTimer], 
                     playbackComponents=[]
             )
-            # abbreviate parameter names if possible (e.g. rgb = thisAnswer1_trial.rgb)
-            if thisAnswer1_trial != None:
-                for paramName in thisAnswer1_trial:
-                    globals()[paramName] = thisAnswer1_trial[paramName]
+            # abbreviate parameter names if possible (e.g. rgb = thisAnswer_trial.rgb)
+            if thisAnswer_trial != None:
+                for paramName in thisAnswer_trial:
+                    globals()[paramName] = thisAnswer_trial[paramName]
             
-            # --- Prepare to start Routine "answer1" ---
+            # --- Prepare to start Routine "answer" ---
             continueRoutine = True
             # update component parameters for each repeat
-            thisExp.addData('answer1.started', globalClock.getTime())
+            thisExp.addData('answer.started', globalClock.getTime())
             sound_3.setSound(prompt, secs=1.5, hamming=True)
             sound_3.setVolume(1.0, log=False)
             sound_3.seek(0)
             # keep track of which components have finished
-            answer1Components = [sound_3, image_3, text, mic, image_4]
-            for thisComponent in answer1Components:
+            answerComponents = [sound_3, image_3, text, mic, image_4]
+            for thisComponent in answerComponents:
                 thisComponent.tStart = None
                 thisComponent.tStop = None
                 thisComponent.tStartRefresh = None
@@ -1498,7 +1499,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             _timeToFirstFrame = win.getFutureFlipTime(clock="now")
             frameN = -1
             
-            # --- Run Routine "answer1" ---
+            # --- Run Routine "answer" ---
             routineForceEnded = not continueRoutine
             while continueRoutine and routineTimer.getTime() < 6.5:
                 # get current time
@@ -1509,7 +1510,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update/draw components on each frame
                 
                 # if sound_3 is starting this frame...
-                if sound_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                if sound_3.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
                     # keep track of start time/frame for later
                     sound_3.frameNStart = frameN  # exact frame index
                     sound_3.tStart = t  # local t and not account for scr refresh
@@ -1642,7 +1643,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # *image_4* updates
                 
                 # if image_4 is starting this frame...
-                if image_4.status == NOT_STARTED and tThisFlip >= 1.5-frameTolerance:
+                if image_4.status == NOT_STARTED and tThisFlip >= 2.5-frameTolerance:
                     # keep track of start time/frame for later
                     image_4.frameNStart = frameN  # exact frame index
                     image_4.tStart = t  # local t and not account for scr refresh
@@ -1662,7 +1663,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if image_4 is stopping this frame...
                 if image_4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > image_4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > image_4.tStartRefresh + 4-frameTolerance:
                         # keep track of stop time/frame for later
                         image_4.tStop = t  # not accounting for scr refresh
                         image_4.frameNStop = frameN  # exact frame index
@@ -1684,7 +1685,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     routineForceEnded = True
                     break
                 continueRoutine = False  # will revert to True if at least one component still running
-                for thisComponent in answer1Components:
+                for thisComponent in answerComponents:
                     if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                         continueRoutine = True
                         break  # at least one component has not yet finished
@@ -1693,11 +1694,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
             
-            # --- Ending Routine "answer1" ---
-            for thisComponent in answer1Components:
+            # --- Ending Routine "answer" ---
+            for thisComponent in answerComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            thisExp.addData('answer1.stopped', globalClock.getTime())
+            thisExp.addData('answer.stopped', globalClock.getTime())
             sound_3.pause()  # ensure sound has stopped at end of Routine
             # tell mic to keep hold of current recording in mic.clips and transcript (if applicable) in mic.scripts
             # this will also update mic.lastClip and mic.lastScript
@@ -1707,7 +1708,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 tag=tag, transcribe='None',
                 config=None
             )
-            answer1_trials.addData('mic.clip', os.path.join(micRecFolder, 'recording_mic_%s.wav' % tag))
+            answer_trials.addData('mic.clip', os.path.join(micRecFolder, 'recording_mic_%s.wav' % tag))
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if routineForceEnded:
                 routineTimer.reset()
@@ -1718,7 +1719,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 1.0 repeats of 'answer1_trials'
+        # completed 1.0 repeats of 'answer_trials'
         
         thisExp.nextEntry()
         

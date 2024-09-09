@@ -1,0 +1,5 @@
+﻿instr.started,instr.stopped,instr_key_resp.keys,instr_key_resp.rt,instr_key_resp.duration,编号,主试ID,date,expName,psychopyVersion,OS,frameRate,instr_2.started,instr_2.stopped,instr_key_resp_2.keys,instr_key_resp_2.rt,instr_key_resp_2.duration,instr_3.started,instr_3.stopped,instr_key_resp_3.keys,instr_key_resp_3.rt,instr_key_resp_3.duration,instr_3_1.started,instr_3_1.stopped,instr_key_resp_3_1.keys,instr_key_resp_3_1.rt,instr_key_resp_3_1.duration
+0,11.359,space,11.336,,11,11,2024-08-17_11h24.37.006,NBack_2Back,2023.2.2,MacIntel,66.66666667,,,,,,,,,,,,,,,
+,,,,,11,11,2024-08-17_11h24.37.006,NBack_2Back,2023.2.2,MacIntel,66.66666667,11.36,12.226,z,0.822,,,,,,,,,,,
+,,,,,11,11,2024-08-17_11h24.37.006,NBack_2Back,2023.2.2,MacIntel,66.66666667,,,,,,12.226,12.975,m,0.706,,,,,,
+,,,,,11,11,2024-08-17_11h24.37.006,NBack_2Back,2023.2.2,MacIntel,66.66666667,,,,,,,,,,,12.975,15.525,space,2.526,

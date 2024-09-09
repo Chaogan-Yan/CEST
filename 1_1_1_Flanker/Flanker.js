@@ -2,7 +2,7 @@
  * Flanker *
  ****************/
 
-import { core, data, sound, util, visual, hardware } from '../lib/psychojs-2023.2.2.js';
+import { core, data, sound, util, visual, hardware } from './lib/psychojs-2023.2.2.js';
 const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
@@ -187,13 +187,10 @@ psychoJS.start({
     {'name': 'img/incongruent_left_flash.png', 'path': 'img/incongruent_left_flash.png'},
     {'name': 'audio/F9.wav', 'path': 'audio/F9.wav'},
     {'name': 'audio/F10.wav', 'path': 'audio/F10.wav'},
-    {'name': 'img/star_text.png', 'path': 'img/star_text.png'},
-    {'name': 'audio/F11.wav', 'path': 'audio/F11.wav'},
-    {'name': 'img/star_middle.png', 'path': 'img/star_middle.png'},
+    {'name': 'audio/F11_new.wav', 'path': 'audio/F11_new.wav'},
     {'name': 'img/middle.jpeg', 'path': 'img/middle.jpeg'},
     {'name': 'default.png', 'path': 'https://pavlovia.org/assets/default/default.png'},
-    {'name': 'img/star_text_formal.png', 'path': 'img/star_text_formal.png'},
-    {'name': 'audio/F12.wav', 'path': 'audio/F12.wav'},
+    {'name': 'audio/F12_new.wav', 'path': 'audio/F12_new.wav'},
     {'name': 'audio/F-f.wav', 'path': 'audio/F-f.wav'},
   ]
 });
@@ -293,7 +290,7 @@ var sound_7;
 var image_30;
 var key_resp_11;
 var Instructions_3Clock;
-var image_49;
+var text_2;
 var key_resp_16;
 var sound_24;
 var inter_trial_intervalClock;
@@ -301,7 +298,7 @@ var image_31;
 var image_32;
 var ISIcodeClock;
 var fixationClock;
-var image_35;
+var fix_1;
 var image_33;
 var image_34;
 var CueClock;
@@ -328,9 +325,10 @@ var text_24;
 var key_resp_18;
 var sound_10;
 var Main_Exp_InstructionsClock;
-var image_40;
+var text_10;
 var key_resp_9;
 var sound_13;
+var ISIcode_testClock;
 var finishClock;
 var text_3;
 var sound_12;
@@ -775,21 +773,23 @@ async function experimentInit() {
   
   // Initialize components for Routine "Instructions_3"
   Instructions_3Clock = new util.Clock();
-  image_49 = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'image_49', units : undefined, 
-    image : 'img/star_text.png', mask : undefined,
-    anchor : 'center',
-    ori : 0, pos : [0, 0], size : [0.9, 0.6],
-    color : new util.Color([1, 1, 1]), opacity : 1,
-    flipHoriz : false, flipVert : false,
-    texRes : 512, interpolate : true, depth : 0.0 
+  text_2 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_2',
+    text: '现在请试一试。\n\n请保持注视屏幕上的“+”注视点。\n试着在保持正确的同时尽可能快地回答。\n\n如果您回答错误，继续回答下一题即可。\n记得，回答完之后把手指放回Z键和M键上。\n\n\n按空格键继续。\n\n',
+    font: 'heiti sc',
+    units: undefined, 
+    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   key_resp_16 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   sound_24 = new sound.Sound({
       win: psychoJS.window,
-      value: 'audio/F11.wav',
+      value: 'audio/F11_new.wav',
       secs: (- 1),
       });
   sound_24.setVolume(1);
@@ -819,16 +819,18 @@ async function experimentInit() {
   ISIcodeClock = new util.Clock();
   // Initialize components for Routine "fixation"
   fixationClock = new util.Clock();
-  image_35 = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'image_35', units : undefined, 
-    image : 'img/star_middle.png', mask : undefined,
-    anchor : 'center',
-    ori : 0, pos : [0, 0.2], size : [0.5, 0.5],
-    color : new util.Color([1, 1, 1]), opacity : 1,
-    flipHoriz : false, flipVert : false,
-    texRes : 512, interpolate : true, depth : 0.0 
+  fix_1 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'fix_1',
+    text: '+',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.2], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   image_33 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image_33', units : undefined, 
@@ -996,24 +998,28 @@ async function experimentInit() {
   sound_10.setVolume(1.0);
   // Initialize components for Routine "Main_Exp_Instructions"
   Main_Exp_InstructionsClock = new util.Clock();
-  image_40 = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'image_40', units : undefined, 
-    image : 'img/star_text_formal.png', mask : undefined,
-    anchor : 'center',
-    ori : 0, pos : [0, 0], size : [0.9, 0.6],
-    color : new util.Color([1, 1, 1]), opacity : 1,
-    flipHoriz : false, flipVert : false,
-    texRes : 512, interpolate : true, depth : 0.0 
+  text_10 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_10',
+    text: '准备好，让我们开始正式实验。\n\n请保持注视屏幕上的“+”注视点。\n试着在保持正确的同时尽可能快地回答。\n\n如果您回答错误，继续回答下一题即可。\n记得，回答完之后把手指放回Z键和M键上。\n\n\n按空格键继续。\n\n',
+    font: 'heiti sc',
+    units: undefined, 
+    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   key_resp_9 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   sound_13 = new sound.Sound({
       win: psychoJS.window,
-      value: 'audio/F12.wav',
+      value: 'audio/F12_new.wav',
       secs: (- 1),
       });
   sound_13.setVolume(1);
+  // Initialize components for Routine "ISIcode_test"
+  ISIcode_testClock = new util.Clock();
   // Initialize components for Routine "finish"
   finishClock = new util.Clock();
   text_3 = new visual.TextStim({
@@ -1311,9 +1317,9 @@ function blocknLoopBegin(blocknLoopScheduler, snapshot) {
       blocknLoopScheduler.add(inter_trial_intervalRoutineBegin(snapshot));
       blocknLoopScheduler.add(inter_trial_intervalRoutineEachFrame());
       blocknLoopScheduler.add(inter_trial_intervalRoutineEnd(snapshot));
-      blocknLoopScheduler.add(ISIcodeRoutineBegin(snapshot));
-      blocknLoopScheduler.add(ISIcodeRoutineEachFrame());
-      blocknLoopScheduler.add(ISIcodeRoutineEnd(snapshot));
+      blocknLoopScheduler.add(ISIcode_testRoutineBegin(snapshot));
+      blocknLoopScheduler.add(ISIcode_testRoutineEachFrame());
+      blocknLoopScheduler.add(ISIcode_testRoutineEnd(snapshot));
       blocknLoopScheduler.add(fixationRoutineBegin(snapshot));
       blocknLoopScheduler.add(fixationRoutineEachFrame());
       blocknLoopScheduler.add(fixationRoutineEnd(snapshot));
@@ -3043,7 +3049,7 @@ function Instructions_3RoutineBegin(snapshot) {
     sound_24.setVolume(1);
     // keep track of which components have finished
     Instructions_3Components = [];
-    Instructions_3Components.push(image_49);
+    Instructions_3Components.push(text_2);
     Instructions_3Components.push(key_resp_16);
     Instructions_3Components.push(sound_24);
     
@@ -3063,13 +3069,13 @@ function Instructions_3RoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *image_49* updates
-    if (t >= 0.0 && image_49.status === PsychoJS.Status.NOT_STARTED) {
+    // *text_2* updates
+    if (t >= 0.0 && text_2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      image_49.tStart = t;  // (not accounting for frame time here)
-      image_49.frameNStart = frameN;  // exact frame index
+      text_2.tStart = t;  // (not accounting for frame time here)
+      text_2.frameNStart = frameN;  // exact frame index
       
-      image_49.setAutoDraw(true);
+      text_2.setAutoDraw(true);
     }
     
     
@@ -3339,6 +3345,7 @@ function ISIcodeRoutineEachFrame() {
 
 var ISIRange;
 var thisISI;
+var thistype;
 function ISIcodeRoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'ISIcode' ---
@@ -3349,12 +3356,13 @@ function ISIcodeRoutineEnd(snapshot) {
     }
     psychoJS.experiment.addData('ISIcode.stopped', globalClock.getTime());
     // Run 'End Routine' code from code_10
-    ISIRange = linspace(1000, 3500, 500);
+    ISIRange = linspace(1000, 1500, 500);
     shuffle(ISIRange);
     thisISI = (ISIRange[0] / 1000);
     console.log("thisISI: ", thisISI);
     trials.addData("ISI", thisISI);
-    
+    thistype = 'exercise';
+    trials.addData('type', thistype)
     // the Routine "ISIcode" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -3381,7 +3389,7 @@ function fixationRoutineBegin(snapshot) {
     psychoJS.experiment.addData('fixation.started', globalClock.getTime());
     // keep track of which components have finished
     fixationComponents = [];
-    fixationComponents.push(image_35);
+    fixationComponents.push(fix_1);
     fixationComponents.push(image_33);
     fixationComponents.push(image_34);
     
@@ -3401,18 +3409,18 @@ function fixationRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *image_35* updates
-    if (t >= 0.0 && image_35.status === PsychoJS.Status.NOT_STARTED) {
+    // *fix_1* updates
+    if (t >= 0.0 && fix_1.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      image_35.tStart = t;  // (not accounting for frame time here)
-      image_35.frameNStart = frameN;  // exact frame index
+      fix_1.tStart = t;  // (not accounting for frame time here)
+      fix_1.frameNStart = frameN;  // exact frame index
       
-      image_35.setAutoDraw(true);
+      fix_1.setAutoDraw(true);
     }
     
     frameRemains = 0.0 + thisISI - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (image_35.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      image_35.setAutoDraw(false);
+    if (fix_1.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      fix_1.setAutoDraw(false);
     }
     
     // *image_33* updates
@@ -4017,6 +4025,12 @@ function FeedbackRoutineEnd(snapshot) {
       }
     }
     psychoJS.experiment.addData('Feedback.stopped', globalClock.getTime());
+    sound_9 = new sound.Sound({
+          win: psychoJS.window,
+          value: 'A',
+          secs: 5,
+          });
+    sound_9.setVolume(1.0);
     sound_9.stop();  // ensure sound has stopped at end of Routine
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -4319,7 +4333,7 @@ function Main_Exp_InstructionsRoutineBegin(snapshot) {
     sound_13.setVolume(1);
     // keep track of which components have finished
     Main_Exp_InstructionsComponents = [];
-    Main_Exp_InstructionsComponents.push(image_40);
+    Main_Exp_InstructionsComponents.push(text_10);
     Main_Exp_InstructionsComponents.push(key_resp_9);
     Main_Exp_InstructionsComponents.push(sound_13);
     
@@ -4339,13 +4353,13 @@ function Main_Exp_InstructionsRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *image_40* updates
-    if (t >= 0.0 && image_40.status === PsychoJS.Status.NOT_STARTED) {
+    // *text_10* updates
+    if (t >= 0.0 && text_10.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      image_40.tStart = t;  // (not accounting for frame time here)
-      image_40.frameNStart = frameN;  // exact frame index
+      text_10.tStart = t;  // (not accounting for frame time here)
+      text_10.frameNStart = frameN;  // exact frame index
       
-      image_40.setAutoDraw(true);
+      text_10.setAutoDraw(true);
     }
     
     
@@ -4439,6 +4453,93 @@ function Main_Exp_InstructionsRoutineEnd(snapshot) {
     key_resp_9.stop();
     sound_13.stop();  // ensure sound has stopped at end of Routine
     // the Routine "Main_Exp_Instructions" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset();
+    
+    // Routines running outside a loop should always advance the datafile row
+    if (currentLoop === psychoJS.experiment) {
+      psychoJS.experiment.nextEntry(snapshot);
+    }
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+var ISIcode_testComponents;
+function ISIcode_testRoutineBegin(snapshot) {
+  return async function () {
+    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+    
+    //--- Prepare to start Routine 'ISIcode_test' ---
+    t = 0;
+    ISIcode_testClock.reset(); // clock
+    frameN = -1;
+    continueRoutine = true; // until we're told otherwise
+    // update component parameters for each repeat
+    psychoJS.experiment.addData('ISIcode_test.started', globalClock.getTime());
+    // keep track of which components have finished
+    ISIcode_testComponents = [];
+    
+    for (const thisComponent of ISIcode_testComponents)
+      if ('status' in thisComponent)
+        thisComponent.status = PsychoJS.Status.NOT_STARTED;
+    return Scheduler.Event.NEXT;
+  }
+}
+
+
+function ISIcode_testRoutineEachFrame() {
+  return async function () {
+    //--- Loop for each frame of Routine 'ISIcode_test' ---
+    // get current time
+    t = ISIcode_testClock.getTime();
+    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+    // update/draw components on each frame
+    // check for quit (typically the Esc key)
+    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+    }
+    
+    // check if the Routine should terminate
+    if (!continueRoutine) {  // a component has requested a forced-end of Routine
+      return Scheduler.Event.NEXT;
+    }
+    
+    continueRoutine = false;  // reverts to True if at least one component still running
+    for (const thisComponent of ISIcode_testComponents)
+      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+        continueRoutine = true;
+        break;
+      }
+    
+    // refresh the screen if continuing
+    if (continueRoutine) {
+      return Scheduler.Event.FLIP_REPEAT;
+    } else {
+      return Scheduler.Event.NEXT;
+    }
+  };
+}
+
+
+function ISIcode_testRoutineEnd(snapshot) {
+  return async function () {
+    //--- Ending Routine 'ISIcode_test' ---
+    for (const thisComponent of ISIcode_testComponents) {
+      if (typeof thisComponent.setAutoDraw === 'function') {
+        thisComponent.setAutoDraw(false);
+      }
+    }
+    psychoJS.experiment.addData('ISIcode_test.stopped', globalClock.getTime());
+    // Run 'End Routine' code from code_14
+    ISIRange = linspace(1000, 1500, 500);
+    shuffle(ISIRange);
+    thisISI = (ISIRange[0] / 1000);
+    console.log("thisISI: ", thisISI);
+    trials.addData("ISI", thisISI);
+    thistype = 'formal';
+    trials.addData('type', thistype)
+    
+    // the Routine "ISIcode_test" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row
@@ -4574,6 +4675,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   

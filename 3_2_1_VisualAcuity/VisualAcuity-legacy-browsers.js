@@ -1468,9 +1468,15 @@ function trialRoutineEnd(snapshot) {
     key_resp.stop();
     // Run 'End Routine' code from code
     if ((key_resp.corr === 0)) {
-        Line = (line - 1);
-        continueRoutine = false;
-        trials.finished = true;
+        if ((line === 40)) {
+            Line = 40;
+            continueRoutine = false;
+            trials.finished = true;
+        } else {
+            Line = (line - 1);
+            continueRoutine = false;
+            trials.finished = true;
+        }
     } else {
         if ((line === 53)) {
             Line = 53;

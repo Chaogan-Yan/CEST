@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.2),
-    on Thu Jan  4 08:28:12 2024
+    on Mon Jun 24 22:48:37 2024
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -105,7 +105,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Users/chen-nanwu/Documents/认知实验工具箱/认知实验工具箱0103/Cognition/1_1_1_Flanker/Flanker_lastrun.py',
+        originPath='/Users/chen-nanwu/Documents/认知实验工具箱/认知实验工具箱【发布后修改】/CEST_Github_0104_v2/【有改动】1_1_1_Flanker/Flanker_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -652,14 +652,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "ISIcode" ---
     
     # --- Initialize components for Routine "fixation" ---
-    image_35 = visual.ImageStim(
-        win=win,
-        name='image_35', 
-        image='img/star_middle.png', mask=None, anchor='center',
-        ori=0, pos=(0, .2), size=(0.5, 0.5),
-        color=[1,1,1], colorSpace='rgb', opacity=1,
-        flipHoriz=False, flipVert=False,
-        texRes=512, interpolate=True, depth=0.0)
+    fix_1 = visual.TextStim(win=win, name='fix_1',
+        text='+',
+        font='Open Sans',
+        pos=(0, .2), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     image_33 = visual.ImageStim(
         win=win,
         name='image_33', 
@@ -819,17 +818,16 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         flipHoriz=False, flipVert=False,
         texRes=512, interpolate=True, depth=-1.0)
     
-    # --- Initialize components for Routine "ISIcode" ---
+    # --- Initialize components for Routine "ISIcode_test" ---
     
     # --- Initialize components for Routine "fixation" ---
-    image_35 = visual.ImageStim(
-        win=win,
-        name='image_35', 
-        image='img/star_middle.png', mask=None, anchor='center',
-        ori=0, pos=(0, .2), size=(0.5, 0.5),
-        color=[1,1,1], colorSpace='rgb', opacity=1,
-        flipHoriz=False, flipVert=False,
-        texRes=512, interpolate=True, depth=0.0)
+    fix_1 = visual.TextStim(win=win, name='fix_1',
+        text='+',
+        font='Open Sans',
+        pos=(0, .2), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     image_33 = visual.ImageStim(
         win=win,
         name='image_33', 
@@ -3263,7 +3261,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # at the start of np.linspace (this is a python library JS won't know what to call. 
             
             # make range from a to b in n stepsizes
-            ISIRange = np.linspace(1000, 3500, 500)
+            ISIRange = np.linspace(1000, 1500, 500)
             
             # picking from a shuffled array is easier for random selection in JS
             shuffle(ISIRange)
@@ -3275,6 +3273,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # save this ISI to our output file
             trials.addData('ISI', thisISI)
             
+            # save the type of trials to our output file
+            thistype = 'exercise'
+            trials.addData('type', thistype)
             # the Routine "ISIcode" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             
@@ -3283,7 +3284,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             thisExp.addData('fixation.started', globalClock.getTime())
             # keep track of which components have finished
-            fixationComponents = [image_35, image_33, image_34]
+            fixationComponents = [fix_1, image_33, image_34]
             for thisComponent in fixationComponents:
                 thisComponent.tStart = None
                 thisComponent.tStop = None
@@ -3306,38 +3307,38 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                # *image_35* updates
+                # *fix_1* updates
                 
-                # if image_35 is starting this frame...
-                if image_35.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # if fix_1 is starting this frame...
+                if fix_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    image_35.frameNStart = frameN  # exact frame index
-                    image_35.tStart = t  # local t and not account for scr refresh
-                    image_35.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(image_35, 'tStartRefresh')  # time at next scr refresh
+                    fix_1.frameNStart = frameN  # exact frame index
+                    fix_1.tStart = t  # local t and not account for scr refresh
+                    fix_1.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(fix_1, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'image_35.started')
+                    thisExp.timestampOnFlip(win, 'fix_1.started')
                     # update status
-                    image_35.status = STARTED
-                    image_35.setAutoDraw(True)
+                    fix_1.status = STARTED
+                    fix_1.setAutoDraw(True)
                 
-                # if image_35 is active this frame...
-                if image_35.status == STARTED:
+                # if fix_1 is active this frame...
+                if fix_1.status == STARTED:
                     # update params
                     pass
                 
-                # if image_35 is stopping this frame...
-                if image_35.status == STARTED:
+                # if fix_1 is stopping this frame...
+                if fix_1.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > image_35.tStartRefresh + thisISI-frameTolerance:
+                    if tThisFlipGlobal > fix_1.tStartRefresh + thisISI-frameTolerance:
                         # keep track of stop time/frame for later
-                        image_35.tStop = t  # not accounting for scr refresh
-                        image_35.frameNStop = frameN  # exact frame index
+                        fix_1.tStop = t  # not accounting for scr refresh
+                        fix_1.frameNStop = frameN  # exact frame index
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'image_35.stopped')
+                        thisExp.timestampOnFlip(win, 'fix_1.stopped')
                         # update status
-                        image_35.status = FINISHED
-                        image_35.setAutoDraw(False)
+                        fix_1.status = FINISHED
+                        fix_1.setAutoDraw(False)
                 
                 # *image_33* updates
                 
@@ -4668,13 +4669,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             else:
                 routineTimer.addTime(-0.800000)
             
-            # --- Prepare to start Routine "ISIcode" ---
+            # --- Prepare to start Routine "ISIcode_test" ---
             continueRoutine = True
             # update component parameters for each repeat
-            thisExp.addData('ISIcode.started', globalClock.getTime())
+            thisExp.addData('ISIcode_test.started', globalClock.getTime())
             # keep track of which components have finished
-            ISIcodeComponents = []
-            for thisComponent in ISIcodeComponents:
+            ISIcode_testComponents = []
+            for thisComponent in ISIcode_testComponents:
                 thisComponent.tStart = None
                 thisComponent.tStop = None
                 thisComponent.tStartRefresh = None
@@ -4686,7 +4687,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             _timeToFirstFrame = win.getFutureFlipTime(clock="now")
             frameN = -1
             
-            # --- Run Routine "ISIcode" ---
+            # --- Run Routine "ISIcode_test" ---
             routineForceEnded = not continueRoutine
             while continueRoutine:
                 # get current time
@@ -4708,7 +4709,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     routineForceEnded = True
                     break
                 continueRoutine = False  # will revert to True if at least one component still running
-                for thisComponent in ISIcodeComponents:
+                for thisComponent in ISIcode_testComponents:
                     if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                         continueRoutine = True
                         break  # at least one component has not yet finished
@@ -4717,18 +4718,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
             
-            # --- Ending Routine "ISIcode" ---
-            for thisComponent in ISIcodeComponents:
+            # --- Ending Routine "ISIcode_test" ---
+            for thisComponent in ISIcode_testComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            thisExp.addData('ISIcode.stopped', globalClock.getTime())
-            # Run 'End Routine' code from code_10
+            thisExp.addData('ISIcode_test.stopped', globalClock.getTime())
+            # Run 'End Routine' code from code_14
             # pick the ISI for the next routine
             # this code component is set to 'both' because we need to remove the 'np'
             # at the start of np.linspace (this is a python library JS won't know what to call. 
             
             # make range from a to b in n stepsizes
-            ISIRange = np.linspace(1000, 3500, 500)
+            ISIRange = np.linspace(1000, 1500, 500)
             
             # picking from a shuffled array is easier for random selection in JS
             shuffle(ISIRange)
@@ -4740,7 +4741,10 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # save this ISI to our output file
             trials.addData('ISI', thisISI)
             
-            # the Routine "ISIcode" was not non-slip safe, so reset the non-slip timer
+            # save the type of trials to our output file
+            thistype = 'formal'
+            trials.addData('type', thistype)
+            # the Routine "ISIcode_test" was not non-slip safe, so reset the non-slip timer
             routineTimer.reset()
             
             # --- Prepare to start Routine "fixation" ---
@@ -4748,7 +4752,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             thisExp.addData('fixation.started', globalClock.getTime())
             # keep track of which components have finished
-            fixationComponents = [image_35, image_33, image_34]
+            fixationComponents = [fix_1, image_33, image_34]
             for thisComponent in fixationComponents:
                 thisComponent.tStart = None
                 thisComponent.tStop = None
@@ -4771,38 +4775,38 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
                 
-                # *image_35* updates
+                # *fix_1* updates
                 
-                # if image_35 is starting this frame...
-                if image_35.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # if fix_1 is starting this frame...
+                if fix_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                     # keep track of start time/frame for later
-                    image_35.frameNStart = frameN  # exact frame index
-                    image_35.tStart = t  # local t and not account for scr refresh
-                    image_35.tStartRefresh = tThisFlipGlobal  # on global time
-                    win.timeOnFlip(image_35, 'tStartRefresh')  # time at next scr refresh
+                    fix_1.frameNStart = frameN  # exact frame index
+                    fix_1.tStart = t  # local t and not account for scr refresh
+                    fix_1.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(fix_1, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'image_35.started')
+                    thisExp.timestampOnFlip(win, 'fix_1.started')
                     # update status
-                    image_35.status = STARTED
-                    image_35.setAutoDraw(True)
+                    fix_1.status = STARTED
+                    fix_1.setAutoDraw(True)
                 
-                # if image_35 is active this frame...
-                if image_35.status == STARTED:
+                # if fix_1 is active this frame...
+                if fix_1.status == STARTED:
                     # update params
                     pass
                 
-                # if image_35 is stopping this frame...
-                if image_35.status == STARTED:
+                # if fix_1 is stopping this frame...
+                if fix_1.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > image_35.tStartRefresh + thisISI-frameTolerance:
+                    if tThisFlipGlobal > fix_1.tStartRefresh + thisISI-frameTolerance:
                         # keep track of stop time/frame for later
-                        image_35.tStop = t  # not accounting for scr refresh
-                        image_35.frameNStop = frameN  # exact frame index
+                        fix_1.tStop = t  # not accounting for scr refresh
+                        fix_1.frameNStop = frameN  # exact frame index
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'image_35.stopped')
+                        thisExp.timestampOnFlip(win, 'fix_1.stopped')
                         # update status
-                        image_35.status = FINISHED
-                        image_35.setAutoDraw(False)
+                        fix_1.status = FINISHED
+                        fix_1.setAutoDraw(False)
                 
                 # *image_33* updates
                 

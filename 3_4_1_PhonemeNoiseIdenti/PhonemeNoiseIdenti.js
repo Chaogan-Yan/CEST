@@ -2,7 +2,7 @@
  * Phonemenoiseidenti *
  ***************************/
 
-import { core, data, sound, util, visual, hardware } from '../lib/psychojs-2023.2.2.js';
+import { core, data, sound, util, visual, hardware } from './lib/psychojs-2023.2.2.js';
 const { PsychoJS } = core;
 const { TrialHandler, MultiStairHandler } = data;
 const { Scheduler } = util;
@@ -88,7 +88,6 @@ psychoJS.start({
     {'name': 'data_trials_practice.xlsx', 'path': 'data_trials_practice.xlsx'},
     {'name': 'data_trials.xlsx', 'path': 'data_trials.xlsx'},
     {'name': 'intro.wav', 'path': 'intro.wav'},
-    {'name': 'star.png', 'path': 'star.png'},
     {'name': 'noise_SNR_phonemes/ba_rms.wav', 'path': 'noise_SNR_phonemes/ba_rms.wav'},
     {'name': 'noise_SNR_phonemes/ca_rms.wav', 'path': 'noise_SNR_phonemes/ca_rms.wav'},
     {'name': 'noise_SNR_phonemes/cha_rms.wav', 'path': 'noise_SNR_phonemes/cha_rms.wav'},
@@ -214,9 +213,9 @@ var text;
 var key_resp;
 var intro_sound;
 var fix_practiceClock;
-var fix_practice_star;
+var prac_fix;
 var phoneme_practiceClock;
-var fixation_sound_practice_star;
+var fix_prac_sound;
 var sound_practice;
 var response_key_practiceClock;
 var word1_prac;
@@ -230,9 +229,9 @@ var key_resp_introprac;
 var intro_realClock;
 var intro_real_data;
 var fix2Clock;
-var fixation_star;
+var fix;
 var phoneme_startClock;
-var fixation_sound_star;
+var fix_sound;
 var sound_1;
 var response_keyClock;
 var word1;
@@ -267,28 +266,32 @@ async function experimentInit() {
   intro_sound.setVolume(1.0);
   // Initialize components for Routine "fix_practice"
   fix_practiceClock = new util.Clock();
-  fix_practice_star = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'fix_practice_star', units : undefined, 
-    image : 'star.png', mask : undefined,
-    anchor : 'center',
-    ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
-    color : new util.Color([1,1,1]), opacity : undefined,
-    flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : 0.0 
+  prac_fix = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'prac_fix',
+    text: '+',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   // Initialize components for Routine "phoneme_practice"
   phoneme_practiceClock = new util.Clock();
-  fixation_sound_practice_star = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'fixation_sound_practice_star', units : undefined, 
-    image : 'star.png', mask : undefined,
-    anchor : 'center',
-    ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
-    color : new util.Color([1,1,1]), opacity : undefined,
-    flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : 0.0 
+  fix_prac_sound = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'fix_prac_sound',
+    text: '+',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   sound_practice = new sound.Sound({
       win: psychoJS.window,
       value: 'A',
@@ -369,28 +372,32 @@ async function experimentInit() {
   
   // Initialize components for Routine "fix2"
   fix2Clock = new util.Clock();
-  fixation_star = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'fixation_star', units : undefined, 
-    image : 'star.png', mask : undefined,
-    anchor : 'center',
-    ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
-    color : new util.Color([1,1,1]), opacity : undefined,
-    flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : 0.0 
+  fix = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'fix',
+    text: '+',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   // Initialize components for Routine "phoneme_start"
   phoneme_startClock = new util.Clock();
-  fixation_sound_star = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'fixation_sound_star', units : undefined, 
-    image : 'star.png', mask : undefined,
-    anchor : 'center',
-    ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
-    color : new util.Color([1,1,1]), opacity : undefined,
-    flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : 0.0 
+  fix_sound = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'fix_sound',
+    text: '+',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   sound_1 = new sound.Sound({
       win: psychoJS.window,
       value: 'A',
@@ -820,7 +827,7 @@ function fix_practiceRoutineBegin(snapshot) {
     psychoJS.experiment.addData('fix_practice.started', globalClock.getTime());
     // keep track of which components have finished
     fix_practiceComponents = [];
-    fix_practiceComponents.push(fix_practice_star);
+    fix_practiceComponents.push(prac_fix);
     
     for (const thisComponent of fix_practiceComponents)
       if ('status' in thisComponent)
@@ -839,18 +846,18 @@ function fix_practiceRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *fix_practice_star* updates
-    if (t >= 0.0 && fix_practice_star.status === PsychoJS.Status.NOT_STARTED) {
+    // *prac_fix* updates
+    if (t >= 0.0 && prac_fix.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      fix_practice_star.tStart = t;  // (not accounting for frame time here)
-      fix_practice_star.frameNStart = frameN;  // exact frame index
+      prac_fix.tStart = t;  // (not accounting for frame time here)
+      prac_fix.frameNStart = frameN;  // exact frame index
       
-      fix_practice_star.setAutoDraw(true);
+      prac_fix.setAutoDraw(true);
     }
     
     frameRemains = 0.0 + 0.3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (fix_practice_star.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      fix_practice_star.setAutoDraw(false);
+    if (prac_fix.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      prac_fix.setAutoDraw(false);
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -925,7 +932,7 @@ function phoneme_practiceRoutineBegin(snapshot) {
     sound_practice.setVolume(1.0);
     // keep track of which components have finished
     phoneme_practiceComponents = [];
-    phoneme_practiceComponents.push(fixation_sound_practice_star);
+    phoneme_practiceComponents.push(fix_prac_sound);
     phoneme_practiceComponents.push(sound_practice);
     
     for (const thisComponent of phoneme_practiceComponents)
@@ -944,18 +951,18 @@ function phoneme_practiceRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *fixation_sound_practice_star* updates
-    if (t >= 0.0 && fixation_sound_practice_star.status === PsychoJS.Status.NOT_STARTED) {
+    // *fix_prac_sound* updates
+    if (t >= 0.0 && fix_prac_sound.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      fixation_sound_practice_star.tStart = t;  // (not accounting for frame time here)
-      fixation_sound_practice_star.frameNStart = frameN;  // exact frame index
+      fix_prac_sound.tStart = t;  // (not accounting for frame time here)
+      fix_prac_sound.frameNStart = frameN;  // exact frame index
       
-      fixation_sound_practice_star.setAutoDraw(true);
+      fix_prac_sound.setAutoDraw(true);
     }
     
     frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (fixation_sound_practice_star.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      fixation_sound_practice_star.setAutoDraw(false);
+    if (fix_prac_sound.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      fix_prac_sound.setAutoDraw(false);
     }
     // start/stop sound_practice
     if (t >= 0.0 && sound_practice.status === PsychoJS.Status.NOT_STARTED) {
@@ -1541,7 +1548,7 @@ function fix2RoutineBegin(snapshot) {
     sound_1.setVolume(1.0);
     // keep track of which components have finished
     fix2Components = [];
-    fix2Components.push(fixation_star);
+    fix2Components.push(fix);
     
     for (const thisComponent of fix2Components)
       if ('status' in thisComponent)
@@ -1559,18 +1566,18 @@ function fix2RoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *fixation_star* updates
-    if (t >= 0.0 && fixation_star.status === PsychoJS.Status.NOT_STARTED) {
+    // *fix* updates
+    if (t >= 0.0 && fix.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      fixation_star.tStart = t;  // (not accounting for frame time here)
-      fixation_star.frameNStart = frameN;  // exact frame index
+      fix.tStart = t;  // (not accounting for frame time here)
+      fix.frameNStart = frameN;  // exact frame index
       
-      fixation_star.setAutoDraw(true);
+      fix.setAutoDraw(true);
     }
     
     frameRemains = 0.0 + 0.3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (fixation_star.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      fixation_star.setAutoDraw(false);
+    if (fix.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      fix.setAutoDraw(false);
     }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
@@ -1635,7 +1642,7 @@ function phoneme_startRoutineBegin(snapshot) {
     sound_1.setVolume(1.0);
     // keep track of which components have finished
     phoneme_startComponents = [];
-    phoneme_startComponents.push(fixation_sound_star);
+    phoneme_startComponents.push(fix_sound);
     phoneme_startComponents.push(sound_1);
     
     for (const thisComponent of phoneme_startComponents)
@@ -1654,18 +1661,18 @@ function phoneme_startRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *fixation_sound_star* updates
-    if (t >= 0.0 && fixation_sound_star.status === PsychoJS.Status.NOT_STARTED) {
+    // *fix_sound* updates
+    if (t >= 0.0 && fix_sound.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      fixation_sound_star.tStart = t;  // (not accounting for frame time here)
-      fixation_sound_star.frameNStart = frameN;  // exact frame index
+      fix_sound.tStart = t;  // (not accounting for frame time here)
+      fix_sound.frameNStart = frameN;  // exact frame index
       
-      fixation_sound_star.setAutoDraw(true);
+      fix_sound.setAutoDraw(true);
     }
     
     frameRemains = 0.0 + 2 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (fixation_sound_star.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      fixation_sound_star.setAutoDraw(false);
+    if (fix_sound.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      fix_sound.setAutoDraw(false);
     }
     // start/stop sound_1
     if (t >= 0.0 && sound_1.status === PsychoJS.Status.NOT_STARTED) {

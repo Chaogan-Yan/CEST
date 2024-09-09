@@ -181,22 +181,31 @@ psychoJS.start({
     {'name': 'resources/audio/F-d1.mp3', 'path': 'resources/audio/F-d1.mp3'},
     {'name': 'resources/audio/F-e.mp3', 'path': 'resources/audio/F-e.mp3'},
     {'name': 'resources/audio/F-g.mp3', 'path': 'resources/audio/F-g.mp3'},
+    {'name': 'resources/audio/instr_1_audio.wav', 'path': 'resources/audio/instr_1_audio.wav'},
     {'name': 'resources/assets/RedBoat.png', 'path': 'resources/assets/RedBoat.png'},
     {'name': 'resources/assets/RedRabbitWhite.png', 'path': 'resources/assets/RedRabbitWhite.png'},
     {'name': 'resources/assets/BlueBoatWhite.png', 'path': 'resources/assets/BlueBoatWhite.png'},
     {'name': 'resources/assets/BlueBoatGreen.png', 'path': 'resources/assets/BlueBoatGreen.png'},
+    {'name': 'resources/audio/instr_2_audio.wav', 'path': 'resources/audio/instr_2_audio.wav'},
     {'name': 'resources/assets/BlueRabbit.png', 'path': 'resources/assets/BlueRabbit.png'},
     {'name': 'resources/assets/RedRabbitGreen.png', 'path': 'resources/assets/RedRabbitGreen.png'},
-    {'name': 'resources/assets/star_text.png', 'path': 'resources/assets/star_text.png'},
-    {'name': 'resources/audio/F11.mp3', 'path': 'resources/audio/F11.mp3'},
-    {'name': 'resources/assets/star.png', 'path': 'resources/assets/star.png'},
+    {'name': 'resources/audio/instr_3_audio.wav', 'path': 'resources/audio/instr_3_audio.wav'},
+    {'name': 'resources/audio/F11_new.wav', 'path': 'resources/audio/F11_new.wav'},
     {'name': 'default.png', 'path': 'https://pavlovia.org/assets/default/default.png'},
     {'name': 'resources/assets/RedRabbitRed.png', 'path': 'resources/assets/RedRabbitRed.png'},
+    {'name': 'resources/audio/instr_4_audio.wav', 'path': 'resources/audio/instr_4_audio.wav'},
     {'name': 'resources/assets/BlueBoatRed.png', 'path': 'resources/assets/BlueBoatRed.png'},
-    {'name': 'resources/assets/star_text_formal.png', 'path': 'resources/assets/star_text_formal.png'},
-    {'name': 'resources/audio/F12.mp3', 'path': 'resources/audio/F12.mp3'},
+    {'name': 'resources/audio/instr_5_audio.wav', 'path': 'resources/audio/instr_5_audio.wav'},
+    {'name': 'resources/audio/combin_instr.wav', 'path': 'resources/audio/combin_instr.wav'},
+    {'name': 'resources/audio/F12_new.wav', 'path': 'resources/audio/F12_new.wav'},
     {'name': 'resources/assets/BlueBallWhite.png', 'path': 'resources/assets/BlueBallWhite.png'},
     {'name': 'resources/assets/YellowTruckWhite.png', 'path': 'resources/assets/YellowTruckWhite.png'},
+    {'name': 'resources/audio/F-a.mp3', 'path': 'resources/audio/F-a.mp3'},
+    {'name': 'resources/audio/F-b.mp3', 'path': 'resources/audio/F-b.mp3'},
+    {'name': 'resources/audio/F-d.mp3', 'path': 'resources/audio/F-d.mp3'},
+    {'name': 'resources/audio/F-d1.mp3', 'path': 'resources/audio/F-d1.mp3'},
+    {'name': 'resources/audio/F-e.mp3', 'path': 'resources/audio/F-e.mp3'},
+    {'name': 'resources/audio/F-g.mp3', 'path': 'resources/audio/F-g.mp3'},
   ]
 });
 
@@ -244,6 +253,7 @@ var instruction_1Clock;
 var shuffle;
 var text_homebase;
 var wecomle_resp;
+var sound_13;
 var ShapeBoatExClock;
 var textBoat;
 var stimulus;
@@ -254,6 +264,7 @@ var image_13;
 var image_14;
 var key_resp_8;
 var text_11;
+var sound_14;
 var ShapeRabbitExClock;
 var text;
 var image;
@@ -264,8 +275,9 @@ var image_16;
 var image_17;
 var key_resp_7;
 var text_10;
+var sound_15;
 var InstructionsClock;
-var image_5;
+var prac_instr;
 var key_resp_2;
 var sound_2;
 var InterTrial_IntrevalClock;
@@ -273,7 +285,7 @@ var image_6;
 var image_7;
 var ISIcodeClock;
 var FixationClock;
-var image_8;
+var fix_image_8;
 var image_9;
 var image_37;
 var CueShapeClock;
@@ -308,6 +320,7 @@ var image_22;
 var image_23;
 var key_resp_9;
 var text_12;
+var sound_16;
 var ColorBlueExClock;
 var text_8;
 var image_24;
@@ -318,6 +331,7 @@ var image_28;
 var image_29;
 var key_resp_10;
 var text_13;
+var sound_17;
 var CueColorClock;
 var text_16;
 var image_46;
@@ -340,8 +354,9 @@ var sound_11;
 var CombInstructionsClock;
 var MainTaskPrompt;
 var key_resp_4;
+var sound_18;
 var Instructions2Clock;
-var image_11;
+var instr;
 var key_resp;
 var sound_3;
 var countResetClock;
@@ -349,7 +364,7 @@ var ITI_CombClock;
 var image_65;
 var image_66;
 var FixationComb_2Clock;
-var image_67;
+var fix_image_67;
 var image_68;
 var image_69;
 var cueComb_3Clock;
@@ -428,6 +443,12 @@ async function experimentInit() {
   
   wecomle_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  sound_13 = new sound.Sound({
+      win: psychoJS.window,
+      value: 'resources/audio/instr_1_audio.wav',
+      secs: (- 1),
+      });
+  sound_13.setVolume(1.0);
   // Initialize components for Routine "ShapeBoatEx"
   ShapeBoatExClock = new util.Clock();
   textBoat = new visual.TextStim({
@@ -516,6 +537,12 @@ async function experimentInit() {
     depth: -8.0 
   });
   
+  sound_14 = new sound.Sound({
+      win: psychoJS.window,
+      value: 'resources/audio/instr_2_audio.wav',
+      secs: (- 1),
+      });
+  sound_14.setVolume(1.0);
   // Initialize components for Routine "ShapeRabbitEx"
   ShapeRabbitExClock = new util.Clock();
   text = new visual.TextStim({
@@ -604,23 +631,31 @@ async function experimentInit() {
     depth: -8.0 
   });
   
+  sound_15 = new sound.Sound({
+      win: psychoJS.window,
+      value: 'resources/audio/instr_3_audio.wav',
+      secs: (- 1),
+      });
+  sound_15.setVolume(1.0);
   // Initialize components for Routine "Instructions"
   InstructionsClock = new util.Clock();
-  image_5 = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'image_5', units : undefined, 
-    image : 'resources/assets/star_text.png', mask : undefined,
-    anchor : 'center',
-    ori : 0.0, pos : [0, 0], size : [0.9, 0.6],
-    color : new util.Color([1,1,1]), opacity : undefined,
-    flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : 0.0 
+  prac_instr = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'prac_instr',
+    text: '现在请试一试。\n\n请保持注视屏幕上的“+”注视点。\n试着在保持正确的同时尽可能快地回答。\n\n如果您回答错误，继续回答下一题即可。\n记得，回答完之后把手指放回Z键和M键上。\n\n\n按空格键继续。\n\n',
+    font: 'Heiti SC',
+    units: undefined, 
+    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   key_resp_2 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   sound_2 = new sound.Sound({
       win: psychoJS.window,
-      value: 'resources/audio/F11.mp3',
+      value: 'resources/audio/F11_new.wav',
       secs: (- 1),
       });
   sound_2.setVolume(1.0);
@@ -650,16 +685,18 @@ async function experimentInit() {
   ISIcodeClock = new util.Clock();
   // Initialize components for Routine "Fixation"
   FixationClock = new util.Clock();
-  image_8 = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'image_8', units : undefined, 
-    image : 'resources/assets/star.png', mask : undefined,
-    anchor : 'center',
-    ori : 0, pos : [0, 0.1], size : [0.05, 0.05],
-    color : new util.Color([1, 1, 1]), opacity : 1,
-    flipHoriz : false, flipVert : false,
-    texRes : 512, interpolate : true, depth : 0.0 
+  fix_image_8 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'fix_image_8',
+    text: '+',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.1], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   image_9 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image_9', units : undefined, 
@@ -905,6 +942,12 @@ async function experimentInit() {
     depth: -8.0 
   });
   
+  sound_16 = new sound.Sound({
+      win: psychoJS.window,
+      value: 'resources/audio/instr_4_audio.wav',
+      secs: (- 1),
+      });
+  sound_16.setVolume(1.0);
   // Initialize components for Routine "ColorBlueEx"
   ColorBlueExClock = new util.Clock();
   text_8 = new visual.TextStim({
@@ -993,6 +1036,12 @@ async function experimentInit() {
     depth: -8.0 
   });
   
+  sound_17 = new sound.Sound({
+      win: psychoJS.window,
+      value: 'resources/audio/instr_5_audio.wav',
+      secs: (- 1),
+      });
+  sound_17.setVolume(1.0);
   // Initialize components for Routine "CueColor"
   CueColorClock = new util.Clock();
   text_16 = new visual.TextStim({
@@ -1116,7 +1165,7 @@ async function experimentInit() {
     text: '',
     font: 'heiti sc',
     units: undefined, 
-    pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0,
+    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: 1,
     depth: -1.0 
@@ -1146,23 +1195,31 @@ async function experimentInit() {
   
   key_resp_4 = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  sound_18 = new sound.Sound({
+      win: psychoJS.window,
+      value: 'resources/audio/combin_instr.wav',
+      secs: (- 1),
+      });
+  sound_18.setVolume(1.0);
   // Initialize components for Routine "Instructions2"
   Instructions2Clock = new util.Clock();
-  image_11 = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'image_11', units : undefined, 
-    image : 'resources/assets/star_text_formal.png', mask : undefined,
-    anchor : 'center',
-    ori : 0.0, pos : [0, 0], size : [0.9, 0.6],
-    color : new util.Color([1,1,1]), opacity : undefined,
-    flipHoriz : false, flipVert : false,
-    texRes : 128.0, interpolate : true, depth : 0.0 
+  instr = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'instr',
+    text: '准备好，让我们开始正式实验。\n\n请保持注视屏幕上的“+”号注视点。\n试着在保持正确的同时尽可能快地回答。\n\n如果您回答错误，继续回答下一题即可。\n记得，回答完之后把手指放回Z键和M键上。\n\n\n按空格键继续。\n\n',
+    font: 'Heiti SC',
+    units: undefined, 
+    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   sound_3 = new sound.Sound({
       win: psychoJS.window,
-      value: 'resources/audio/F12.mp3',
+      value: 'resources/audio/F12_new.wav',
       secs: (- 1),
       });
   sound_3.setVolume(1.0);
@@ -1192,16 +1249,18 @@ async function experimentInit() {
   });
   // Initialize components for Routine "FixationComb_2"
   FixationComb_2Clock = new util.Clock();
-  image_67 = new visual.ImageStim({
-    win : psychoJS.window,
-    name : 'image_67', units : undefined, 
-    image : 'resources/assets/star.png', mask : undefined,
-    anchor : 'center',
-    ori : 0, pos : [0, 0.1], size : [0.05, 0.05],
-    color : new util.Color([1, 1, 1]), opacity : 1,
-    flipHoriz : false, flipVert : false,
-    texRes : 512, interpolate : true, depth : 0.0 
+  fix_image_67 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'fix_image_67',
+    text: '+',
+    font: 'Open Sans',
+    units: undefined, 
+    pos: [0, 0.1], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
   });
+  
   image_68 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'image_68', units : undefined, 
@@ -2167,10 +2226,12 @@ function instruction_1RoutineBegin(snapshot) {
     wecomle_resp.keys = undefined;
     wecomle_resp.rt = undefined;
     _wecomle_resp_allKeys = [];
+    sound_13.setVolume(1.0);
     // keep track of which components have finished
     instruction_1Components = [];
     instruction_1Components.push(text_homebase);
     instruction_1Components.push(wecomle_resp);
+    instruction_1Components.push(sound_13);
     
     instruction_1Components.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -2223,6 +2284,19 @@ function instruction_1RoutineEachFrame() {
       }
     }
     
+    // start/stop sound_13
+    if (t >= 0.0 && sound_13.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      sound_13.tStart = t;  // (not accounting for frame time here)
+      sound_13.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ sound_13.play(); });  // screen flip
+      sound_13.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (sound_13.getDuration() + sound_13.tStart)     && sound_13.status === PsychoJS.Status.STARTED) {
+      sound_13.stop();  // stop the sound (if longer than duration)
+      sound_13.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -2260,6 +2334,7 @@ function instruction_1RoutineEnd(snapshot) {
     });
     psychoJS.experiment.addData('instruction_1.stopped', globalClock.getTime());
     wecomle_resp.stop();
+    sound_13.stop();  // ensure sound has stopped at end of Routine
     // the Routine "instruction_1" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -2288,6 +2363,7 @@ function ShapeBoatExRoutineBegin(snapshot) {
     key_resp_8.keys = undefined;
     key_resp_8.rt = undefined;
     _key_resp_8_allKeys = [];
+    sound_14.setVolume(1.0);
     // keep track of which components have finished
     ShapeBoatExComponents = [];
     ShapeBoatExComponents.push(textBoat);
@@ -2299,6 +2375,7 @@ function ShapeBoatExRoutineBegin(snapshot) {
     ShapeBoatExComponents.push(image_14);
     ShapeBoatExComponents.push(key_resp_8);
     ShapeBoatExComponents.push(text_11);
+    ShapeBoatExComponents.push(sound_14);
     
     ShapeBoatExComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -2433,6 +2510,19 @@ function ShapeBoatExRoutineEachFrame() {
       text_11.setAutoDraw(true);
     }
     
+    // start/stop sound_14
+    if (t >= 0.0 && sound_14.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      sound_14.tStart = t;  // (not accounting for frame time here)
+      sound_14.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ sound_14.play(); });  // screen flip
+      sound_14.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (sound_14.getDuration() + sound_14.tStart)     && sound_14.status === PsychoJS.Status.STARTED) {
+      sound_14.stop();  // stop the sound (if longer than duration)
+      sound_14.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -2481,6 +2571,7 @@ function ShapeBoatExRoutineEnd(snapshot) {
         }
     
     key_resp_8.stop();
+    sound_14.stop();  // ensure sound has stopped at end of Routine
     // the Routine "ShapeBoatEx" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -2509,6 +2600,7 @@ function ShapeRabbitExRoutineBegin(snapshot) {
     key_resp_7.keys = undefined;
     key_resp_7.rt = undefined;
     _key_resp_7_allKeys = [];
+    sound_15.setVolume(1.0);
     // keep track of which components have finished
     ShapeRabbitExComponents = [];
     ShapeRabbitExComponents.push(text);
@@ -2520,6 +2612,7 @@ function ShapeRabbitExRoutineBegin(snapshot) {
     ShapeRabbitExComponents.push(image_17);
     ShapeRabbitExComponents.push(key_resp_7);
     ShapeRabbitExComponents.push(text_10);
+    ShapeRabbitExComponents.push(sound_15);
     
     ShapeRabbitExComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -2654,6 +2747,19 @@ function ShapeRabbitExRoutineEachFrame() {
       text_10.setAutoDraw(true);
     }
     
+    // start/stop sound_15
+    if (t >= 0.0 && sound_15.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      sound_15.tStart = t;  // (not accounting for frame time here)
+      sound_15.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ sound_15.play(); });  // screen flip
+      sound_15.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (sound_15.getDuration() + sound_15.tStart)     && sound_15.status === PsychoJS.Status.STARTED) {
+      sound_15.stop();  // stop the sound (if longer than duration)
+      sound_15.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -2702,6 +2808,7 @@ function ShapeRabbitExRoutineEnd(snapshot) {
         }
     
     key_resp_7.stop();
+    sound_15.stop();  // ensure sound has stopped at end of Routine
     // the Routine "ShapeRabbitEx" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -2734,7 +2841,7 @@ function InstructionsRoutineBegin(snapshot) {
     sound_2.setVolume(1.0);
     // keep track of which components have finished
     InstructionsComponents = [];
-    InstructionsComponents.push(image_5);
+    InstructionsComponents.push(prac_instr);
     InstructionsComponents.push(key_resp_2);
     InstructionsComponents.push(sound_2);
     
@@ -2755,13 +2862,13 @@ function InstructionsRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *image_5* updates
-    if (t >= 0.0 && image_5.status === PsychoJS.Status.NOT_STARTED) {
+    // *prac_instr* updates
+    if (t >= 0.0 && prac_instr.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      image_5.tStart = t;  // (not accounting for frame time here)
-      image_5.frameNStart = frameN;  // exact frame index
+      prac_instr.tStart = t;  // (not accounting for frame time here)
+      prac_instr.frameNStart = frameN;  // exact frame index
       
-      image_5.setAutoDraw(true);
+      prac_instr.setAutoDraw(true);
     }
     
     
@@ -3075,7 +3182,7 @@ function FixationRoutineBegin(snapshot) {
     psychoJS.experiment.addData('Fixation.started', globalClock.getTime());
     // keep track of which components have finished
     FixationComponents = [];
-    FixationComponents.push(image_8);
+    FixationComponents.push(fix_image_8);
     FixationComponents.push(image_9);
     FixationComponents.push(image_37);
     
@@ -3096,18 +3203,18 @@ function FixationRoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *image_8* updates
-    if (t >= 0.0 && image_8.status === PsychoJS.Status.NOT_STARTED) {
+    // *fix_image_8* updates
+    if (t >= 0.0 && fix_image_8.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      image_8.tStart = t;  // (not accounting for frame time here)
-      image_8.frameNStart = frameN;  // exact frame index
+      fix_image_8.tStart = t;  // (not accounting for frame time here)
+      fix_image_8.frameNStart = frameN;  // exact frame index
       
-      image_8.setAutoDraw(true);
+      fix_image_8.setAutoDraw(true);
     }
     
     frameRemains = 0.0 + thisISI - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (image_8.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      image_8.setAutoDraw(false);
+    if (fix_image_8.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      fix_image_8.setAutoDraw(false);
     }
     
     // *image_9* updates
@@ -3695,6 +3802,12 @@ function FeedbackRoutineEnd(snapshot) {
       }
     });
     psychoJS.experiment.addData('Feedback.stopped', globalClock.getTime());
+    sound_9 = new sound.Sound({
+        win: psychoJS.window,
+        value: 'A',
+        secs: (- 1),
+        });
+    sound_9.setVolume(1.0)
     sound_9.stop();  // ensure sound has stopped at end of Routine
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -3995,6 +4108,7 @@ function ColorRedExRoutineBegin(snapshot) {
     key_resp_9.keys = undefined;
     key_resp_9.rt = undefined;
     _key_resp_9_allKeys = [];
+    sound_16.setVolume(1.0);
     // keep track of which components have finished
     ColorRedExComponents = [];
     ColorRedExComponents.push(text_7);
@@ -4006,6 +4120,7 @@ function ColorRedExRoutineBegin(snapshot) {
     ColorRedExComponents.push(image_23);
     ColorRedExComponents.push(key_resp_9);
     ColorRedExComponents.push(text_12);
+    ColorRedExComponents.push(sound_16);
     
     ColorRedExComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -4140,6 +4255,19 @@ function ColorRedExRoutineEachFrame() {
       text_12.setAutoDraw(true);
     }
     
+    // start/stop sound_16
+    if (t >= 0.0 && sound_16.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      sound_16.tStart = t;  // (not accounting for frame time here)
+      sound_16.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ sound_16.play(); });  // screen flip
+      sound_16.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (sound_16.getDuration() + sound_16.tStart)     && sound_16.status === PsychoJS.Status.STARTED) {
+      sound_16.stop();  // stop the sound (if longer than duration)
+      sound_16.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -4188,6 +4316,7 @@ function ColorRedExRoutineEnd(snapshot) {
         }
     
     key_resp_9.stop();
+    sound_16.stop();  // ensure sound has stopped at end of Routine
     // the Routine "ColorRedEx" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -4216,6 +4345,7 @@ function ColorBlueExRoutineBegin(snapshot) {
     key_resp_10.keys = undefined;
     key_resp_10.rt = undefined;
     _key_resp_10_allKeys = [];
+    sound_17.setVolume(1.0);
     // keep track of which components have finished
     ColorBlueExComponents = [];
     ColorBlueExComponents.push(text_8);
@@ -4227,6 +4357,7 @@ function ColorBlueExRoutineBegin(snapshot) {
     ColorBlueExComponents.push(image_29);
     ColorBlueExComponents.push(key_resp_10);
     ColorBlueExComponents.push(text_13);
+    ColorBlueExComponents.push(sound_17);
     
     ColorBlueExComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -4361,6 +4492,19 @@ function ColorBlueExRoutineEachFrame() {
       text_13.setAutoDraw(true);
     }
     
+    // start/stop sound_17
+    if (t >= 0.0 && sound_17.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      sound_17.tStart = t;  // (not accounting for frame time here)
+      sound_17.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ sound_17.play(); });  // screen flip
+      sound_17.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (sound_17.getDuration() + sound_17.tStart)     && sound_17.status === PsychoJS.Status.STARTED) {
+      sound_17.stop();  // stop the sound (if longer than duration)
+      sound_17.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -4409,6 +4553,7 @@ function ColorBlueExRoutineEnd(snapshot) {
         }
     
     key_resp_10.stop();
+    sound_17.stop();  // ensure sound has stopped at end of Routine
     // the Routine "ColorBlueEx" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -4929,6 +5074,12 @@ function Feedback2RoutineEnd(snapshot) {
       }
     });
     psychoJS.experiment.addData('Feedback2.stopped', globalClock.getTime());
+    sound_1 = new sound.Sound({
+        win: psychoJS.window,
+        value: 'A',
+        secs: (- 1),
+        });
+    sound_1.setVolume(1.0)
     sound_1.stop();  // ensure sound has stopped at end of Routine
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -5228,10 +5379,12 @@ function CombInstructionsRoutineBegin(snapshot) {
     key_resp_4.keys = undefined;
     key_resp_4.rt = undefined;
     _key_resp_4_allKeys = [];
+    sound_18.setVolume(1.0);
     // keep track of which components have finished
     CombInstructionsComponents = [];
     CombInstructionsComponents.push(MainTaskPrompt);
     CombInstructionsComponents.push(key_resp_4);
+    CombInstructionsComponents.push(sound_18);
     
     CombInstructionsComponents.forEach( function(thisComponent) {
       if ('status' in thisComponent)
@@ -5284,6 +5437,19 @@ function CombInstructionsRoutineEachFrame() {
       }
     }
     
+    // start/stop sound_18
+    if (t >= 0.0 && sound_18.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      sound_18.tStart = t;  // (not accounting for frame time here)
+      sound_18.frameNStart = frameN;  // exact frame index
+      
+      psychoJS.window.callOnFlip(function(){ sound_18.play(); });  // screen flip
+      sound_18.status = PsychoJS.Status.STARTED;
+    }
+    if (t >= (sound_18.getDuration() + sound_18.tStart)     && sound_18.status === PsychoJS.Status.STARTED) {
+      sound_18.stop();  // stop the sound (if longer than duration)
+      sound_18.status = PsychoJS.Status.FINISHED;
+    }
     // check for quit (typically the Esc key)
     if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
       return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
@@ -5332,6 +5498,7 @@ function CombInstructionsRoutineEnd(snapshot) {
         }
     
     key_resp_4.stop();
+    sound_18.stop();  // ensure sound has stopped at end of Routine
     // the Routine "CombInstructions" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
@@ -5364,7 +5531,7 @@ function Instructions2RoutineBegin(snapshot) {
     sound_3.setVolume(1.0);
     // keep track of which components have finished
     Instructions2Components = [];
-    Instructions2Components.push(image_11);
+    Instructions2Components.push(instr);
     Instructions2Components.push(key_resp);
     Instructions2Components.push(sound_3);
     
@@ -5385,13 +5552,13 @@ function Instructions2RoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *image_11* updates
-    if (t >= 0.0 && image_11.status === PsychoJS.Status.NOT_STARTED) {
+    // *instr* updates
+    if (t >= 0.0 && instr.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      image_11.tStart = t;  // (not accounting for frame time here)
-      image_11.frameNStart = frameN;  // exact frame index
+      instr.tStart = t;  // (not accounting for frame time here)
+      instr.frameNStart = frameN;  // exact frame index
       
-      image_11.setAutoDraw(true);
+      instr.setAutoDraw(true);
     }
     
     
@@ -5702,7 +5869,7 @@ function FixationComb_2RoutineBegin(snapshot) {
     psychoJS.experiment.addData('FixationComb_2.started', globalClock.getTime());
     // keep track of which components have finished
     FixationComb_2Components = [];
-    FixationComb_2Components.push(image_67);
+    FixationComb_2Components.push(fix_image_67);
     FixationComb_2Components.push(image_68);
     FixationComb_2Components.push(image_69);
     
@@ -5723,18 +5890,18 @@ function FixationComb_2RoutineEachFrame() {
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
-    // *image_67* updates
-    if (t >= 0.0 && image_67.status === PsychoJS.Status.NOT_STARTED) {
+    // *fix_image_67* updates
+    if (t >= 0.0 && fix_image_67.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      image_67.tStart = t;  // (not accounting for frame time here)
-      image_67.frameNStart = frameN;  // exact frame index
+      fix_image_67.tStart = t;  // (not accounting for frame time here)
+      fix_image_67.frameNStart = frameN;  // exact frame index
       
-      image_67.setAutoDraw(true);
+      fix_image_67.setAutoDraw(true);
     }
     
     frameRemains = 0.0 + thisISI - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (image_67.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      image_67.setAutoDraw(false);
+    if (fix_image_67.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      fix_image_67.setAutoDraw(false);
     }
     
     // *image_68* updates

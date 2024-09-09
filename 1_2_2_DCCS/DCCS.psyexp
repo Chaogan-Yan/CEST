@@ -14,7 +14,7 @@
     <Param val="" valType="str" updates="None" name="HTML path"/>
     <Param val="" valType="str" updates="None" name="Incomplete URL"/>
     <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
-    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="['resources/audio/F-a.mp3', 'resources/audio/F-b.mp3', 'resources/audio/F-d.mp3', 'resources/audio/F-d1.mp3', 'resources/audio/F-e.mp3', 'resources/audio/F-g.mp3']" valType="list" updates="None" name="Resources"/>
     <Param val="False" valType="bool" updates="None" name="Save csv file"/>
     <Param val="False" valType="bool" updates="None" name="Save excel file"/>
     <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
@@ -197,6 +197,22 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <SoundComponent name="sound_13" plugin="None">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_13" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="resources/audio/instr_1_audio.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="stopWithRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
     </Routine>
     <Routine name="ShapeBoatEx">
       <RoutineSettingsComponent name="ShapeBoatEx" plugin="None">
@@ -445,6 +461,22 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
+      <SoundComponent name="sound_14" plugin="None">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_14" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="resources/audio/instr_2_audio.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="stopWithRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
     </Routine>
     <Routine name="ShapeRabbitEx">
       <RoutineSettingsComponent name="ShapeRabbitEx" plugin="None">
@@ -693,6 +725,22 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
+      <SoundComponent name="sound_15" plugin="None">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_15" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="resources/audio/instr_3_audio.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="stopWithRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
     </Routine>
     <Routine name="Instructions">
       <RoutineSettingsComponent name="Instructions" plugin="None">
@@ -710,33 +758,31 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="image_5" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="prac_instr" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="resources/assets/star_text.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="image_5" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Heiti SC" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="prac_instr" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.9, 0.6)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="现在请试一试。&amp;#10;&amp;#10;请保持注视屏幕上的“+”注视点。&amp;#10;试着在保持正确的同时尽可能快地回答。&amp;#10;&amp;#10;如果您回答错误，继续回答下一题即可。&amp;#10;记得，回答完之后把手指放回Z键和M键上。&amp;#10;&amp;#10;&amp;#10;按空格键继续。&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <KeyboardComponent name="key_resp_2" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -762,7 +808,7 @@
         <Param val="True" valType="bool" updates="constant" name="hamming"/>
         <Param val="sound_2" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="resources/audio/F11.mp3" valType="str" updates="constant" name="sound"/>
+        <Param val="resources/audio/F11_new.wav" valType="str" updates="constant" name="sound"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -894,33 +940,31 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="image_8" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
+      <TextComponent name="fix_image_8" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="resources/assets/star.png" valType="str" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="None" valType="str" updates="constant" name="mask"/>
-        <Param val="image_8" valType="code" updates="None" name="name"/>
-        <Param val="1" valType="code" updates="constant" name="opacity"/>
-        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="fix_image_8" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="$thisISI" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="512" valType="code" updates="constant" name="texture resolution"/>
+        <Param val="+" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <ImageComponent name="image_9" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
@@ -1212,12 +1256,12 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="if (key_resp_3.keys) {&amp;#10;    if ((key_resp_3.keys[0] === &quot;z&quot;)) {&amp;#10;        if (key_resp_3.corr) {&amp;#10;            left = &quot;resources/assets/RedRabbitGreen.png&quot;;&amp;#10;            right = &quot;resources/assets/BlueBoatWhite.png&quot;;&amp;#10;            audio = &quot;resources/audio/F-b.mp3&quot;;&amp;#10;        } else {&amp;#10;            left = &quot;resources/assets/RedRabbitRed.png&quot;;&amp;#10;            right = &quot;resources/assets/BlueBoatWhite.png&quot;;&amp;#10;            audio = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;        }&amp;#10;    } else {&amp;#10;        if ((key_resp_3.keys[0] === &quot;m&quot;)) {&amp;#10;            if (key_resp_3.corr) {&amp;#10;                right = &quot;resources/assets/BlueBoatGreen.png&quot;;&amp;#10;                left = &quot;resources/assets/RedRabbitWhite.png&quot;;&amp;#10;                audio = &quot;resources/audio/F-b.mp3&quot;;&amp;#10;            } else {&amp;#10;                left = &quot;resources/assets/RedRabbitWhite.png&quot;;&amp;#10;                right = &quot;resources/assets/BlueBoatRed.png&quot;;&amp;#10;                audio = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((corrAns === &quot;m&quot;)) {&amp;#10;        right = &quot;resources/assets/BlueBoatRed.png&quot;;&amp;#10;        left = &quot;resources/assets/RedRabbitWhite.png&quot;;&amp;#10;        audio = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;    } else {&amp;#10;        left = &quot;resources/assets/RedRabbitRed.png&quot;;&amp;#10;        right = &quot;resources/assets/BlueBoatWhite.png&quot;;&amp;#10;        audio = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="if key_resp_3.keys: # if a keypress has been made&amp;#10;    if key_resp_3.keys[0] =='z':&amp;#10;        if key_resp_3.corr:&amp;#10;            left = 'resources/assets/RedRabbitGreen.png'&amp;#10;            right = 'resources/assets/BlueBoatWhite.png'&amp;#10;            audio = 'resources/audio/F-b.mp3'&amp;#10;        else:&amp;#10;            left = 'resources/assets/RedRabbitRed.png'&amp;#10;            right = 'resources/assets/BlueBoatWhite.png'&amp;#10;            audio = 'resources/audio/F-a.mp3'&amp;#10;    elif key_resp_3.keys[0] =='m':&amp;#10;        if key_resp_3.corr:&amp;#10;            right = 'resources/assets/BlueBoatGreen.png'&amp;#10;            left = 'resources/assets/RedRabbitWhite.png'&amp;#10;            audio = 'resources/audio/F-b.mp3'&amp;#10;        else:&amp;#10;            left = 'resources/assets/RedRabbitWhite.png'&amp;#10;            right = 'resources/assets/BlueBoatRed.png'&amp;#10;            audio = 'resources/audio/F-a.mp3'&amp;#10;else: # thi is classed as an incorrect response&amp;#10;    if corrAns == 'm':&amp;#10;        right = 'resources/assets/BlueBoatRed.png'&amp;#10;        left = 'resources/assets/RedRabbitWhite.png'&amp;#10;        audio = 'resources/audio/F-a.mp3'&amp;#10;    else:&amp;#10;        left = 'resources/assets/RedRabbitRed.png'&amp;#10;        right = 'resources/assets/BlueBoatWhite.png'&amp;#10;        audio = 'resources/audio/F-a.mp3'&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="sound_9 = new sound.Sound({&amp;#10;    win: psychoJS.window,&amp;#10;    value: 'A',&amp;#10;    secs: (- 1),&amp;#10;    });&amp;#10;sound_9.setVolume(1.0)" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_2" valType="code" updates="None" name="name"/>
@@ -1712,6 +1756,22 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
+      <SoundComponent name="sound_16" plugin="None">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_16" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="resources/audio/instr_4_audio.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="stopWithRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
     </Routine>
     <Routine name="ColorBlueEx">
       <RoutineSettingsComponent name="ColorBlueEx" plugin="None">
@@ -1960,6 +2020,22 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="constant" name="wrapWidth"/>
       </TextComponent>
+      <SoundComponent name="sound_17" plugin="None">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_17" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="resources/audio/instr_5_audio.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="stopWithRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
     </Routine>
     <Routine name="CueColor">
       <RoutineSettingsComponent name="CueColor" plugin="None">
@@ -2197,12 +2273,12 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="if (key_resp_12.keys) {&amp;#10;    if ((key_resp_12.keys[0] === &quot;z&quot;)) {&amp;#10;        if (key_resp_12.corr) {&amp;#10;            left = &quot;resources/assets/RedRabbitGreen.png&quot;;&amp;#10;            right = &quot;resources/assets/BlueBoatWhite.png&quot;;&amp;#10;            audio1 = &quot;resources/audio/F-b.mp3&quot;;&amp;#10;        } else {&amp;#10;            left = &quot;resources/assets/RedRabbitRed.png&quot;;&amp;#10;            right = &quot;resources/assets/BlueBoatWhite.png&quot;;&amp;#10;            audio1 = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;        }&amp;#10;    } else {&amp;#10;        if ((key_resp_12.keys[0] === &quot;m&quot;)) {&amp;#10;            if (key_resp_12.corr) {&amp;#10;                right = &quot;resources/assets/BlueBoatGreen.png&quot;;&amp;#10;                left = &quot;resources/assets/RedRabbitWhite.png&quot;;&amp;#10;                audio1 = &quot;resources/audio/F-b.mp3&quot;;&amp;#10;            } else {&amp;#10;                left = &quot;resources/assets/RedRabbitRed.png&quot;;&amp;#10;                right = &quot;resources/assets/BlueBoatWhite.png&quot;;&amp;#10;                audio1 = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((corrAns === &quot;m&quot;)) {&amp;#10;        right = &quot;resources/assets/BlueBoatRed.png&quot;;&amp;#10;        left = &quot;resources/assets/RedRabbitWhite.png&quot;;&amp;#10;        audio1 = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;    } else {&amp;#10;        left = &quot;resources/assets/RedRabbitRed.png&quot;;&amp;#10;        right = &quot;resources/assets/BlueBoatWhite.png&quot;;&amp;#10;        audio1 = &quot;resources/audio/F-a.mp3&quot;;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="if key_resp_12.keys:&amp;#10;    if key_resp_12.keys[0] =='z':&amp;#10;        if key_resp_12.corr:&amp;#10;            left = 'resources/assets/RedRabbitGreen.png'&amp;#10;            right = 'resources/assets/BlueBoatWhite.png'&amp;#10;            audio1 = 'resources/audio/F-b.mp3'&amp;#10;        else:&amp;#10;            left = 'resources/assets/RedRabbitRed.png'&amp;#10;            right = 'resources/assets/BlueBoatWhite.png'&amp;#10;            audio1 = 'resources/audio/F-a.mp3'&amp;#10;&amp;#10;    elif key_resp_12.keys[0] =='m':&amp;#10;        if key_resp_12.corr:&amp;#10;            right = 'resources/assets/BlueBoatGreen.png'&amp;#10;            left = 'resources/assets/RedRabbitWhite.png'&amp;#10;            audio1 = 'resources/audio/F-b.mp3'&amp;#10;        else:&amp;#10;            left = 'resources/assets/RedRabbitRed.png'&amp;#10;            right = 'resources/assets/BlueBoatWhite.png'&amp;#10;            audio1 = 'resources/audio/F-a.mp3'&amp;#10;else:&amp;#10;    if corrAns == 'm':&amp;#10;            right = 'resources/assets/BlueBoatRed.png'&amp;#10;            left = 'resources/assets/RedRabbitWhite.png'&amp;#10;            audio1 = 'resources/audio/F-a.mp3'&amp;#10;    else:&amp;#10;            left = 'resources/assets/RedRabbitRed.png'&amp;#10;            right = 'resources/assets/BlueBoatWhite.png'&amp;#10;            audio1 = 'resources/audio/F-a.mp3'&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="sound_1 = new sound.Sound({&amp;#10;    win: psychoJS.window,&amp;#10;    value: 'A',&amp;#10;    secs: (- 1),&amp;#10;    });&amp;#10;sound_1.setVolume(1.0)" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_6" valType="code" updates="None" name="name"/>
@@ -2381,11 +2457,11 @@
         <Param val="" valType="str" updates="constant" name="flip"/>
         <Param val="heiti sc" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.04" valType="code" updates="constant" name="letterHeight"/>
+        <Param val="0.03" valType="code" updates="constant" name="letterHeight"/>
         <Param val="text_17" valType="code" updates="None" name="name"/>
         <Param val="1" valType="code" updates="constant" name="opacity"/>
         <Param val="0" valType="code" updates="constant" name="ori"/>
-        <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -2510,6 +2586,22 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <SoundComponent name="sound_18" plugin="None">
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="True" valType="bool" updates="constant" name="hamming"/>
+        <Param val="sound_18" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="resources/audio/combin_instr.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="constant" name="stopWithRoutine"/>
+        <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
+        <Param val="1" valType="num" updates="constant" name="volume"/>
+      </SoundComponent>
     </Routine>
     <Routine name="countReset">
       <RoutineSettingsComponent name="countReset" plugin="None">
@@ -2632,33 +2724,31 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="image_67" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
+      <TextComponent name="fix_image_67" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="resources/assets/star.png" valType="str" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="None" valType="str" updates="constant" name="mask"/>
-        <Param val="image_67" valType="code" updates="None" name="name"/>
-        <Param val="1" valType="code" updates="constant" name="opacity"/>
-        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="fix_image_67" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="$thisISI" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="512" valType="code" updates="constant" name="texture resolution"/>
+        <Param val="+" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <ImageComponent name="image_68" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
@@ -3053,33 +3143,31 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="image_11" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+      <TextComponent name="instr" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="resources/assets/star_text_formal.png" valType="file" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="" valType="str" updates="constant" name="mask"/>
-        <Param val="image_11" valType="code" updates="None" name="name"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Heiti SC" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="instr" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.9, 0.6)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="准备好，让我们开始正式实验。&amp;#10;&amp;#10;请保持注视屏幕上的“+”号注视点。&amp;#10;试着在保持正确的同时尽可能快地回答。&amp;#10;&amp;#10;如果您回答错误，继续回答下一题即可。&amp;#10;记得，回答完之后把手指放回Z键和M键上。&amp;#10;&amp;#10;&amp;#10;按空格键继续。&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <KeyboardComponent name="key_resp" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -3105,7 +3193,7 @@
         <Param val="True" valType="bool" updates="constant" name="hamming"/>
         <Param val="sound_3" valType="code" updates="None" name="name"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="resources/audio/F12.mp3" valType="str" updates="constant" name="sound"/>
+        <Param val="resources/audio/F12_new.wav" valType="str" updates="constant" name="sound"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>

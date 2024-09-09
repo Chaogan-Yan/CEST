@@ -1747,33 +1747,31 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="image_35" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
+      <TextComponent name="fix_1" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="img/star_middle.png" valType="str" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="None" valType="str" updates="constant" name="mask"/>
-        <Param val="image_35" valType="code" updates="None" name="name"/>
-        <Param val="1" valType="code" updates="constant" name="opacity"/>
-        <Param val="0" valType="code" updates="constant" name="ori"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="fix_1" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, .2)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="$thisISI" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="512" valType="code" updates="constant" name="texture resolution"/>
+        <Param val="+" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <ImageComponent name="image_33" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
@@ -2482,8 +2480,8 @@
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="ISIRange = linspace(1000, 3500, 500);&amp;#10;shuffle(ISIRange);&amp;#10;thisISI = (ISIRange[0] / 1000);&amp;#10;console.log(&quot;thisISI: &quot;, thisISI);&amp;#10;trials.addData(&quot;ISI&quot;, thisISI);&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="# pick the ISI for the next routine&amp;#10;# this code component is set to 'both' because we need to remove the 'np'&amp;#10;# at the start of np.linspace (this is a python library JS won't know what to call. &amp;#10;&amp;#10;# make range from a to b in n stepsizes&amp;#10;ISIRange = np.linspace(1000, 3500, 500)&amp;#10;&amp;#10;# picking from a shuffled array is easier for random selection in JS&amp;#10;shuffle(ISIRange)&amp;#10;thisISI = ISIRange[0]/1000 # the first item of the shuffled array &amp;#10;&amp;#10;# show in console for debugging&amp;#10;print('thisISI: ', thisISI)&amp;#10;&amp;#10;# save this ISI to our output file&amp;#10;trials.addData('ISI', thisISI)&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="ISIRange = linspace(1000, 1500, 500);&amp;#10;shuffle(ISIRange);&amp;#10;thisISI = (ISIRange[0] / 1000);&amp;#10;console.log(&quot;thisISI: &quot;, thisISI);&amp;#10;trials.addData(&quot;ISI&quot;, thisISI);&amp;#10;thistype = 'exercise';&amp;#10;trials.addData('type', thistype)" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="# pick the ISI for the next routine&amp;#10;# this code component is set to 'both' because we need to remove the 'np'&amp;#10;# at the start of np.linspace (this is a python library JS won't know what to call. &amp;#10;&amp;#10;# make range from a to b in n stepsizes&amp;#10;ISIRange = np.linspace(1000, 1500, 500)&amp;#10;&amp;#10;# picking from a shuffled array is easier for random selection in JS&amp;#10;shuffle(ISIRange)&amp;#10;thisISI = ISIRange[0]/1000 # the first item of the shuffled array &amp;#10;&amp;#10;# show in console for debugging&amp;#10;print('thisISI: ', thisISI)&amp;#10;&amp;#10;# save this ISI to our output file&amp;#10;trials.addData('ISI', thisISI)&amp;#10;&amp;#10;# save the type of trials to our output file&amp;#10;thistype = 'exercise'&amp;#10;trials.addData('type', thistype)" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code_10" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -2753,12 +2751,12 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="if (key_resp_2.keys) {&amp;#10;    if ((key_resp_2.keys[0] === &quot;z&quot;)) {&amp;#10;        if (key_resp_2.corr) {&amp;#10;            left = &quot;img/left_arrow_border.png&quot;;&amp;#10;            right = &quot;img/right_arrow.png&quot;;&amp;#10;            audio = &quot;audio/F-b.wav&quot;;&amp;#10;        } else {&amp;#10;            left = &quot;img/left_arrow.png&quot;;&amp;#10;            right = &quot;img/right_arrow_red.png&quot;;&amp;#10;            audio = &quot;audio/F-a.wav&quot;;&amp;#10;        }&amp;#10;    } else {&amp;#10;        if ((key_resp_2.keys[0] === &quot;m&quot;)) {&amp;#10;            if (key_resp_2.corr) {&amp;#10;                right = &quot;img/right_arrow_border.png&quot;;&amp;#10;                left = &quot;img/left_arrow.png&quot;;&amp;#10;                audio = &quot;audio/F-b.wav&quot;;&amp;#10;            } else {&amp;#10;                left = &quot;img/left_arrow_red.png&quot;;&amp;#10;                right = &quot;img/right_arrow.png&quot;;&amp;#10;                audio = &quot;audio/F-a.wav&quot;;&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;} else {&amp;#10;    if ((corrAns === &quot;m&quot;)) {&amp;#10;        left = &quot;img/left_arrow.png&quot;;&amp;#10;        right = &quot;img/right_arrow_red.png&quot;;&amp;#10;        audio = &quot;audio/F-a.wav&quot;;&amp;#10;    } else {&amp;#10;        right = &quot;img/right_arrow.png&quot;;&amp;#10;        left = &quot;img/left_arrow_red.png&quot;;&amp;#10;        audio = &quot;audio/F-a.wav&quot;;&amp;#10;    }&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="if key_resp_2.keys:&amp;#10;    if key_resp_2.keys[0] =='z':&amp;#10;        if key_resp_2.corr:&amp;#10;            left = 'img/left_arrow_border.png'&amp;#10;            right = 'img/right_arrow.png'&amp;#10;            audio = 'audio/F-b.wav'&amp;#10;        else:&amp;#10;            left = 'img/left_arrow.png'&amp;#10;            right = 'img/right_arrow_red.png'&amp;#10;            audio = 'audio/F-a.wav'&amp;#10;&amp;#10;    elif key_resp_2.keys[0] =='m':&amp;#10;        if key_resp_2.corr:&amp;#10;            right = 'img/right_arrow_border.png'&amp;#10;            left = 'img/left_arrow.png'&amp;#10;            audio = 'audio/F-b.wav'&amp;#10;        else:&amp;#10;            left = 'img/left_arrow_red.png'&amp;#10;            right = 'img/right_arrow.png'&amp;#10;            audio= 'audio/F-a.wav'&amp;#10;else:&amp;#10;    if corrAns == 'm':&amp;#10;                left = 'img/left_arrow.png'&amp;#10;                right = 'img/right_arrow_red.png'&amp;#10;                audio= 'audio/F-a.wav'&amp;#10;    else:&amp;#10;            right = 'img/right_arrow.png'&amp;#10;            left = 'img/left_arrow_red.png'&amp;#10;            audio= 'audio/F-a.wav'" valType="extendedCode" updates="constant" name="Begin Routine"/>
-        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="sound_9 = new sound.Sound({&amp;#10;      win: psychoJS.window,&amp;#10;      value: 'A',&amp;#10;      secs: 5,&amp;#10;      });&amp;#10;sound_9.setVolume(1.0);" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="code" valType="code" updates="None" name="name"/>
@@ -2896,6 +2894,31 @@
       </CodeComponent>
     </Routine>
     <Routine name="Main_Exp_Instructions">
+      <TextComponent name="text_10" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="heiti sc" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_10" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="准备好，让我们开始正式实验。&amp;#10;&amp;#10;请保持注视屏幕上的“+”注视点。&amp;#10;试着在保持正确的同时尽可能快地回答。&amp;#10;&amp;#10;如果您回答错误，继续回答下一题即可。&amp;#10;记得，回答完之后把手指放回Z键和M键上。&amp;#10;&amp;#10;&amp;#10;按空格键继续。&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <RoutineSettingsComponent name="Main_Exp_Instructions" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -2911,33 +2934,6 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="image_40" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="img/star_text_formal.png" valType="str" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="None" valType="str" updates="constant" name="mask"/>
-        <Param val="image_40" valType="code" updates="None" name="name"/>
-        <Param val="1" valType="code" updates="constant" name="opacity"/>
-        <Param val="0" valType="code" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.9, 0.6)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="512" valType="code" updates="constant" name="texture resolution"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
       <KeyboardComponent name="key_resp_9" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -2963,7 +2959,7 @@
         <Param val="True" valType="bool" updates="constant" name="hamming"/>
         <Param val="sound_13" valType="code" updates="None" name="name"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="audio/F12.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="audio/F12_new.wav" valType="str" updates="constant" name="sound"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2975,6 +2971,31 @@
       </SoundComponent>
     </Routine>
     <Routine name="Instructions_3">
+      <TextComponent name="text_2" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="heiti sc" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="text_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="现在请试一试。&amp;#10;&amp;#10;请保持注视屏幕上的“+”注视点。&amp;#10;试着在保持正确的同时尽可能快地回答。&amp;#10;&amp;#10;如果您回答错误，继续回答下一题即可。&amp;#10;记得，回答完之后把手指放回Z键和M键上。&amp;#10;&amp;#10;&amp;#10;按空格键继续。&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <RoutineSettingsComponent name="Instructions_3" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -2990,33 +3011,6 @@
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
-      <ImageComponent name="image_49" plugin="None">
-        <Param val="center" valType="str" updates="constant" name="anchor"/>
-        <Param val="$[1,1,1]" valType="str" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
-        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="img/star_text.png" valType="str" updates="constant" name="image"/>
-        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
-        <Param val="None" valType="str" updates="constant" name="mask"/>
-        <Param val="image_49" valType="code" updates="None" name="name"/>
-        <Param val="1" valType="code" updates="constant" name="opacity"/>
-        <Param val="0" valType="code" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.9, 0.6)" valType="list" updates="constant" name="size"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="512" valType="code" updates="constant" name="texture resolution"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-      </ImageComponent>
       <KeyboardComponent name="key_resp_16" plugin="None">
         <Param val="'space'" valType="list" updates="constant" name="allowedKeys"/>
         <Param val="" valType="str" updates="constant" name="correctAns"/>
@@ -3042,7 +3036,7 @@
         <Param val="True" valType="bool" updates="constant" name="hamming"/>
         <Param val="sound_24" valType="code" updates="None" name="name"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="audio/F11.wav" valType="str" updates="constant" name="sound"/>
+        <Param val="audio/F11_new.wav" valType="str" updates="constant" name="sound"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -3326,6 +3320,40 @@
         <Param val="code_13" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>
+    <Routine name="ISIcode_test">
+      <RoutineSettingsComponent name="ISIcode_test" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="ISIcode_test" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <CodeComponent name="code_14" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Both" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="ISIRange = linspace(1000, 1500, 500);&amp;#10;shuffle(ISIRange);&amp;#10;thisISI = (ISIRange[0] / 1000);&amp;#10;console.log(&quot;thisISI: &quot;, thisISI);&amp;#10;trials.addData(&quot;ISI&quot;, thisISI);&amp;#10;thistype = 'formal';&amp;#10;trials.addData('type', thistype)&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="# pick the ISI for the next routine&amp;#10;# this code component is set to 'both' because we need to remove the 'np'&amp;#10;# at the start of np.linspace (this is a python library JS won't know what to call. &amp;#10;&amp;#10;# make range from a to b in n stepsizes&amp;#10;ISIRange = np.linspace(1000, 1500, 500)&amp;#10;&amp;#10;# picking from a shuffled array is easier for random selection in JS&amp;#10;shuffle(ISIRange)&amp;#10;thisISI = ISIRange[0]/1000 # the first item of the shuffled array &amp;#10;&amp;#10;# show in console for debugging&amp;#10;print('thisISI: ', thisISI)&amp;#10;&amp;#10;# save this ISI to our output file&amp;#10;trials.addData('ISI', thisISI)&amp;#10;&amp;#10;# save the type of trials to our output file&amp;#10;thistype = 'formal'&amp;#10;trials.addData('type', thistype)" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_14" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
   </Routines>
   <Flow>
     <LoopInitiator loopType="TrialHandler" name="dummy_trial">
@@ -3363,7 +3391,7 @@
     <Routine name="Instructions_3"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('left_arrow', 'img/left_arrow.png'), ('right_arrow', 'img/right_arrow.png'), ('empty', 'img/congruent_left_empty.png'), ('middle', 'img/congruent_left.png'), ('corrAns', 'z')]), OrderedDict([('left_arrow', 'img/left_arrow.png'), ('right_arrow', 'img/right_arrow.png'), ('empty', 'img/congruent_right_empty.png'), ('middle', 'img/congruent_right.png'), ('corrAns', 'm')]), OrderedDict([('left_arrow', 'img/left_arrow.png'), ('right_arrow', 'img/right_arrow.png'), ('empty', 'img/incongruent_right_empty.png'), ('middle', 'img/incongruent_right.png'), ('corrAns', 'm')]), OrderedDict([('left_arrow', 'img/left_arrow.png'), ('right_arrow', 'img/right_arrow.png'), ('empty', 'img/incongruent_left_empty.png'), ('middle', 'img/incongruent_left.png'), ('corrAns', 'z')])]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_left_empty.png', 'middle': 'img/congruent_left.png', 'corrAns': 'z', 'condition': 'congruent'}, {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/congruent_right_empty.png', 'middle': 'img/congruent_right.png', 'corrAns': 'm', 'condition': 'congruent'}, {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_right_empty.png', 'middle': 'img/incongruent_right.png', 'corrAns': 'm', 'condition': 'incongruent'}, {'left_arrow': 'img/left_arrow.png', 'right_arrow': 'img/right_arrow.png', 'empty': 'img/incongruent_left_empty.png', 'middle': 'img/incongruent_left.png', 'corrAns': 'z', 'condition': 'incongruent'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="conditions_mixed.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -3385,7 +3413,7 @@
     <Routine name="Main_Exp_Instructions"/>
     <LoopInitiator loopType="TrialHandler" name="test_trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[{'blockfile': 'PNblock1.xlsx'}, {'blockfile': 'PNblock2.xlsx'}, {'blockfile': 'PNblock3.xlsx'}, {'blockfile': 'PNblock4.xlsx'}, {'blockfile': 'PNblock5.xlsx'}, {'blockfile': 'PNblock6.xlsx'}, {'blockfile': 'PNblock7.xlsx'}, {'blockfile': None}, {'blockfile': None}, {'blockfile': None}, {'blockfile': None}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[{'blockfile': 'PNblock1.xlsx'}, {'blockfile': 'PNblock2.xlsx'}, {'blockfile': 'PNblock3.xlsx'}, {'blockfile': 'PNblock4.xlsx'}, {'blockfile': 'PNblock5.xlsx'}, {'blockfile': 'PNblock6.xlsx'}, {'blockfile': 'PNblock7.xlsx'}]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="conditions_test(13+7).xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
@@ -3406,7 +3434,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="inter_trial_interval"/>
-    <Routine name="ISIcode"/>
+    <Routine name="ISIcode_test"/>
     <Routine name="fixation"/>
     <Routine name="Cue"/>
     <Routine name="Stim"/>

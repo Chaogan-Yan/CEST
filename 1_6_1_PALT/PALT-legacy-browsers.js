@@ -321,7 +321,7 @@ async function experimentInit() {
   instr_4_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'instr_4_text',
-    text: '好，下面我读前面一个词，\n\n请您回答和它一对儿的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样后作答。\n\n\n按空格键继续。',
+    text: '好，下面我读前面一个词，\n\n请您回答和它一对儿的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样消失后再进行作答。\n\n\n按空格键继续。',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -382,7 +382,7 @@ async function experimentInit() {
     name : 'image_4', units : undefined, 
     image : 'mic_icon.jpg', mask : undefined,
     anchor : 'center',
-    ori : 0.0, pos : [0, 0.1], size : [0.1, 0.1],
+    ori : 0.0, pos : [0, 0], size : [0.1, 0.1],
     color : new util.Color([1,1,1]), opacity : undefined,
     flipHoriz : false, flipVert : false,
     texRes : 128.0, interpolate : true, depth : -5.0 
@@ -1660,7 +1660,7 @@ function answerRoutineEachFrame() {
     }
     
     // *image_4* updates
-    if (t >= 1.5 && image_4.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 2.5 && image_4.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       image_4.tStart = t;  // (not accounting for frame time here)
       image_4.frameNStart = frameN;  // exact frame index
@@ -1668,7 +1668,7 @@ function answerRoutineEachFrame() {
       image_4.setAutoDraw(true);
     }
     
-    frameRemains = 1.5 + 5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 2.5 + 4 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (image_4.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       image_4.setAutoDraw(false);
     }
