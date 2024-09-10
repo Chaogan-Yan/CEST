@@ -1,0 +1,799 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+/*!
+ *  Spatial Plugin - Adds support for stereo and 3D audio where Web Audio is supported.
+ *  
+ *  howler.js v2.2.1
+ *  howlerjs.com
+ *
+ *  (c) 2013-2020, James Simpson of GoldFire Studios
+ *  goldfirestudios.com
+ *
+ *  MIT License
+ */
+/*!
+ *  howler.js v2.2.1
+ *  howlerjs.com
+ *
+ *  (c) 2013-2020, James Simpson of GoldFire Studios
+ *  goldfirestudios.com
+ *
+ *  MIT License
+ */
+/*!
+ * @pixi/accessibility - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/accessibility is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/app - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/app is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-display - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-display is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-extract - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-extract is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-graphics - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-graphics is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-mesh - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-mesh is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-particles - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-particles is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-prepare - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-prepare is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-renderer - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-renderer is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-sprite - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-sprite is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-sprite-tiling - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-sprite-tiling is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/canvas-text - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/canvas-text is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/compressed-textures - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/compressed-textures is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/constants - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/constants is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/core - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/core is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/display - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/display is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/extract - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/extract is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/filter-adjustment - v4.1.3
+ * Compiled Thu, 17 Jun 2021 19:33:56 UTC
+ *
+ * @pixi/filter-adjustment is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/filter-alpha - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/filter-alpha is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/filter-blur - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/filter-blur is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/filter-color-matrix - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/filter-color-matrix is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/filter-displacement - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/filter-displacement is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/filter-fxaa - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/filter-fxaa is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/filter-noise - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/filter-noise is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/graphics - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/graphics is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/interaction - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/interaction is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/loaders - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/loaders is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/math - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/math is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/mesh - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/mesh is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/mesh-extras - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/mesh-extras is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/mixin-cache-as-bitmap - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/mixin-cache-as-bitmap is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/mixin-get-child-by-name - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/mixin-get-child-by-name is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/mixin-get-global-position - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/mixin-get-global-position is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/particles - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/particles is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/polyfill - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/polyfill is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/prepare - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/prepare is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/runner - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/runner is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/settings - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/settings is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/sprite - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/sprite is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/sprite-animated - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/sprite-animated is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/sprite-tiling - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/sprite-tiling is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/spritesheet - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/spritesheet is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/text - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/text is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/text-bitmap - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/text-bitmap is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/ticker - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/ticker is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * @pixi/utils - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * @pixi/utils is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * pixi.js - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * pixi.js is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * pixi.js-legacy - v6.0.4
+ * Compiled Tue, 11 May 2021 18:00:23 UTC
+ *
+ * pixi.js-legacy is licensed under the MIT License.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*!
+ * resource-loader - v3.0.1
+ * https://github.com/pixijs/pixi-sound
+ * Compiled Tue, 02 Jul 2019 14:06:18 UTC
+ *
+ * resource-loader is licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license
+ */
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+/*! https://mths.be/punycode v1.3.2 by @mathias */
+/*! sheetjs (C) 2013-present SheetJS -- http://sheetjs.com */
+/*! xlsx.js (C) 2013-present SheetJS -- http://sheetjs.com */
+/**
+ * AudioClip Player.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * AudioClip encapsulates an audio recording.
+ *
+ * @author Alain Pitiot and Sotiri Bakagiannis
+ * @version 2022.2.3
+ * @copyright (c) 2021 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Base class for all stimuli.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.0
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Base class for all visual stimuli.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Basic Shape Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Button Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Clock component.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Color Mixin.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Color management.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Core Object.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Editable TextBox Stimulus.
+ *
+ * @author Alain Pitiot, Nikita Agafonov
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Event Emitter.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Experiment Handler
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Form Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Graphic User Interface
+ *
+ * @author Alain Pitiot
+ * @author Sijia Zhao - fine-grained resource loading
+ * @version 2021.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Grating Stimulus.
+ *
+ * @author Nikita Agafonov
+ * @version 2021.2.3
+ * @copyright (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Image Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Logger
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Main component of the PsychoJS library.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager handling the detecting of faces in video streams.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2021 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager handling the keyboard and mouse/touch events.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager handling the keyboard events.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager handling the live transcription of speech into text.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager handling the recording of audio signal.
+ *
+ * @author Alain Pitiot and Sotiri Bakagiannis
+ * @version 2022.2.3
+ * @copyright (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager handling the recording of video signal.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.0
+ * @copyright (c) 2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager responsible for the communication between the experiment running in the participant's browser and the
+ * pavlovia.org server.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd.
+ *   (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Manager responsible for the interactions between the experiment's stimuli and the mouse.
+ *
+ * @author Alain Pitiot
+ * @author Sotiri Bakagiannis  - isPressedIn
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Mixin implementing various unit-handling measurement methods.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Movie Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Multiple Staircase Trial Handler
+ *
+ * @author Alain Pitiot
+ * @version 2021.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd.
+ *   (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * PIXI utilities.
+ *
+ * @authors Alain Pitiot, Sotiri Bakagiannis, Thomas Pronk
+ * @version 2022.2.0
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Particle Emitter.
+ *
+ * @author Nikita Agafonov
+ * @version 2023.2.0
+ * @copyright (c) 2020-2023 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Polygonal Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Quest Trial Handler
+ *
+ * @author Alain Pitiot & Thomas Pronk
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Rectangular Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Scheduler.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Shelf handles persistent key/value pairs, or records, which are stored in the shelf collection on the
+ * server, and can be accessed and manipulated in a concurrent fashion.
+ *
+ * @author Alain Pitiot
+ * @version 2021.2.3
+ * @copyright (c) 2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Slider Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Sound player interface
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Sound stimulus.
+ *
+ * @author Alain Pitiot, Nikita Agafonov
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Survey Stimulus.
+ *
+ * @author Alain Pitiot and Nikita Agafonov
+ * @version 2022.3
+ * @copyright (c) 2023 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Text Stimulus.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * TextInput encapsulates an html <input> element into a PIXI Container.
+ *
+ * @author 'Mwni' (https://github.com/Mwni), Nikita Agafonov
+ * @copyright (c) 2018 Mwni
+ * @license Distributed under the terms of the MIT License
+ *
+ * @note TextInput was initially developed by 'Mwni' and is available under the MIT License.
+ * We are currently modifying it to our needs.
+ */
+/**
+ * Tone Player.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Tone.js
+ * @author Yotam Mann
+ * @license http://opensource.org/licenses/MIT MIT License
+ * @copyright 2014-2019 Yotam Mann
+ */
+/**
+ * Track Player.
+ *
+ * @author Alain Pitiot
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Trial Handler
+ *
+ * @author Alain Pitiot
+ * @author Hiroyuki Sogo & Sotiri Bakagiannis  - better support for BOM and accented characters
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Various utilities.
+ *
+ * @authors Alain Pitiot, Sotiri Bakagiannis, Thomas Pronk
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
+/**
+ * Window responsible for displaying the experiment stimuli
+ *
+ * @author Alain Pitiot & Nikita Agafonov
+ * @version 2022.2.3
+ * @copyright (c) 2017-2020 Ilixa Ltd. (http://ilixa.com) (c) 2020-2022 Open Science Tools Ltd. (https://opensciencetools.org)
+ * @license Distributed under the terms of the MIT License
+ */
