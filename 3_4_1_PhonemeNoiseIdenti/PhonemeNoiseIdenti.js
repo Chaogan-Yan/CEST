@@ -87,7 +87,7 @@ psychoJS.start({
     // resources:
     {'name': 'data_trials_practice.xlsx', 'path': 'data_trials_practice.xlsx'},
     {'name': 'data_trials.xlsx', 'path': 'data_trials.xlsx'},
-    {'name': 'intro.wav', 'path': 'intro.wav'},
+    {'name': 'intro_new.wav', 'path': 'intro_new.wav'},
     {'name': 'noise_SNR_phonemes/ba_rms.wav', 'path': 'noise_SNR_phonemes/ba_rms.wav'},
     {'name': 'noise_SNR_phonemes/ca_rms.wav', 'path': 'noise_SNR_phonemes/ca_rms.wav'},
     {'name': 'noise_SNR_phonemes/cha_rms.wav', 'path': 'noise_SNR_phonemes/cha_rms.wav'},
@@ -247,7 +247,7 @@ async function experimentInit() {
   text = new visual.TextStim({
     win: psychoJS.window,
     name: 'text',
-    text: '欢迎来到噪声下音节识别任务！\n\n请在看到星号注视点时，认真听音节\n如果听到噪声干扰，请认真分辨噪声中的音节\n\n请在看到选项后，选择您听到的音节\n按z键选择屏幕左侧音节\n按m键选择屏幕右侧音节\n\n准备好请按空格开始练习\n',
+    text: '欢迎来到噪声下音节识别任务！\n\n请在看到“+”注视点时，认真听音节\n如果听到噪声干扰，请认真分辨噪声中的音节\n\n请在看到选项后，选择您听到的音节\n按z键选择屏幕左侧音节\n按m键选择屏幕右侧音节\n\n准备好请按空格开始练习\n',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -260,7 +260,7 @@ async function experimentInit() {
   
   intro_sound = new sound.Sound({
       win: psychoJS.window,
-      value: 'intro.wav',
+      value: 'intro_new.wav',
       secs: (- 1),
       });
   intro_sound.setVolume(1.0);
@@ -334,7 +334,7 @@ async function experimentInit() {
     text: '',
     font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color([1.0, 1.0, 1.0]),  opacity: undefined,
     depth: 0.0 
@@ -348,7 +348,7 @@ async function experimentInit() {
     text: '继续练习请按“1”\n开始任务请按“4”',
     font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color([1.0, 1.0, 1.0]),  opacity: undefined,
     depth: 0.0 
@@ -364,7 +364,7 @@ async function experimentInit() {
     text: '接下来开始正式任务！',
     font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -440,7 +440,7 @@ async function experimentInit() {
     text: '实验结束。\n\n感谢您的参与！',
     font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.1,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color([1.0, 1.0, 1.0]),  opacity: undefined,
     depth: 0.0 

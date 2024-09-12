@@ -175,7 +175,7 @@ async function experimentInit() {
   instr_4_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'instr_4_text',
-    text: '请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样消失后再进行作答。\n\n\n按空格键开始。',
+    text: '请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样【消失】后再进行作答。\n\n\n按空格键开始。',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
