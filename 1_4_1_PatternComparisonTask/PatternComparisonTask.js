@@ -92,7 +92,7 @@ psychoJS.start({
     {'name': 'prac_conditions.xlsx', 'path': 'prac_conditions.xlsx'},
     {'name': 'conditions.xlsx', 'path': 'conditions.xlsx'},
     {'name': 'audio/instr_1.wav', 'path': 'audio/instr_1.wav'},
-    {'name': 'audio/instr_2.wav', 'path': 'audio/instr_2.wav'},
+    {'name': 'audio/instr_2_new.wav', 'path': 'audio/instr_2_new.wav'},
     {'name': 'default.png', 'path': 'https://pavlovia.org/assets/default/default.png'},
     {'name': 'audio/instr_3.wav', 'path': 'audio/instr_3.wav'},
     {'name': 'audio/prac_rest_instr_1.wav', 'path': 'audio/prac_rest_instr_1.wav'},
@@ -253,7 +253,7 @@ async function experimentInit() {
   instructions_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'instructions_2',
-    text: '现在，请试一试。\n\n请保持注视屏幕上的“+”注视点，\n并在看到图片后立即做出反应，\n试着在保证正确的同时尽可能快地回答。\n我们将提供反馈（包括反应时间）。\n\n如果您回答错误，继续回答下一题即可。\n记得，在整个实验过程中将手指放在答题键上。\n\n\n按空格键开始练习。\n',
+    text: '现在，请试一试。\n\n请保持注视屏幕上的“+”注视点，\n并在看到图片后立即做出反应，\n试着在保证正确的同时尽可能快地回答。\n\n如果您回答错误，继续回答下一题即可。\n记得，在整个实验过程中将手指放在答题键上。\n\n\n按空格键继续。\n',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -266,7 +266,7 @@ async function experimentInit() {
   
   instr_2_sound = new sound.Sound({
       win: psychoJS.window,
-      value: 'audio/instr_2.wav',
+      value: 'audio/instr_2_new.wav',
       secs: (- 1),
       });
   instr_2_sound.setVolume(1.0);
@@ -496,9 +496,9 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'contn',
     text: '继续',
-    font: 'Open Sans',
+    font: 'Heiti SC',
     units: undefined, 
-    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, (- 0.3)], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: -2.0 
