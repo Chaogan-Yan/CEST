@@ -834,7 +834,7 @@ function answerRoutineEnd(snapshot) {
     // stop the microphone (make the audio data ready for upload)
     await mic.stop();
     // construct a filename for this recording
-    thisFilename = psychoJS.experiment.dataFileName.substring(7) + '_' + 'recording_mic_' + 'block_' + block.thisN + '_' + currentLoop.name + '_' + currentLoop.thisN
+    thisFilename = psychoJS.experiment.dataFileName.substring(7) + '_' + 'recording_mic_' + currentLoop.name + '_' + currentLoop.thisN
     // get the recording
     mic.lastClip = await mic.getRecording({
       tag: thisFilename + '_' + util.MonotonicClock.getDateStr(),

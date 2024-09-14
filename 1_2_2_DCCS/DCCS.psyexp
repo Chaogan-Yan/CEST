@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" ?>
 <PsychoPy2experiment encoding="utf-8" version="2023.2.2">
   <Settings>
-    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
-    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="3" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="pygame" valType="str" updates="None" name="Audio lib"/>
     <Param val="" valType="str" updates="None" name="Completed URL"/>
     <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
     <Param val="u'data/%s_1_2_2_%s_%s_%s' % (expInfo['主试ID'], expName, expInfo['编号'], expInfo['date'])" valType="code" updates="None" name="Data filename"/>
