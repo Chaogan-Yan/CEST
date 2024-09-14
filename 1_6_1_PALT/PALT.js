@@ -134,8 +134,11 @@ psychoJS.start({
     {'name': 'audio/instr.wav', 'path': 'audio/instr.wav'},
     {'name': 'audio/instr_2.wav', 'path': 'audio/instr_2.wav'},
     {'name': 'player_icon.jpg', 'path': 'player_icon.jpg'},
-    {'name': 'audio/instr_4.wav', 'path': 'audio/instr_4.wav'},
+    {'name': 'audio/instr_4_new.wav', 'path': 'audio/instr_4_new.wav'},
     {'name': 'mic_icon.jpg', 'path': 'mic_icon.jpg'},
+    {'name': 'audio/instr_3_1.wav', 'path': 'audio/instr_3_1.wav'},
+    {'name': 'audio/instr_3_2.wav', 'path': 'audio/instr_3_2.wav'},
+    {'name': 'audio/instr_3_3.wav', 'path': 'audio/instr_3_3.wav'},
   ]
 });
 
@@ -265,7 +268,7 @@ async function experimentInit() {
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: 0.0 
+    depth: -1.0 
   });
   
   instr_3_sound = new sound.Sound({
@@ -329,7 +332,7 @@ async function experimentInit() {
   instr_4_text = new visual.TextStim({
     win: psychoJS.window,
     name: 'instr_4_text',
-    text: '好，下面我读前面一个词，\n\n请您回答和它一对儿的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样消失后再进行作答。\n\n\n按空格键继续。',
+    text: '好，下面我读前面一个词，\n\n请您回答和它一对的后面一个词。\n\n请注意，每对词允许的回忆时间为5秒。\n\n请在看到“请作答”的提示字样【消失】后再进行作答。\n\n\n按空格键继续。',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -342,7 +345,7 @@ async function experimentInit() {
   
   instr_4_sound = new sound.Sound({
       win: psychoJS.window,
-      value: 'audio/instr_4.wav',
+      value: 'audio/instr_4_new.wav',
       secs: (- 1),
       });
   instr_4_sound.setVolume(1.0);
@@ -1068,6 +1071,7 @@ function instr_3RoutineEachFrame() {
 }
 
 
+var instr_sound_3;
 function instr_3RoutineEnd(snapshot) {
   return async function () {
     //--- Ending Routine 'instr_3' ---
@@ -1077,6 +1081,12 @@ function instr_3RoutineEnd(snapshot) {
       }
     }
     psychoJS.experiment.addData('instr_3.stopped', globalClock.getTime());
+    instr_sound_3 = new sound.Sound({
+          win: psychoJS.window,
+          value: 'A',
+          secs: 4,
+          });
+    instr_sound_3.setVolume(1.0);
     instr_3_sound.stop();  // ensure sound has stopped at end of Routine
     // Routines running outside a loop should always advance the datafile row
     if (currentLoop === psychoJS.experiment) {
@@ -1987,6 +1997,8 @@ async function quitPsychoJS(message, isCompleted) {
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   
