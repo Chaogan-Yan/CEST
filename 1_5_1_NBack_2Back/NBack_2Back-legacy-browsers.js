@@ -107,7 +107,6 @@ flowScheduler.add(block_loopLoopEnd);
 
 
 
-
 flowScheduler.add(thanksRoutineBegin());
 flowScheduler.add(thanksRoutineEachFrame());
 flowScheduler.add(thanksRoutineEnd());
@@ -138,7 +137,7 @@ psychoJS.start({
     {'name': 'audio/instr_4_3.wav', 'path': 'audio/instr_4_3.wav'},
     {'name': 'audio/instr_4_1.wav', 'path': 'audio/instr_4_1.wav'},
     {'name': 'audio/instr_4_2.wav', 'path': 'audio/instr_4_2.wav'},
-    {'name': 'audio/instr_5.wav', 'path': 'audio/instr_5.wav'},
+    {'name': 'audio/instr_5_new.wav', 'path': 'audio/instr_5_new.wav'},
     {'name': 'audio/prac_rest_instr_1.wav', 'path': 'audio/prac_rest_instr_1.wav'},
     {'name': 'audio/prac_rest_instr_2.wav', 'path': 'audio/prac_rest_instr_2.wav'},
     {'name': 'audio/noresp.wav', 'path': 'audio/noresp.wav'},
@@ -202,6 +201,7 @@ var welpage_3_1;
 var instr_key_resp_3_1;
 var instr_3_1_sound;
 var instr_3_2Clock;
+var text_45;
 var text_9;
 var text;
 var instr_3_2_sound;
@@ -336,14 +336,9 @@ var stimu;
 var blank;
 var key_resp;
 var block_fbClock;
+var blockn;
 var block_feedb_text;
 var block_fb_key_resp;
-var restClock;
-var rest_text;
-var blockn;
-var text_rest;
-var contn;
-var mouse_contn;
 var thanksClock;
 var endpage;
 var globalClock;
@@ -483,6 +478,18 @@ async function experimentInit() {
   instr_3_1_sound.setVolume(1.0);
   // Initialize components for Routine "instr_3_2"
   instr_3_2Clock = new util.Clock();
+  text_45 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_45',
+    text: '试一试',
+    font: 'Heiti SC',
+    units: undefined, 
+    pos: [0, 0.4], height: 0.035,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
   text_9 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_9',
@@ -492,7 +499,7 @@ async function experimentInit() {
     pos: [0, 0.35], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: 0.0 
+    depth: -1.0 
   });
   
   text = new visual.TextStim({
@@ -504,7 +511,7 @@ async function experimentInit() {
     pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
-    depth: -1.0 
+    depth: -2.0 
   });
   
   instr_3_2_sound = new sound.Sound({
@@ -594,7 +601,7 @@ async function experimentInit() {
   text_12 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_12',
-    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？',
+    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？\n(提示：您需要回忆刚才呈现过的数字，做出判断）',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.35], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -710,7 +717,7 @@ async function experimentInit() {
   text_15 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_15',
-    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？',
+    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？\n(提示：您需要回忆刚才呈现过的数字，做出判断）',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.35], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -838,7 +845,7 @@ async function experimentInit() {
   text_24 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_24',
-    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？',
+    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？\n(提示：您需要回忆刚才呈现过的数字，做出判断）',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.35], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -978,7 +985,7 @@ async function experimentInit() {
   text_33 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_33',
-    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？',
+    text: '请判断：这个数字与往前数第2个数字 相同 还是 不同？\n(提示：您需要回忆刚才呈现过的数字，做出判断）',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0.35], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -1350,7 +1357,7 @@ async function experimentInit() {
   welpage_exp = new visual.TextStim({
     win: psychoJS.window,
     name: 'welpage_exp',
-    text: '做得好！练习结束了。\n\n让我们开始正式实验吧。\n请注意，正式实验中不再提供正误反馈。\n\n记得，在看到数字后立即做出反应，\n试着在保证正确的同时尽可能快地回答。\n\n\n请按空格键继续。',
+    text: '练习结束了。\n\n让我们开始正式实验吧。\n请注意，正式实验中不再提供正误反馈。\n\n记得，在看到数字后立即做出反应，\n试着在保证正确的同时尽可能快地回答。\n\n\n请按空格键继续。',
     font: 'Heiti SC',
     units: undefined, 
     pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
@@ -1363,7 +1370,7 @@ async function experimentInit() {
   
   instr_sound_5 = new sound.Sound({
       win: psychoJS.window,
-      value: 'audio/instr_5.wav',
+      value: 'audio/instr_5_new.wav',
       secs: (- 1),
       });
   instr_sound_5.setVolume(1.0);
@@ -1422,6 +1429,7 @@ async function experimentInit() {
   block_fbClock = new util.Clock();
   // Run 'Begin Experiment' code from code_3
   block_feedb = "";
+  blockn = 0;
   
   block_feedb_text = new visual.TextStim({
     win: psychoJS.window,
@@ -1437,40 +1445,6 @@ async function experimentInit() {
   
   block_fb_key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
-  // Initialize components for Routine "rest"
-  restClock = new util.Clock();
-  // Run 'Begin Experiment' code from code_7
-  rest_text = "";
-  blockn = 0;
-  
-  text_rest = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_rest',
-    text: '',
-    font: 'Heiti SC',
-    units: undefined, 
-    pos: [0, 0], height: 0.035,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -1.0 
-  });
-  
-  contn = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'contn',
-    text: '继续',
-    font: 'Heiti SC',
-    units: undefined, 
-    pos: [0, (- 0.3)], height: 0.035,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -2.0 
-  });
-  
-  mouse_contn = new core.Mouse({
-    win: psychoJS.window,
-  });
-  mouse_contn.mouseClock = new util.Clock();
   // Initialize components for Routine "thanks"
   thanksClock = new util.Clock();
   endpage = new visual.TextStim({
@@ -2305,7 +2279,7 @@ function prac_block_loopLoopBegin(prac_block_loopLoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     prac_block_loop = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 999, method: TrialHandler.Method.SEQUENTIAL,
+      nReps: 3, method: TrialHandler.Method.SEQUENTIAL,
       extraInfo: expInfo, originPath: undefined,
       trialList: undefined,
       seed: undefined, name: 'prac_block_loop'
@@ -2469,9 +2443,6 @@ function block_loopLoopBegin(block_loopLoopScheduler, snapshot) {
       block_loopLoopScheduler.add(block_fbRoutineBegin(snapshot));
       block_loopLoopScheduler.add(block_fbRoutineEachFrame());
       block_loopLoopScheduler.add(block_fbRoutineEnd(snapshot));
-      block_loopLoopScheduler.add(restRoutineBegin(snapshot));
-      block_loopLoopScheduler.add(restRoutineEachFrame());
-      block_loopLoopScheduler.add(restRoutineEnd(snapshot));
       block_loopLoopScheduler.add(block_loopLoopEndIteration(block_loopLoopScheduler, snapshot));
     });
     
@@ -2593,6 +2564,7 @@ function instr_3_2RoutineBegin(snapshot) {
     instr_3_2_sound.setVolume(1.0);
     // keep track of which components have finished
     instr_3_2Components = [];
+    instr_3_2Components.push(text_45);
     instr_3_2Components.push(text_9);
     instr_3_2Components.push(text);
     instr_3_2Components.push(instr_3_2_sound);
@@ -2614,6 +2586,20 @@ function instr_3_2RoutineEachFrame() {
     t = instr_3_2Clock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
+    
+    // *text_45* updates
+    if (t >= 0.0 && text_45.status === PsychoJS.Status.NOT_STARTED) {
+      // keep track of start time/frame for later
+      text_45.tStart = t;  // (not accounting for frame time here)
+      text_45.frameNStart = frameN;  // exact frame index
+      
+      text_45.setAutoDraw(true);
+    }
+    
+    frameRemains = 0.0 + 6 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    if (text_45.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      text_45.setAutoDraw(false);
+    }
     
     // *text_9* updates
     if (t >= 0.0 && text_9.status === PsychoJS.Status.NOT_STARTED) {
@@ -6577,14 +6563,15 @@ function block_fbRoutineBegin(snapshot) {
     // update component parameters for each repeat
     psychoJS.experiment.addData('block_fb.started', globalClock.getTime());
     // Run 'Begin Routine' code from code_3
-    exp_acc = (exp_corr.reduce((a, b) => a + b, 0) / exp_corr.length) * 100;
-    
-    if (exp_rt.length == 0) {
-        block_feedb = '您的正确率为0。\n请确保明白实验规则再继续实验。\n\n\n请按空格键继续。';
+    exp_acc = ((util.sum(exp_corr) / exp_corr.length) * 100);
+    blockn = (3 - block_loop.thisN);
+    if ((exp_rt.length === 0)) {
+        block_feedb = "\u60a8\u7684\u6b63\u786e\u7387\u4e3a0\u3002\n\u8bf7\u786e\u4fdd\u660e\u767d\u5b9e\u9a8c\u89c4\u5219\u518d\u7ee7\u7eed\u5b9e\u9a8c\u3002\n\n\n\u8bf7\u6309\u7a7a\u683c\u952e\u7ee7\u7eed\u3002";
     } else {
-        exp_meanRT = exp_rt.reduce((a, b) => a + b, 0) / exp_rt.length;
-        block_feedb = `您的正确率为${exp_acc.toFixed(2)}%\n您的平均反应时为${exp_meanRT.toFixed(2)}秒\n\n\n请按空格键继续。`;
+        exp_meanRT = (util.sum(exp_rt) / exp_rt.length);
+        block_feedb = `您的正确率为${exp_acc.toFixed(2)}%\n您的平均反应时为${exp_meanRT.toFixed(2)}秒\n当前剩余${blockn.toFixed(0)}组实验\n\n\n请按空格键继续。`;
     }
+    
     block_feedb_text.setText(block_feedb);
     block_fb_key_resp.keys = undefined;
     block_fb_key_resp.rt = undefined;
@@ -6699,181 +6686,6 @@ function block_fbRoutineEnd(snapshot) {
     
     block_fb_key_resp.stop();
     // the Routine "block_fb" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset();
-    
-    // Routines running outside a loop should always advance the datafile row
-    if (currentLoop === psychoJS.experiment) {
-      psychoJS.experiment.nextEntry(snapshot);
-    }
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-var gotValidClick;
-var restComponents;
-function restRoutineBegin(snapshot) {
-  return async function () {
-    TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
-    
-    //--- Prepare to start Routine 'rest' ---
-    t = 0;
-    restClock.reset(); // clock
-    frameN = -1;
-    continueRoutine = true; // until we're told otherwise
-    // update component parameters for each repeat
-    psychoJS.experiment.addData('rest.started', globalClock.getTime());
-    // Run 'Begin Routine' code from code_7
-    if ((block_loop.thisN === 3)) {
-        continueRoutine = false;
-    } else {
-        continueRoutine = true;
-    }
-    blockn = (3 - block_loop.thisN);
-    rest_text = `休息2分钟
-    
-    准备好了请点击“继续”
-    
-    当前剩余${blockn}组实验`
-    ;
-    
-    text_rest.setText(rest_text);
-    // setup some python lists for storing info about the mouse_contn
-    // current position of the mouse:
-    mouse_contn.x = [];
-    mouse_contn.y = [];
-    mouse_contn.leftButton = [];
-    mouse_contn.midButton = [];
-    mouse_contn.rightButton = [];
-    mouse_contn.time = [];
-    mouse_contn.clicked_name = [];
-    gotValidClick = false; // until a click is received
-    // keep track of which components have finished
-    restComponents = [];
-    restComponents.push(text_rest);
-    restComponents.push(contn);
-    restComponents.push(mouse_contn);
-    
-    restComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent)
-        thisComponent.status = PsychoJS.Status.NOT_STARTED;
-       });
-    return Scheduler.Event.NEXT;
-  }
-}
-
-
-var prevButtonState;
-var _mouseButtons;
-var _mouseXYs;
-function restRoutineEachFrame() {
-  return async function () {
-    //--- Loop for each frame of Routine 'rest' ---
-    // get current time
-    t = restClock.getTime();
-    frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
-    // update/draw components on each frame
-    
-    // *text_rest* updates
-    if (t >= 0.0 && text_rest.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      text_rest.tStart = t;  // (not accounting for frame time here)
-      text_rest.frameNStart = frameN;  // exact frame index
-      
-      text_rest.setAutoDraw(true);
-    }
-    
-    
-    // *contn* updates
-    if (t >= 120 && contn.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      contn.tStart = t;  // (not accounting for frame time here)
-      contn.frameNStart = frameN;  // exact frame index
-      
-      contn.setAutoDraw(true);
-    }
-    
-    // *mouse_contn* updates
-    if (t >= 120 && mouse_contn.status === PsychoJS.Status.NOT_STARTED) {
-      // keep track of start time/frame for later
-      mouse_contn.tStart = t;  // (not accounting for frame time here)
-      mouse_contn.frameNStart = frameN;  // exact frame index
-      
-      mouse_contn.status = PsychoJS.Status.STARTED;
-      mouse_contn.mouseClock.reset();
-      prevButtonState = mouse_contn.getPressed();  // if button is down already this ISN'T a new click
-      }
-    if (mouse_contn.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = mouse_contn.getPressed();
-      if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
-        prevButtonState = _mouseButtons;
-        if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
-          // check if the mouse was inside our 'clickable' objects
-          gotValidClick = false;
-          for (const obj of [contn]) {
-            if (obj.contains(mouse_contn)) {
-              gotValidClick = true;
-              mouse_contn.clicked_name.push(obj.name)
-            }
-          }
-          _mouseXYs = mouse_contn.getPos();
-          mouse_contn.x.push(_mouseXYs[0]);
-          mouse_contn.y.push(_mouseXYs[1]);
-          mouse_contn.leftButton.push(_mouseButtons[0]);
-          mouse_contn.midButton.push(_mouseButtons[1]);
-          mouse_contn.rightButton.push(_mouseButtons[2]);
-          mouse_contn.time.push(mouse_contn.mouseClock.getTime());
-          // end routine on response
-          continueRoutine = false;
-        }
-      }
-    }
-    // check for quit (typically the Esc key)
-    if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-      return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
-    }
-    
-    // check if the Routine should terminate
-    if (!continueRoutine) {  // a component has requested a forced-end of Routine
-      return Scheduler.Event.NEXT;
-    }
-    
-    continueRoutine = false;  // reverts to True if at least one component still running
-    restComponents.forEach( function(thisComponent) {
-      if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
-        continueRoutine = true;
-      }
-    });
-    
-    // refresh the screen if continuing
-    if (continueRoutine) {
-      return Scheduler.Event.FLIP_REPEAT;
-    } else {
-      return Scheduler.Event.NEXT;
-    }
-  };
-}
-
-
-function restRoutineEnd(snapshot) {
-  return async function () {
-    //--- Ending Routine 'rest' ---
-    restComponents.forEach( function(thisComponent) {
-      if (typeof thisComponent.setAutoDraw === 'function') {
-        thisComponent.setAutoDraw(false);
-      }
-    });
-    psychoJS.experiment.addData('rest.stopped', globalClock.getTime());
-    // store data for psychoJS.experiment (ExperimentHandler)
-    if (mouse_contn.x) {  psychoJS.experiment.addData('mouse_contn.x', mouse_contn.x[0])};
-    if (mouse_contn.y) {  psychoJS.experiment.addData('mouse_contn.y', mouse_contn.y[0])};
-    if (mouse_contn.leftButton) {  psychoJS.experiment.addData('mouse_contn.leftButton', mouse_contn.leftButton[0])};
-    if (mouse_contn.midButton) {  psychoJS.experiment.addData('mouse_contn.midButton', mouse_contn.midButton[0])};
-    if (mouse_contn.rightButton) {  psychoJS.experiment.addData('mouse_contn.rightButton', mouse_contn.rightButton[0])};
-    if (mouse_contn.time) {  psychoJS.experiment.addData('mouse_contn.time', mouse_contn.time[0])};
-    if (mouse_contn.clicked_name) {  psychoJS.experiment.addData('mouse_contn.clicked_name', mouse_contn.clicked_name[0])};
-    
-    // the Routine "rest" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset();
     
     // Routines running outside a loop should always advance the datafile row

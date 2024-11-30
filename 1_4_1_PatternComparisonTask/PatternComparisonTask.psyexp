@@ -887,10 +887,10 @@
       <CodeComponent name="code_5" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="exp_acc = (exp_corr.reduce((a, b) =&gt; a + b, 0) / exp_corr.length) * 100;&amp;#10;&amp;#10;if (exp_rt.length == 0) {&amp;#10;    block_feedb = '您的正确率为0。\n请确保明白实验规则再继续实验。\n\n\n请按空格键继续。';&amp;#10;} else {&amp;#10;    exp_meanRT = exp_rt.reduce((a, b) =&gt; a + b, 0) / exp_rt.length;&amp;#10;    block_feedb = `您的正确率为${exp_acc.toFixed(2)}%\n您的平均反应时为${exp_meanRT.toFixed(2)}秒\n\n\n请按空格键继续。`;&amp;#10;}" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="exp_acc = (sum(exp_corr) / len(exp_corr)) * 100&amp;#10;&amp;#10;if len(exp_rt) == 0:&amp;#10;    block_feedb = '您的正确率为0。\n请确保明白实验规则再继续实验。\n\n\n请按空格键继续。'&amp;#10;else:&amp;#10;    exp_meanRT = sum(exp_rt)/len(exp_rt)&amp;#10;    block_feedb = '您的正确率为%.2f%%\n您的平均反应时为%.2f秒\n\n\n请按空格键继续。'%(exp_acc,exp_meanRT)" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="blockn = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="blockn = 0;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="exp_acc = ((util.sum(exp_corr) / exp_corr.length) * 100);&amp;#10;blockn = (3 - block_loop.thisN);&amp;#10;if ((exp_rt.length === 0)) {&amp;#10;    block_feedb = &quot;\u60a8\u7684\u6b63\u786e\u7387\u4e3a0\u3002\n\u8bf7\u786e\u4fdd\u660e\u767d\u5b9e\u9a8c\u89c4\u5219\u518d\u7ee7\u7eed\u5b9e\u9a8c\u3002\n\n\n\u8bf7\u6309\u7a7a\u683c\u952e\u7ee7\u7eed\u3002&quot;;&amp;#10;} else {&amp;#10;    exp_meanRT = (util.sum(exp_rt) / exp_rt.length);&amp;#10;    block_feedb = `您的正确率为${exp_acc.toFixed(2)}%\n您的平均反应时为${exp_meanRT.toFixed(2)}秒\n当前剩余${blockn.toFixed(0)}组实验\n\n\n请按空格键继续。`;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="exp_acc = (sum(exp_corr) / len(exp_corr)) * 100&amp;#10;blockn=3-block_loop.thisN&amp;#10;&amp;#10;if len(exp_rt) == 0:&amp;#10;    block_feedb = '您的正确率为0。\n请确保明白实验规则再继续实验。\n\n\n请按空格键继续。'&amp;#10;else:&amp;#10;    exp_meanRT = sum(exp_rt)/len(exp_rt)&amp;#10;    block_feedb = '您的正确率为%.2f%%\n您的平均反应时为%.2f秒\n当前剩余%d组实验\n\n\n请按空格键继续。'%(exp_acc,exp_meanRT,blockn)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Both" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1185,7 +1185,6 @@
     <Routine name="Trial"/>
     <LoopTerminator name="trials"/>
     <Routine name="Block_Feedback"/>
-    <Routine name="rest"/>
     <LoopTerminator name="block_loop"/>
     <Routine name="End"/>
   </Flow>
