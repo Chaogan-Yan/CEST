@@ -6792,5 +6792,7 @@ async function quitPsychoJS(message, isCompleted) {
   psychoJS.window.close();
   psychoJS.quit({message: message, isCompleted: isCompleted});
   
+  window.location.href = "https://experiment.psych.ac.cn/EpisodicMemory"; // 回到下段启动页面
+  
   return Scheduler.Event.QUIT;
 }
