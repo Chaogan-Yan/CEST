@@ -96,7 +96,7 @@ psychoJS.start({
     {'name': 'Image/E_up.png', 'path': 'Image/E_up.png'},
     {'name': 'Image/E_down.png', 'path': 'Image/E_down.png'},
     {'name': 'Image/bank-1300155_640.png', 'path': 'Image/bank-1300155_640.png'},
-    {'name': 'default.png', 'path': 'https://pavlovia.org/assets/default/default.png'},
+    {'name': 'default.png', 'path': '../lib/default.png'},
     {'name': 'Line_resources/line53.xlsx', 'path': 'Line_resources/line53.xlsx'},
     {'name': 'Line_resources/line52.xlsx', 'path': 'Line_resources/line52.xlsx'},
     {'name': 'Line_resources/line51.xlsx', 'path': 'Line_resources/line51.xlsx'},

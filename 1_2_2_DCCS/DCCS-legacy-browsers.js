@@ -191,7 +191,7 @@ psychoJS.start({
     {'name': 'resources/assets/RedRabbitGreen.png', 'path': 'resources/assets/RedRabbitGreen.png'},
     {'name': 'resources/audio/instr_3_audio.wav', 'path': 'resources/audio/instr_3_audio.wav'},
     {'name': 'resources/audio/F11_new.wav', 'path': 'resources/audio/F11_new.wav'},
-    {'name': 'default.png', 'path': 'https://pavlovia.org/assets/default/default.png'},
+    {'name': 'default.png', 'path': '../lib/default.png'},
     {'name': 'resources/assets/RedRabbitRed.png', 'path': 'resources/assets/RedRabbitRed.png'},
     {'name': 'resources/audio/instr_4_audio.wav', 'path': 'resources/audio/instr_4_audio.wav'},
     {'name': 'resources/assets/BlueBoatRed.png', 'path': 'resources/assets/BlueBoatRed.png'},

@@ -84,7 +84,7 @@ psychoJS.start({
     {'name': 'conditions.xlsx', 'path': 'conditions.xlsx'},
     {'name': 'audio/instr_1.wav', 'path': 'audio/instr_1.wav'},
     {'name': 'audio/instr_2_new.wav', 'path': 'audio/instr_2_new.wav'},
-    {'name': 'default.png', 'path': 'https://pavlovia.org/assets/default/default.png'},
+    {'name': 'default.png', 'path': '../lib/default.png'},
     {'name': 'audio/instr_3.wav', 'path': 'audio/instr_3.wav'},
     {'name': 'audio/prac_rest_instr_1.wav', 'path': 'audio/prac_rest_instr_1.wav'},
     {'name': 'audio/prac_rest_instr_2.wav', 'path': 'audio/prac_rest_instr_2.wav'},

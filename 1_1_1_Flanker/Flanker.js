@@ -189,7 +189,7 @@ psychoJS.start({
     {'name': 'audio/F10.wav', 'path': 'audio/F10.wav'},
     {'name': 'audio/F11_new.wav', 'path': 'audio/F11_new.wav'},
     {'name': 'img/middle.jpeg', 'path': 'img/middle.jpeg'},
-    {'name': 'default.png', 'path': 'https://pavlovia.org/assets/default/default.png'},
+    {'name': 'default.png', 'path': '../lib/default.png'},
     {'name': 'audio/F12_new.wav', 'path': 'audio/F12_new.wav'},
     {'name': 'audio/F-f.wav', 'path': 'audio/F-f.wav'},
   ]
